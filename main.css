@@ -1,0 +1,354 @@
+
+/*****************************************************************/
+/*************************** UNIVERSAL ***************************/
+/*****************************************************************/
+
+body {
+  margin: 0;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/****************************************************************/
+/**************************** HEADER ****************************/
+/****************************************************************/
+
+/* SOCIAL MEDIA & ORDER ONLINE */
+
+#top {
+  margin-top: 25px;
+}
+
+#social {
+  margin-left: 125px;
+}
+
+.social_icon a img {
+  height: 25px;
+}
+
+#facebook {
+  position: relative;
+  display: inline;
+}
+
+#twitter {
+  position: relative;
+  display: inline;
+  margin-left: 10px;
+}
+
+#instagram {
+  position: relative;
+  display: inline;
+  margin-left: 10px;
+}
+
+.order_online {
+  display: inline;
+  vertical-align: middle;
+}
+
+#order_div {  
+  float: right;
+  margin-right: 125px;
+}
+
+#order_online_text {
+  font-size: 20px;
+  color: #555;
+  font-family: 'PT Sans Narrow';
+  padding-right: 10px;
+}
+
+#coffee_icon {
+  height: 25px;
+}
+
+/* SITE TITLE */
+
+#gratitude_cafe {
+  text-align: center;
+  font-size: 75px;
+  background: #FFF;
+  font-family: 'Amatic SC', cursive;
+  text-transform: uppercase;
+}
+
+#gratitude_cafe a {
+  color: #333;
+}
+
+/* MAIN NAV */
+
+#links a {
+  text-decoration: none;
+  color: #555;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+header {
+  position: fixed;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 55px;
+  background: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  height: 50px;
+  /*border-bottom: 1px solid #F0F0F0;*/
+
+  // set animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+header.sticky {
+  opacity: .85;
+  margin-top: -150px;
+  z-index: 1;
+}
+
+/****************************************************************/
+/**************************** FOOTER ****************************/
+/****************************************************************/
+
+footer {
+  font-family: 'PT Sans Narrow';
+  color: #777;
+  width: auto;
+  padding: 25px 125px;
+  font-size: 15px;
+  border-top: 1.5px solid #E0E0E0;
+}
+
+#info {
+  position: relative;
+  float: left;
+}
+
+/* EMAIL */
+
+#email a {
+  color: #777;
+}
+
+/* PHONE */
+
+#phone_number {
+  margin-top: 32.5px;
+  margin-bottom: 32.5px;
+}
+
+/* HOURS */
+
+#hours_footer {
+  width: 275px;
+  position: relative;
+  margin-top: -5px;
+  float: right;
+  line-height: ;
+}
+
+.time {
+  text-align: right;
+}
+
+/**************************************************************/
+/**************************** HOME ****************************/
+/**************************************************************/
+
+/* COVER PHOTO */
+
+#header-img {
+  background: url(http://i.imgur.com/fHPOxIA.jpg);
+}
+
+#header-img, #header-img_suppliers, #header-img_contact, #header-img_events, #header-img_menu {
+  display: block;
+  margin: auto;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: 50px;
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+#header-img img {
+  width: 300px;
+  padding: 100px 0px;
+  opacity: .95;
+  display: block;
+  margin: 0 auto;
+}
+
+/* TAGLINE */
+
+#tagline {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 75px 125px;
+  text-transform: uppercase;	
+  text-align: center;	
+}
+
+#tagline_1 {
+  font-size: 50px;
+  padding-bottom: 15px;
+  color: #333;
+}
+
+#tagline_2 {
+  font-size: 30px;
+  color: #555;
+}
+
+/* INFO CONTAINERS */
+
+#info_containers {
+  margin: 0 200px;
+}
+.highlights {
+  float: left;
+  width: 250px;
+  color: #555;
+}
+
+#events {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.highlights:hover {
+  opacity: .75;
+}
+
+.info_img {
+  height: 85px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: #555;
+  font-size: 25px;
+  font-family: 'PT Sans Narrow';
+  text-align: center;
+}
+
+.highlight_description {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'PT Sans Narrow';
+  text-align: center;
+}
+
+/* MAP */
+
+#map {
+  display: block;
+  margin: auto;
+  height: 500px;
+  background: url(http://i.imgur.com/JKt42ly.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: 75px;
+  border-top: 1px solid #F0F0F0;
+}
+
+#map img {
+  width: 40px;
+  padding: 225px 0px;
+  display: block;
+  margin: 0 auto;
+}
+
+/***************************************************************/
+/************************** SUPPLIERS **************************/
+/***************************************************************/
+
+#header-img_suppliers, #header-img_contact, #header-img_events, #header-img_menu {
+  /*background: url(http://i.imgur.com/kD9LjF5.jpg);*/
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #E0E0E0;
+  padding: 162.5px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FFF;
+}
+
+.suppliers_img {
+  width: 250px;
+  position: relative;
+  display: inline;
+  padding: 0px 25px 75px 25px;
+}
+
+#suppliers_list {
+  margin-right: 125px;
+  margin-left: 125px;
+}
+
+/***************************************************************/
+/*************************** CONTACT ***************************/
+/***************************************************************/
+
+/* FORM */
+
+form {
+  margin-left: 125px;
+  margin-right: 150px;
+  margin-bottom: 75px;
+}
+
+input[type=submit], input[type=text], input[type=email], textarea {
+  padding: 10px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  border: 2px solid #B8B8B8;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #999;
+  width: 100%;
+}
+
+input[type=submit] {
+  border: 2px solid #999;
+  background: #999;
+  width: 75px;
+  margin-top: 0px;
+  margin-left: 0px;
+  color: #FFF;
+}
+
+textarea {
+  height: 300px;
+}
+
+/**************************************************************/
+/*************************** EVENTS ***************************/
+/**************************************************************/
+
+/**************************************************************/
+/**************************** MENU ****************************/
+/**************************************************************/
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* html .clearfix{ zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
