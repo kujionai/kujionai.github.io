@@ -25,8 +25,7 @@ a {
 }
 
 .social_icon a img {
-  height: 25px;
-  padding-bottom: 5px;
+  height: 20px;
 }
 
 #facebook {
@@ -93,12 +92,12 @@ header {
   position: fixed;
   display: block;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 10px;
   background: #fff;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
-  opacity: .85;
+  opacity: .65;
   /*border-bottom: 1px solid #F0F0F0;*/
 
   // set animation
@@ -107,7 +106,7 @@ header {
 }
 
 header.sticky {
-  opacity: .75;
+  opacity: .65;
   z-index: 1;
 }
 
@@ -173,6 +172,7 @@ footer {
   padding-bottom: 205px;
   display: block;
   margin: 0 auto;
+  margin-top: -1px;
 }
 
 #rosa_pergams {
