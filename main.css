@@ -18,10 +18,9 @@ a {
 
 /* SOCIAL MEDIA & ORDER ONLINE */
 
-
-
 #social {
   margin-left: 125px;
+  padding-top: 2.5px;
 }
 
 .social_icon a img {
@@ -45,49 +44,6 @@ a {
   margin-left: 10px;
 }
 
-.order_online {
-  display: inline;
-  vertical-align: middle;
-}
-
-#order_div {  
-  float: right;
-  margin-right: 125px;
-}
-
-#order_online_text {
-  font-size: 27.5px;
-  color: #333;
-  font-family: 'PT Sans Narrow';
-}
-
-#coffee_icon {
-  height: 15px;
-}
-
-/* SITE TITLE */
-
-#gratitude_cafe {
-  text-align: center;
-  font-size: 75px;
-  background: #FFF;
-  font-family: 'Amatic SC', cursive;
-  text-transform: uppercase;
-}
-
-#gratitude_cafe a {
-  color: #333;
-}
-
-/* MAIN NAV */
-
-#links a {
-  text-decoration: none;
-  color: #555;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
 header {
   position: fixed;
   display: block;
@@ -106,60 +62,8 @@ header {
 }
 
 header.sticky {
-  opacity: .65;
   z-index: 1;
 }
-
-/****************************************************************/
-/**************************** FOOTER ****************************/
-/****************************************************************/
-
-footer {
-  font-family: 'PT Sans Narrow';
-  color: #777;
-  width: auto;
-  padding: 25px 125px;
-  font-size: 15px;
-  border-top: 1.5px solid #E0E0E0;
-  text-align: center;
-}
-
-#info {
-  position: relative;
-  float: left;
-}
-
-/* EMAIL */
-
-#email a {
-  color: #777;
-}
-
-/* PHONE */
-
-#phone_number {
-  margin-top: 32.5px;
-  margin-bottom: 32.5px;
-}
-
-/* HOURS */
-
-#hours_footer {
-  width: 275px;
-  position: relative;
-  margin-top: -5px;
-  float: right;
-}
-
-.time {
-  text-align: right;
-}
-
-/**************************************************************/
-/**************************** HOME ****************************/
-/**************************************************************/
-
-/* COVER PHOTO */
 
 #headline {
   background: url(http://i.imgur.com/L41gisR.jpg);
@@ -168,11 +72,10 @@ footer {
   border-top: 1px solid #F0F0F0;
   border-bottom: 1px solid #F0F0F0;
   background-size: cover;
-  padding-top: 275px;
-  padding-bottom: 205px;
+  padding-top: 250px;
+  padding-bottom: 200px;
   display: block;
   margin: 0 auto;
-  margin-top: -1px;
 }
 
 #rosa_pergams {
@@ -185,6 +88,24 @@ footer {
   margin-right: 27.5%;
   border: 10px solid #F8F8F8 ;
 }
+
+/****************************************************************/
+/**************************** FOOTER ****************************/
+/****************************************************************/
+
+footer {
+  font-family: 'PT Sans Narrow';
+  color: #777;
+  padding: 25px 0px;
+  margin: 0px 125px;
+  font-size: 15px;
+  border-top: 1.5px solid #E0E0E0;
+  text-align: center;
+}
+
+/**************************************************************/
+/**************************** HOME ****************************/
+/**************************************************************/
 
 /* TAGLINE */
 
@@ -270,8 +191,6 @@ h2 {
 /***************************************************************/
 /************************** SUPPLIERS **************************/
 /***************************************************************/
-
-
 
 .suppliers_img {
   width: 250px;
