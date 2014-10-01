@@ -20,11 +20,21 @@ a {
 
 #social {
   margin-left: 125px;
-  padding-top: 2.5px;
 }
 
 .social_icon a img {
   height: 20px;
+  margin-top: 5px;
+}
+
+.social_icon a img:hover {
+  opacity: .85;
+}
+
+#github {
+  position: relative;
+  display: inline;
+  padding-right: 10px;
 }
 
 #facebook {
@@ -44,16 +54,42 @@ a {
   margin-left: 10px;
 }
 
+.header {
+  display: inline;
+  margin-top: 10px;
+}
+
+#main_nav_bar {  
+  float: right;
+  margin-right: 110px;
+}
+
+#main_nav_bar a {
+  text-decoration: none;
+  color: #555;
+  margin-left: 15px;
+  margin-right: 15px;
+  float: right;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+#main_nav_bar a:hover {
+  opacity: .85;
+}
+
+#main_button {
+  padding-right: 0px;
+}
+
 header {
   position: fixed;
   display: block;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: #fff;
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  opacity: .75;
+  opacity: .9;
 
   // set animation
   -webkit-transition: all 0.4s ease;
@@ -110,8 +146,8 @@ footer {
 #tagline {
   font-family: 'Josefin Sans', sans-serif;
   margin: 75px 125px;
-  text-transform: uppercase;	
-  text-align: center;	
+  text-transform: uppercase;  
+  text-align: center; 
 }
 
 #tagline_1 {
