@@ -106,8 +106,8 @@ header.sticky {
   background-position: 50% 50%;
   border-bottom: 1px solid #F0F0F0;
   background-size: cover;
-  padding-top: 300px;
-  padding-bottom: 200px;
+  padding-top: 225px;
+  padding-bottom: 125px;
 }
 
 #rosa_pergams img {
@@ -125,7 +125,7 @@ footer {
   font-family: 'PT Sans Narrow';
   color: #777;
   padding: 25px 0px;
-  margin: 0px 125px;
+  margin: 0px;
   font-size: 15px;
   border-top: 1.5px solid #E0E0E0;
   text-align: center;
