@@ -19,11 +19,12 @@ a {
 
 #social {
   margin-left: 125px;
+  float: left;
+  margin-top: 7.5px;
 }
 
 .social_icon a img {
   height: 17.5px;
-  margin-top: 7.5px;
 }
 
 .social_icon a img:hover {
