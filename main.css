@@ -156,12 +156,46 @@ footer {
 }
 
 /*****************************************************************/
+/************************* CONTACT *************************/
+/*****************************************************************/
+
+#contact_info {
+  margin-right: 125px;
+  margin-left: 125px;
+  margin-bottom: 75px;
+}
+
+.contact_img {
+  padding-top: 0px;
+  height: 100px;
+  opacity: .75;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -25px;
+}
+
+.contact_method {
+  margin-bottom: 50px;
+}
+
+.contact_method:hover {
+  opacity: .65;
+}
+
+.contact_method_description {
+  font-family: 'PT Sans Narrow';
+  text-align: center;
+  color: #555;
+}
+
+/*****************************************************************/
 /************************* MEDIA QUERIES *************************/
 /*****************************************************************/
 
 @media (max-width: 500px) {
   #rosa_pergams img {
-    width: 300px;
+    width: 300px; 
   }
 }   
 
