@@ -126,13 +126,14 @@ footer {
   color: #777;
   padding: 25px 0px;
   margin: 0px;
+  margin-top: 75px;
   font-size: 15px;
-  border-top: 1.5px solid #E0E0E0;
+  border-top: 1.75px solid #E0E0E0;
   text-align: center;
 }
 
 /**************************************************************/
-/**************************** HOME ****************************/
+/**************************** BLOG ****************************/
 /**************************************************************/
 
 /* TAGLINE */
@@ -153,6 +154,15 @@ footer {
 #tagline_2 {
   font-size: 30px;
   color: #555;
+}
+
+#content {
+  font-family: 'PT Sans Narrow';
+  text-align: justify;
+  color: #333;
+  margin-top: -50px;
+  margin-right: 250px;
+  margin-left: 250px;
 }
 
 /*****************************************************************/
@@ -180,7 +190,7 @@ footer {
 }
 
 .contact_method:hover {
-  opacity: .65;
+  opacity: .9;
 }
 
 .contact_method_description {
