@@ -206,7 +206,7 @@ br {
 /************************* MEDIA QUERIES *************************/
 /*****************************************************************/
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     #content, #tagline {
     margin-right: 50px;
     margin-left: 50px; 
@@ -215,7 +215,19 @@ br {
 
 @media (max-width: 500px) {
   #rosa_pergams img {
-    width: 300px; 
+    width: 300px;
+  }
+  #main_nav_bar {  
+    margin-right: 42.5px;
+    margin-left: 42.5px;
+  }
+  #main_nav_bar a {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    font-size: 16.5px;
+  }
+  #social {
+    margin-left: 50px;
   }
 }   
 
