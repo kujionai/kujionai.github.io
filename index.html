@@ -27,9 +27,19 @@
             <a href="http://instagram.com/rosapergams" target="_blank"><img src="http://i.imgur.com/OvTI0TX.png" alt="instagram"></a>
           </div>
         </div>
-        <div id="main_nav_bar" class="header">
-          <a class="main_nav_button" href="about.html">About</a><a class="main_nav_button" href="projects.html">Projects</a> <a class="main_nav_button" href="index.html">Blog</a> <a class="main_nav_button" href="contact.html">Contact</a> 
-        </div>
+        <nav>
+          <div id="main_nav_bar" class="header">
+            <ul>
+              <li><a class="main_nav_button" href="about.html">About</a></li>
+              <li><a class="main_nav_button" href="projects.html">Projects</a></li>
+              <li><a class="main_nav_button" href="index.html">Blog</a></li>
+                <ul id="archive">
+                  <li><a class="main_nav_button" href="#">Archive</a></li>
+                </ul>
+              <li><a class="main_nav_button" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
       </header>
 
@@ -57,11 +67,91 @@
         <p>Duis aute irure dolor in <a class="blog_post_link" href="http://.com/" target="_blank">reprehenderit</a> in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+        <div class="blog_post_footer">October 2nd, 2014</div>
+
       </div> 
 
     </div>
 -->
 
+    <div id="blog_post">
+
+      <div id="tagline">
+        <div id="tagline_1">Command Line Basics</div>
+        <div id="tagline_2">A new way to use your computer!</div>
+      </div>
+
+      <div id="content">
+        <p>Usually, when I'm navigating through folders and files on my computer, I click on a whole bunch of stuff. It takes a <i>lot</i> of time, finding the right folder with my eyes and then clicking on it. Click, click, click. <i>Geez</i>.</p>
+
+        <p>Turns out, there's a better way to communicate with your Macbook! Enter the command line.</p>
+
+        <img class="blog_post_img" src="http://i.imgur.com/J2QPOoa.png" alt="Terminal" />
+
+        <p>Here are some cool commands you can use to get things done with your computer.</p>
+
+        <p><b>Identify your location</b></p>
+          <p>
+            <b>pwd</b> - print working directory
+          </p>
+
+        <p><b>Navigate between directories</b></p>
+        <p>
+         <b>cd</b> - change directory
+          <br>
+          <b>pushd</b> - Save current directory, then go to another directory.
+          <br>
+          <b>popd</b> - Take the last directory pushed and "pop" it off (take me back there).
+        </p>
+
+        <p><b>Move, rename, and copy items</b></p>
+        <p>
+          <b>mv</b> - Move a file or directory
+          <br>
+          <b>cp</b> - Copy a file or directory
+        </p>
+
+        <p><b>Create new and delete existing directories and files</b></p>
+          <p>
+            <b>mkdir</b> - Make directory
+            <br>
+            <b>rmdir</b> - Remove directory
+            <br>
+            <b>touch</b> - Make a new empty file
+            <br>
+            <b>rm</b> - Remove a file
+          </p>
+
+        <p><b>Open, view, or stream a file</b></p>
+        <p>
+            <b>open</b> - Open a file
+            <br>
+            <b>less</b> - View a file
+            <br>
+            <b>cat</b> - Stream a file (display the whole file on the screen with no paging or stopping)
+          </p>
+
+        <p><b>Find and look inside files</b></p>
+        <p>
+            <b>find</b> - Find files
+            <br>
+            <b>grep</b> - Find things inside files
+        </p>
+
+        <p><b>Get help</b></p>
+          <p>
+            <b>man</b> - Read a command&#8217;s manual page
+            <br>
+            <b>apropo</b> - Look through all the help files to find potentially relevant help
+        </p>
+
+        <p>That's a little bit about how you can use the Command Line! Check out <a class="blog_post_link" href="http://cli.learncodethehardway.org/book/" target="_blank">Zed Shaw's Learn Code The Hard Way</a> for an excellent crash course.</p>
+
+        <div class="blog_post_footer">October 6th, 2014</div>
+
+      </div> 
+
+    </div>
 
 
     <div id="blog_post">
