@@ -59,7 +59,7 @@ a {
   margin-top: -5px;
 }
 
-#main_nav_bar ul li {  
+#main_nav_bar ul li {
   list-style: none;
   float: right;
 }
@@ -149,7 +149,7 @@ footer {
 #tagline {
   font-family: 'Josefin Sans', sans-serif;
   margin: 75px 125px 25px 125px;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -182,7 +182,7 @@ footer {
   margin-left: auto;
   margin-top: 25px;
   margin-bottom: 25px;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .blog_post_quote {
@@ -247,22 +247,22 @@ a:hover {
 @media (max-width: 1000px) {
     #content, #tagline {
     margin-right: 50px;
-    margin-left: 50px; 
+    margin-left: 50px;
   }
-  #main_nav_bar {  
+  #main_nav_bar {
     margin-right: 35px;
     margin-left: 35px;
   }
   #social {
     margin-left: 50px;
   }
-} 
+}
 
 @media (max-width: 500px) {
   #rosa_pergams img {
     width: 300px;
   }
-  #main_nav_bar ul li a{  
+  #main_nav_bar ul li a{
     margin-right: 42.5px;
     margin-left: 42.5px;
   }
@@ -282,7 +282,10 @@ a:hover {
   #tagline_2 {
     font-size: 20px;
   }
-}   
+  .blog_post_img {
+    max-width: 100%;
+  }
+}
 
 /****************************************************************/
 /*************************** CLEARFIX ***************************/
