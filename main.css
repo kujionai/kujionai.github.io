@@ -316,6 +316,9 @@ a:hover {
   .blog_post_img {
     max-width: 100%;
   }
+  #about_info {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /****************************************************************/
