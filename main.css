@@ -205,6 +205,34 @@ a:hover {
   text-align: right;
 }
 
+/**************************************************************/
+/**************************** ABOUT ****************************/
+/**************************************************************/
+
+#about_info {
+  margin: 50px 125px 0px 125px;
+}
+
+.about_stuff {
+  position: relative;
+  display: inline;
+}
+
+#about_img {
+  width: 450px;
+  border-radius: 2.5px;
+}
+
+#about_text {
+  font-family: 'PT Sans Narrow';
+  text-align: justify;
+  color: #333;
+  font-size: 17.5px;
+  position: relative;
+  display: inline;
+  padding-right: 10px;
+}
+
 /*****************************************************************/
 /************************* CONTACT *************************/
 /*****************************************************************/
@@ -255,6 +283,9 @@ a:hover {
   }
   #social {
     margin-left: 50px;
+  }
+  #about_img {
+    width: 100%;
   }
 }
 
