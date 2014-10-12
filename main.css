@@ -210,27 +210,30 @@ a:hover {
 /**************************************************************/
 
 #about_info {
-  margin: 50px 125px 0px 125px;
+text-align: center;
 }
 
 .about_stuff {
-  position: relative;
-  display: inline;
+  display: inline-block;
+  width: 450px;
+  vertical-align: top;
 }
 
 #about_img {
+  margin-top: 20px;
+  margin-right: 25px;
   width: 450px;
   border-radius: 2.5px;
+  display: inline-block;
 }
 
 #about_text {
+  margin-left: 25px;
   font-family: 'PT Sans Narrow';
   text-align: justify;
   color: #333;
   font-size: 17.5px;
-  position: relative;
-  display: inline;
-  padding-right: 10px;
+  display: inline-block;
 }
 
 /*****************************************************************/
@@ -284,8 +287,15 @@ a:hover {
   #social {
     margin-left: 50px;
   }
+  #about_info {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
   #about_img {
-    width: 100%;
+    margin-right: 0px;
+  }
+  #about_text {
+    margin-left: 0px;
   }
 }
 
@@ -316,9 +326,12 @@ a:hover {
   .blog_post_img {
     max-width: 100%;
   }
-  #about_info {
-    margin-left: 50px;
-    margin-right: 50px;
+  #about_img {
+    width: 100%;
+  }
+  #about_text {
+    width: 100%;
+  }
 }
 
 /****************************************************************/
