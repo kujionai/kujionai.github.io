@@ -97,8 +97,8 @@ header {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  background: #fff;
-  opacity: .9;
+  background: #f9f9f9;
+  opacity: .85;
 
   // set animation
   -webkit-transition: all 0.4s ease;
@@ -140,6 +140,9 @@ footer {
   text-align: center;
 }
 
+#just_space {
+  height: 50px;
+}
 /**************************************************************/
 /**************************** BLOG ****************************/
 /**************************************************************/
@@ -215,16 +218,17 @@ text-align: center;
 
 .about_stuff {
   display: inline-block;
-  width: 450px;
-  vertical-align: top;
+  width: 400px;
+  vertical-align: middle;
 }
 
 #about_img {
   margin-top: 20px;
   margin-right: 25px;
-  width: 450px;
-  border-radius: 2.5px;
+  width: 400px;
+  border-radius: 112.5px 225px 112.5px;
   display: inline-block;
+  border: 1px solid #F0F0F0;
 }
 
 #about_text {
@@ -324,6 +328,7 @@ text-align: center;
   }
   #about_img {
     width: 100%;
+    border-radius: 75gidd px 150px;
   }
   #about_text {
     width: 100%;
