@@ -97,8 +97,8 @@ header {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  background: #fff;
-  opacity: .9;
+  background: #f9f9f9;
+  opacity: .85;
 
   // set animation
   -webkit-transition: all 0.4s ease;
@@ -138,6 +138,10 @@ footer {
   font-size: 15px;
   border-top: 1.75px solid #E0E0E0;
   text-align: center;
+}
+
+#just_space {
+  height: 50px;
 }
 
 /**************************************************************/
@@ -205,72 +209,6 @@ a:hover {
   text-align: right;
 }
 
-/**************************************************************/
-/**************************** ABOUT ****************************/
-/**************************************************************/
-
-#about_info {
-text-align: center;
-}
-
-.about_stuff {
-  display: inline-block;
-  width: 450px;
-  vertical-align: top;
-}
-
-#about_img {
-  margin-top: 20px;
-  margin-right: 25px;
-  width: 450px;
-  border-radius: 2.5px;
-  display: inline-block;
-}
-
-#about_text {
-  margin-left: 25px;
-  font-family: 'PT Sans Narrow';
-  text-align: justify;
-  color: #333;
-  font-size: 17.5px;
-  display: inline-block;
-}
-
-/*****************************************************************/
-/************************* CONTACT *************************/
-/*****************************************************************/
-
-#contact_info {
-  margin-right: 125px;
-  margin-left: 125px;
-  margin-bottom: 75px;
-  margin-top: 75px;
-}
-
-.contact_img {
-  padding-top: 0px;
-  height: 100px;
-  opacity: .75;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: -25px;
-}
-
-.contact_method {
-  margin-bottom: 50px;
-}
-
-.contact_method:hover {
-  opacity: .9;
-}
-
-.contact_method_description {
-  font-family: 'PT Sans Narrow';
-  text-align: center;
-  color: #555;
-}
-
 /*****************************************************************/
 /************************* MEDIA QUERIES *************************/
 /*****************************************************************/
@@ -286,16 +224,6 @@ text-align: center;
   }
   #social {
     margin-left: 50px;
-  }
-  #about_info {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  #about_img {
-    margin-right: 0px;
-  }
-  #about_text {
-    margin-left: 0px;
   }
 }
 
@@ -321,12 +249,6 @@ text-align: center;
   }
   .blog_post_img {
     max-width: 100%;
-  }
-  #about_img {
-    width: 100%;
-  }
-  #about_text {
-    width: 100%;
   }
 }
 
