@@ -64,7 +64,7 @@ a {
   height: 30px;
   vertical-align: top;
   margin-top: -10px;
-  margin-left: -15px;
+  margin-left: -5px;
 }
 
 #main_nav_bar ul li {
@@ -258,7 +258,25 @@ a:hover {
 }
 
 #blog_single {
-  color: #333;
+  color: #333
+
+}
+
+.arrow {
+  display: inline-block;
+  width: 50px;
+  margin-bottom: -60px;
+  margin-top: 25px;
+  padding: 15px;
+  opacity: .5;
+}
+
+#footer_nav {
+  text-align: center;
+}
+
+#left-arrow-new, #right-arrow-old {
+  opacity: .125;
 }
 
 /****************************************************************/
@@ -407,6 +425,7 @@ a:hover {
   .main_link_text {
     font-size: 25px;
   }
+
   .project {
     width: 30%;
     height: 30%;
