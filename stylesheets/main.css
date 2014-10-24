@@ -149,7 +149,7 @@ footer {
   text-transform: uppercase;
   text-align: center;
   color: #333;
-  font-size: 45px;
+  font-size: 35px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -163,13 +163,11 @@ footer {
 
 .main_visual_link {
   padding: 25px;
-  background: #F7F7F7;
-  width: 30%;
-  height: 30%;
+  background: #F5F5F5;
+  width: 15%;
+  height: 15%;
   display: inline-block;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  margin-top: 50px;
+  margin: 75px 1.5%;
   border-radius: 2.5px;
 }
 
@@ -225,6 +223,13 @@ footer {
   font-size: 17.5px;
 }
 
+#nothing {
+  background: #D7D6C4;
+  background: #9D8773;
+  background: #DCBA75;
+  background: #743E46;
+  background: #BA6C56;
+}
 
 .blog_post_img {
   display: block;
