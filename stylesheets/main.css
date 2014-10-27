@@ -169,6 +169,8 @@ footer {
   display: inline-block;
   margin: 75px 1.5%;
   border-radius: 2.5px;
+  -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+  transition: 1s;
 }
 
 .main_visual_link:hover {
@@ -262,7 +264,6 @@ a:hover {
 
 #blog_single {
   color: #333
-
 }
 
 .arrow {
@@ -306,6 +307,8 @@ a:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+  transition: 1s;
 }
 
 .project_img:hover {
