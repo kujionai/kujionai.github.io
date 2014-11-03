@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <title>Rosa Pergams</title>
+      <LINK rel="stylesheet" href="../stylesheets/main.css" type="text/css">
+
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+      <div id="top"  class="clearfix">
+      <header>
+        <div id="social" class="header">
+          <div id="github" class="social_icon">
+            <a href="https://github.com/rosapergams" target="_blank"><img src="http://i.imgur.com/MW39iDM.png" alt="twitter"></a>
+          </div>
+          <div id="facebook" class="social_icon">
+            <a href="https://twitter.com/rosapergams" target="_blank"><img src="http://i.imgur.com/aWXWJd1.png" alt="twitter"></a>
+          </div>
+          <div id="twitter" class="social_icon">
+            <a href="https://www.linkedin.com/in/rosapergams" target="_blank"><img src="http://i.imgur.com/knt3hty.png" alt="facebook"></a>
+          </div>
+          <div id="instagram" class="social_icon">
+            <a href="http://instagram.com/rosapergams" target="_blank"><img src="http://i.imgur.com/OvTI0TX.png" alt="instagram"></a>
+          </div>
+        </div>
+        <nav>
+          <div id="main_nav_bar" class="header">
+            <ul>
+            <ul>
+              <li><a class="main_nav_button" href="../index.html"><img id="home_img" src="../imgs/icon_4932.png" alt="Home" /></a></li>
+              <li><a class="main_nav_button" href="../contact.html">Contact</a></li>
+              <li><a class="main_nav_button" href="../about.html">About</a></li>
+              <li><a class="main_nav_button" href="../projects.html">Projects</a></li>
+              <li><a class="main_nav_button" href="../index-blog.html">Blog</a></li>
+                <ul id="archive">
+                  <li><a class="main_nav_button" href="#">Archive</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      </header>
+
+      <div id="just_space"></div>
+
+    <div id="blog_post">
+
+      <div id="tagline">
+        <div id="tagline_1">Ruby's Map Method</div>
+        <div id="tagline_2">An Enumerable for the well-adapted glutton.</div>
+      </div>
+
+      <div id="content">
+
+        <p class="blog_post_quote">"Indecision may or may not be my problem."
+        <br>- Jimmy Buffett
+        </p>
+
+        <p>Let's say (with inspiration from a most clever <a class="blog_post_link" href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a> challenge) we've got some bagels, and want another bagel. And, of course, we wanna code about it.</p>
+
+        <pre><code>more_bagels = ["I've" "got" 2 "bagels" "!" "Now" "I" "want" 3 "."]</pre></code>
+
+        <p>Great! Awesome start. The array <code class="inline_code">more_bagels</code> Tells the whole wanting-another-bagel story. UNLESS, of course, I get that extra bagel, in which case it's only natural to want one more.</p>
+
+        <p>But, how might I freely adjust my <code class="inline_code">more_bagels</code> array to properly emulate my bottomless gluttony? It's time to bust out Ruby's <code class="inline_code">#map</code> method!</p>
+
+        <p>But why  <code class="inline_code">#map</code>? Well, I want to change the numbers in my array based on the number of bagels I have, so I'll create a method that accepts both an array and a number as arguments. Unlike <code class="inline_code">#each</code>, which just does something to each element without storing the results anywhere, <code class="inline_code">#map</code> creates a new array with the results of whatever action you're performing. It's the same as the <code class="inline_code">#collect</code> method, so  you can think of <code class="inline_code">#map</code> as 'collecting' the results of an action into a brand new array.</p>
+
+        <p>In my case, I'm executing some delicious addition unto all of the numbers in my array.</p>
+
+        <pre><code>def bagels_on_bagels(array, num)
+  array.map { |obj|
+    if obj.is_a?Fixnum
+      obj + num
+    else
+      obj
+  end }
+end</pre></code>
+
+        <p>Cool! So, I'm letting that <code class="inline_code">#map</code> method have at it on my <code class="inline_code">array</code> argument, finding those <code class="inline_code">Fixnum</code>s and adding some <code class="inline_code">num</code>s to them. Time to call my new method:</p>
+
+        <pre><code>bagels_on_bagels(more_bagels, 7)</pre></code>
+
+        <p>Alright! let's see what all this method madness returns.</p>
+
+        <pre><code>more_bagels = ["I've" "got" 9 "bagels" "!" "Now" "I" "want" 10 "."]</pre></code>
+
+        <img class="blog_post_img" src="../imgs/bagels.png" alt="Title" />
+
+        <p>Perfect! One more bagel, no matter how many I've already hoarded inside of my face. So, #map created a new array for me with the results of performing my method on each element! The <code class="inline_code">#map</code> sure is great for returning an ever-changing desire for more.</p>
+
+        <p>Wanna fill up on <code class="inline_code">#map</code>, <code class="inline_code">#select</code> and even more life-changing Enumerable Methods? Indulge youself with <a class="blog_post_link" href="https://twitter.com/ErikTrautman" target="_blank">Erik Trauman's</a> lovely <a class="blog_post_link" href="http://www.eriktrautman.com/posts/ruby-explained-map-select-and-other-enumerable-methods" target="_blank">blog-post.</a></p>
+
+        <div class="blog_post_footer">November 2nd, 2014</div>
+
+      </div>
+    </div>
+
+    <div id="footer_nav">
+      <a id="left-arrow-new" href="#">
+        <img class="arrow" src="../imgs/icon_6976.png" />
+      </a>
+      <a id="right-arrow" href="c3_thinking-style.html">
+        <img class="arrow" src="../imgs/icon_6977.png" />
+      </a>
+    </div>
+
+    <footer class="clearfix">
+      Made by Rosa Pergams
+    </footer>
+
+    </body>
+  </html>

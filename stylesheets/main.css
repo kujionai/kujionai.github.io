@@ -224,13 +224,13 @@ footer {
   font-size: 17.5px;
 }
 
-#nothing {
+/*#nothing {
   background: #D7D6C4;
   background: #9D8773;
   background: #DCBA75;
   background: #743E46;
   background: #BA6C56;
-}
+}*/
 
 .blog_post_img {
   display: block;
@@ -280,6 +280,37 @@ a:hover {
 
 #left-arrow-new, #right-arrow-old {
   opacity: .125;
+}
+
+/****************************************************************/
+/************************** CODE BLOCK **************************/
+/****************************************************************/
+
+pre {
+  font-size: .9em;
+  font-weight: 100;
+  font-family: Courier, Monospace !important;
+  background-color: #f8f8f8;
+  color: #666;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 22.5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
+}
+
+.inline_code {
+  font-size: .9em;
+  color: #666666;
+  font-family: Courier, Monospace !important;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 2px 4px;
+  white-space: pre;
 }
 
 /****************************************************************/
