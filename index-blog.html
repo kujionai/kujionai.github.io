@@ -50,7 +50,7 @@
     <div id="blog_post">
 
       <div id="tagline">
-        <div id="tagline_1"><a id="blog_single" href="blog/t4-enumerable-methods.html">Ruby's Map Method</a></div>
+        <div id="tagline_1">Ruby's Map Method</div>
         <div id="tagline_2">An Enumerable for the well-adapted glutton.</div>
       </div>
 
@@ -65,8 +65,6 @@
         <pre><code>more_bagels = ["I've" "got" 2 "bagels" "!" "Now" "I" "want" 3 "."]</pre></code>
 
         <p>Great! Awesome start. The array <code class="inline_code">more_bagels</code> Tells the whole wanting-another-bagel story. UNLESS, of course, I get that extra bagel, in which case it's only natural to want one more.</p>
-
-        <img class="blog_post_img" src="imgs/bagels.png" alt="Title" />
 
         <p>But, how might I freely adjust my <code class="inline_code">more_bagels</code> array to properly emulate my bottomless gluttony? It's time to bust out Ruby's <code class="inline_code">#map</code> method!</p>
 
@@ -89,11 +87,13 @@ end</pre></code>
 
         <p>Alright! let's see what all this method madness returns.</p>
 
-        <pre><code>more_bagels = ["I've" "got" 9 "bagels" "!" "Now" "I" "want" 10 "."]</pre></code>
+        <pre><code>=> ["I've" "got" 9 "bagels" "!" "Now" "I" "want" 10 "."]</pre></code>
 
-        <p>Perfect! One more bagel, no matter how many I've already hoarded inside of my face. So, #map created a new array for me with the results of performing my method on each element! The <code class="inline_code">#map</code> sure is great for returning an ever-changing desire for more.</p>
+        <img class="blog_post_img" src="../imgs/bagels.png" alt="Title" />
 
-        <p>Wanna fill up on <code class="inline_code">#map</code>, <code class="inline_code">#select</code> and even more life-changing Enumerable Methods? Indulge youself with <a class="blog_post_link" href="https://twitter.com/ErikTrautman" target="_blank">Erik Trauman's</a> lovely <a class="blog_post_link" href="http://www.eriktrautman.com/posts/ruby-explained-map-select-and-other-enumerable-methods" target="_blank">blog-post.</a></p>
+        <p>Perfect! One more bagel, no matter how many I've already hoarded inside of my face. So, <code class="inline_code">#map</code> created a new array for me with the results of performing my method on each element! The <code class="inline_code">#map</code> sure is great for returning an ever-adjusting desire for more.</p>
+
+        <p>Wanna fill up on <code class="inline_code">#map</code>, <code class="inline_code">#select</code> and other life-changing Enumerable Methods? Indulge youself with <a class="blog_post_link" href="https://twitter.com/ErikTrautman" target="_blank">Erik Trauman's</a> lovely <a class="blog_post_link" href="http://www.eriktrautman.com/posts/ruby-explained-map-select-and-other-enumerable-methods" target="_blank">blog-post.</a></p>
 
         <div class="blog_post_footer">November 2nd, 2014</div>
 
