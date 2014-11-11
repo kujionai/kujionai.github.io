@@ -78,7 +78,7 @@
 
         <p>But, I really am learning from the feedback you took the time to give me. And I'm growing! I've become more aware of when I've changed the subject from booleans to baked goods, and I'm getting more and more comfortable each code-aborative day with speaking up when our syntax is wack.</p>
 
-        <p>And, when I leave you feedback, I'll do my best follow your lead as I offer you my perspective.</p>
+        <p>And, when I leave you feedback, I'll do my best to follow your lead as I offer you my perspective.</p>
 
         <img class="blog_post_img" src="http://media.giphy.com/media/lPkgVnlOTin5e/giphy.gif" />
 
@@ -100,9 +100,9 @@
 
       <div id="content">
 
-        <p>So, think of an object. Any object. Did you think of a caper? Didn't think so. Well, that's an object. However, while the salted and pickled <i>Capparis spinosa</i> bud (that's a caper!) stands on its own as a glorious ingredient, why let it hang out with objects that serve a similar purpose?</p>
+        <p>So, think of an object. Any object. Did you think of a caper? Didn't think so. However, while the salted and pickled <i>Capparis spinosa</i> bud (that's a caper!) stands on its own as a glorious ingredient, why let it hang out with objects that serve a similar purpose?</p>
 
-        <p>We can group objects with a class, which is used to construct an object. classes usually contain multiple methods in them like this:</p>
+        <p>We can group objects with a class, which is used to construct an object. Classes usually contain multiple methods, like this:</p>
 
         <pre><code>class NYC_Bagel
   def initialize(component, color)
@@ -120,19 +120,13 @@
   end
 end</pre></code>
 
-<p>We've got an method <code class="inline_code">descriptions</code>that passes in the description of a componenent of the classic NYC bagel, and one <code class="inline_code">essential</code> that declares each ingredients' importance. Both methods are hanging out in out class <code class="inline_code">NYC_Bagel</code>.</p>
+<p>We've got the method <code class="inline_code">descriptions</code> that <code class="inline_code">puts</code> the description of a componenent of the classic NYC bagel, and the method <code class="inline_code">essential</code> that declares each ingredients' undeniable importance. Both methods are hanging out in our class <code class="inline_code">NYC_Bagel</code>.</p>
+
+<img class="blog_post_img" src="imgs/bagel_class.jpeg" alt="Title" />
 
 <p>Now, instead of creating new methods each time we want to reference a new NYC bagel component (capers inluded, of course), we can just refer to them as instances of the <code class="inline_code">NYC_Bagel</code> class like this:</p>
 
-        <pre><code>d = NYC_Bagel.new("a butter knife", "silver")
-d.description
-d.essential
-
-d = NYC_Bagel.new("the everything topping", "salt-n'-pepper")
-d.description
-d.essential
-
-d = NYC_Bagel.new("cream cheese", "off-white")
+        <pre><code>d = NYC_Bagel.new("cream cheese", "off-white")
 d.description
 d.essential
 
@@ -144,15 +138,9 @@ d = NYC_Bagel.new("capers", "emerald")
 d.description
 d.essential</pre></code>
 
-        <img class="blog_post_img" src="imgs/bagel_class.jpeg" alt="Title" />
+<p>Sweet! We created new instances of our <code class="inline_code">NYC_Bagel</code> class and called the methods on each instance. Here's what we'll get when we run this in our terminal:</p>
 
-        <pre><code=> I am a butter knife! Check out my lovely silver color.
-=> I'm an essential component of the classic NYC bagel!
-
-=> I am the everything topping! Check out my lovely salt-n'-pepper color.
-=> I'm an essential component of the classic NYC bagel!
-
-=> I am cream cheese! Check out my lovely off-white color.
+        <pre><code=> I am cream cheese! Check out my lovely off-white color.
 => I'm an essential component of the classic NYC bagel!
 
 => I am lox! Check out my lovely pink color.
