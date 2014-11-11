@@ -53,61 +53,58 @@
 
       <div id="tagline">
         <div id="tagline_1"><a id="blog_single" href="blog/t5-ruby-classes.html">Ruby Classes</a></div>
-        <div id="tagline_2">Let's hang out.</div>
+        <div id="tagline_2">Greeting the wildlife with ordered expectations.</div>
       </div>
 
       <div id="content">
 
-        <p>So, think of an object. Any object. Did you think of a caper? Didn't think so. However, while the salted and pickled <i>Capparis spinosa</i> bud (that's a caper!) stands on its own as a glorious ingredient, why let it hang out with objects that serve a similar purpose?</p>
+        <p>I moved a stone's throw South of Brooklyn's Prospect Park about six months ago, and I've fallen in love with the neighborhood's WILDLIFE. We're talking squirrels. Chickadees (super-tiny bouncy brown birds). And to my purest delight, we've got cats on cats on cats EVERYWHERE.</p>
 
-        <p>We can group objects with a class, which is used to construct an object. Classes usually contain multiple methods, like this:</p>
+        <p>To Ruby-document some of my favorite feline neightbors, I've created the following <b>class</b> called <code class="inline_code">Neighborhood_Cat</code>.
 
-        <pre><code>class NYC_Bagel
-  def initialize(component, color)
-    # Instance variables
-    @component = component
-    @color = color
+        <pre><code>class Neighborhood_Cat
+  def initialize(location, behavior)
+    @location = location
+    @behavior = behavior
   end
-
-  def description
-    puts "I am #{@component}! Check out my lovely #{@color} color."
+  def hang_out
+    puts "My favorite hangout spot is the #{@location}! Next time we meet, I'll definitely #{@behavior}."
   end
-
-  def essential
-    puts "I'm an essential component of the classic NYC bagel!"
+  def meow
+    puts "Meow! Meow!"
   end
-end</pre></code>
+endd</pre></code>
 
-<p>We've got the method <code class="inline_code">descriptions</code> that <code class="inline_code">puts</code> the description of a componenent of the classic NYC bagel, and the method <code class="inline_code">essential</code> that declares each ingredients' undeniable importance. Both methods are hanging out in our class <code class="inline_code">NYC_Bagel</code>.</p>
+          <p>Classes are perfect for grouping behaviors (methods) into convenient bundles that allow you to effortlessly create many objects that behave in basically the same way. By creating the class <code class="inline_code">Neighborhood_Cat</code>, I can now create objects that are <b>instances</b> of this class - different neightborhood cats that all <code class="inline_code">meow</code> and <code class="inline_code">hang_out</code> (these are the methods bundled in the class), but have different <code class="inline_code">location</code>s and <code class="inline_code">behavior</code>s (these are the arguments passed into the initialize method).</p>
 
-<img class="blog_post_img" src="../imgs/bagel_class.jpeg" alt="Title" />
+        <img class="blog_post_img" src="../imgs/neighborhood_cat.png" alt="Title" />
 
-<p>Now, instead of creating new methods each time we want to reference a new NYC bagel component (capers inluded, of course), we can just refer to them as instances of the <code class="inline_code">NYC_Bagel</code> class like this:</p>
+          <p>Each Neighborhood cat has a favorite <code class="inline_code">location</code> and an expected <code class="inline_code">behavior</code>, so I'll make those the arguments for <code class="inline_code">Neighborhood_Cat</code>'s initialize method (initialize gets called each time we create a new instance of a class).</p>
 
-        <pre><code>d = NYC_Bagel.new("cream cheese", "off-white")
-d.description
-d.essential
+<p></p>
 
-d = NYC_Bagel.new("lox", "pink")
-d.description
-d.essential
+        <pre><code>brown_cat = Neighborhood_Cat.new("corner deli checkout counter", "stay asleep while you try to get my attention")
+brown_cat.hang_out
+brown_cat.meow
 
-d = NYC_Bagel.new("capers", "emerald")
-d.description
-d.essential</pre></code>
+black_cat = Neighborhood_Cat.new("overgrown lot next to the Catholic School", "run away and then look back at you like I want you to chase me")
+black_cat.hang_out
+black_cat.meow
 
-<p>Sweet! We created new instances of our <code class="inline_code">NYC_Bagel</code> class and called the methods on each instance. Here's what we'll get when we run this in our terminal:</p>
+grey_cat = Neighborhood_Cat.new("new duplex close to the subway stop", "butt my head against your hand")
+grey_cat.hang_out
+grey_cat.meow</pre></code>
 
-        <pre><code=> I am cream cheese! Check out my lovely off-white color.
-=> I'm an essential component of the classic NYC bagel!
+        <p>Sweet! We created new instances of our <code class="inline_code">Neighborhood_cats</code> class and called the methods on each instance. Here's what we'll get when we run this in our terminal:</p>
 
-=> I am lox! Check out my lovely pink color.
-=> I'm an essential component of the classic NYC bagel!
+        <pre><code>=> My favorite hangout spot is the corner deli checkout counter! Next time we meet, I'll definitely Stay asleep while you try to get my attention.
+=> Meow! Meow!
+=> My favorite hangout spot is the overgrown lot next to the Catholic School! Next time we meet, I'll definitely run away and then look back at you like I want you to chase me.
+=> Meow! Meow!
+=> My favorite hangout spot is the new duplex close to the subway stop! Next time we meet, I'll definitely butt my head against your hand.
+=> Meow! Meow!</pre></code>
 
-=> I am capers! Check out my lovely emerald color.
-=> I'm an essential component of the classic NYC bagel!</pre></code>
-
-<p>Awesome! That was so much easier with a class. Keep it tasty!</p>
+        <p>Awesome! Keeping all those cats straight is pretty simple with a class. Don't forget to greet your furry neighbors!</p>
 
         <div class="blog_post_footer">November 9th, 2014</div>
 
