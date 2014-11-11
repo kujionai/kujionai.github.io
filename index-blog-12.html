@@ -146,14 +146,14 @@ end</pre></code>
     <div id="blog_post">
 
       <div id="tagline">
-        <div id="tagline_1"><a id="blog_single" href="blog/t3-arrays-hashes.html">Hashes &amp; Arrays</div>
+        <div id="tagline_1">Hashes &amp; Arrays</div>
         <div id="tagline_2">Call it like you mean it.</div>
       </div>
 
       <div id="content">
         <p>This past Wednesday, I had the pleasure of spending a ridiculous amount of super-fun and extra-educational quality time with DBC cohort-mate and brand-new alpaca-loving friend <a>Mai</a>.<p>
 
-        <img class="blog_post_img" src="imgs/alpaca.png" alt="Title" /
+        <img class="blog_post_img" src="imgs/alpaca.jpeg" alt="Title" />
 
         <p>As she was visiting NYC from Virginia, I chose our meeting place. We naturally found ourselves at Manhattan's favorite how-is-this-so-freaking-delicious bagel shop.</p>
 
@@ -164,16 +164,17 @@ end</pre></code>
         <h3>Arrays</h3>
         <p>Objects in an array are indexed with integers starting at 0. You can't really associate them with anything else besides those numbers, so they're great for lists of really similar things. I'll use them to pile on the tofu spreads (that's cream cheese for vegans &amp; lactose-intolerant people).</p>
 
-<pre><code>tofu_spread = ["plain", "spinach", "honey walnut"]
+<!--         <img class="blog_post_img" src="../imgs/array.png" alt="Title" /> -->
+         <pre><code>tofu_spread = ["plain", "spinach", "honey walnut"]
 
 tofu_spread.each do |flavor|
   puts "I want some #{flavor} tofu spread!"
   puts "Just add it on top."
 end
 
-puts "That's all! Thanks!"
+puts "That's all! Thanks!"</code></pre>
 
-=> I want some plain tofu spread!
+<pre><code>=> I want some plain tofu spread!
 => Just add it on top.
 => I want some spinach tofu spread!
 => Just add it on top.
@@ -188,7 +189,7 @@ puts "That's all! Thanks!"
         <h3>Hashes</h3>
         <p>Objects in a hash are indexed with the keys assigned to them (key-value pairs). They're great if you want to call your objects in any order without having to remember a number associatd with them. Instead, just come up with a key that makes a lot of sense for its associated value. I'll use hashes to associate different categories of the bagel-ordering process with my preferences for each.</p>
 
-<pre><code>order = {
+        <pre><code>order = {
   "bagel" => "chocolate chip",
   "spread" => "lox",
   "preparation" => "toasted",
@@ -198,16 +199,16 @@ order.each do |category, preference|
   puts "I'll take #{preference} for my #{category}."
 end
 
-puts "That's it! Great!"
+puts "That's it! Great!"</code></pre>
 
-=> I'll take chocolate chip for my bagel.
+<pre><code>=> I'll take chocolate chip for my bagel.
 => I'll take lox for my spread.
 => I'll take toasted for my preparation.
 => That's it! Great!</code></pre>
 
-        <p>So, that's a little bit about arrays &amp; hashes! both are great for working with a bunch of objects at once; it just depends on how you want to index those objects. Save your voice and your fingers! Avoid redundancies with these epic iterators.</p>
+        <p>So, that's a little bit about arrays &amp; hashes! Both are great for working with a bunch of objects at once; it just depends on how you want to index those objects. Save your voice and your fingers! Avoid redundancies with these epic iterators.</p>
 
-        <div class="blog_post_footer">October 24th, 2014</div>
+        <div class="blog_post_footer">October 24, 2014</div>
       </div>
     </div>
 
