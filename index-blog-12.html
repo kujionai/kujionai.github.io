@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <title>Rosa Pergams</title>
+      <LINK rel="stylesheet" href="stylesheets/main.css" type="text/css">
+      <link rel="shortcut icon" href="favicon.ico">
+      <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+      <div id="top"  class="clearfix">
+      <header>
+        <div id="social" class="header">
+          <div id="github" class="social_icon">
+            <a href="https://github.com/rosapergams" target="_blank"><img src="http://i.imgur.com/MW39iDM.png" alt="twitter"></a>
+          </div>
+          <div id="facebook" class="social_icon">
+            <a href="https://twitter.com/rosapergams" target="_blank"><img src="http://i.imgur.com/aWXWJd1.png" alt="twitter"></a>
+          </div>
+          <div id="twitter" class="social_icon">
+            <a href="https://www.linkedin.com/in/rosapergams" target="_blank"><img src="http://i.imgur.com/knt3hty.png" alt="facebook"></a>
+          </div>
+          <div id="instagram" class="social_icon">
+            <a href="http://instagram.com/rosapergams" target="_blank"><img src="http://i.imgur.com/OvTI0TX.png" alt="instagram"></a>
+          </div>
+        </div>
+        <nav>
+          <div id="main_nav_bar" class="header">
+            <ul>
+              <li><a class="main_nav_button" href="index.html"><img id="home_img" src="imgs/icon_4932.png" alt="Home" /></a></li>
+              <li><a class="main_nav_button" href="contact.html">Contact</a></li>
+              <li><a class="main_nav_button" href="about.html">About</a></li>
+              <li><a class="main_nav_button" href="projects.html">Projects</a></li>
+              <li><a class="main_nav_button" href="index-blog.html">Blog</a></li>
+                <ul id="archive">
+                  <li><a class="main_nav_button" href="#">Archive</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      </header>
+
+      <div id="just_space"></div>
+
+    <div id="blog_post">
+
+      <div id="tagline">
+        <div id="tagline_1"><a id="blog_single" href="blog/t4-enumerable-methods.html">Ruby's Map Method</a></div>
+        <div id="tagline_2">An Enumerable for the well-adapted glutton.</div>
+      </div>
+
+      <div id="content">
+
+        <p>Let's say (with inspiration from a most clever <a class="blog_post_link" href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a> challenge) we've got some bagels, and want another bagel. And, of course, we wanna code about it.</p>
+
+        <pre><code>more_bagels = ["I've" "got" 2 "bagels" "!" "Now" "I" "want" 3 "."]</pre></code>
+
+        <p>Great! Awesome start. The array <code class="inline_code">more_bagels</code> Tells the whole wanting-another-bagel story. UNLESS, of course, I get that extra bagel, in which case it's only natural to want one more.</p>
+
+        <p>But, how might I freely adjust my <code class="inline_code">more_bagels</code> array to properly emulate my bottomless gluttony? It's time to bust out Ruby's <code class="inline_code">#map</code> method!</p>
+
+        <p>But why  <code class="inline_code">#map</code>? Well, I want to change the numbers in my array based on the number of bagels I have, so I'll create a method that accepts both an array and a number as arguments. Unlike <code class="inline_code">#each</code>, which just does something to each element without storing the results anywhere, <code class="inline_code">#map</code> creates a new array with the results of whatever action you're performing. It's the same as the <code class="inline_code">#collect</code> method, so  you can think of <code class="inline_code">#map</code> as 'collecting' the results of an action into a brand new array.</p>
+
+        <p>In my case, I'm executing some delicious addition unto all of the numbers in my array.</p>
+
+        <pre><code>def bagels_on_bagels(array, num)
+  array.map { |obj|
+    if obj.is_a?Fixnum
+      obj + num
+    else
+      obj
+  end }
+end</pre></code>
+
+        <p>Cool! So, I'm letting that <code class="inline_code">#map</code> method have at it on my <code class="inline_code">array</code> argument, finding those <code class="inline_code">Fixnum</code>s and adding some <code class="inline_code">num</code>s to them. Time to call my new method:</p>
+
+        <pre><code>bagels_on_bagels(more_bagels, 7)</pre></code>
+
+        <p>Alright! let's see what all this method madness returns.</p>
+
+        <pre><code>=> ["I've" "got" 9 "bagels" "!" "Now" "I" "want" 10 "."]</pre></code>
+
+        <img class="blog_post_img" src="imgs/bagels.png" alt="Title" />
+
+        <p>Perfect! One more bagel, no matter how many I've already hoarded inside of my face. So, <code class="inline_code">#map</code> created a new array for me with the results of performing my method on each element! The <code class="inline_code">#map</code> sure is great for returning an ever-adjusting desire for more.</p>
+
+        <p>Wanna fill up on <code class="inline_code">#map</code>, <code class="inline_code">#select</code> and other life-changing Enumerable Methods? Indulge youself with <a class="blog_post_link" href="https://twitter.com/ErikTrautman" target="_blank">Erik Trauman's</a> lovely <a class="blog_post_link" href="http://www.eriktrautman.com/posts/ruby-explained-map-select-and-other-enumerable-methods" target="_blank">blog-post.</a></p>
+
+        <div class="blog_post_footer">November 2nd, 2014</div>
+
+      </div>
+    </div>
+
+    <div id="blog_post">
+
+      <div id="tagline">
+        <div id="tagline_1"><a id="blog_single" href="blog/c3_thinking-style.html">Fixed Mindset Vs. Growth Mindset</a></div>
+        <div id="tagline_2">Give Yourself Permission to Grow.</div>
+      </div>
+
+      <div id="content">
+
+        <p class="blog_post_quote">"Be careful how you are talking to yourself because you are listening."
+        <br>
+        - Lisa M. Hayes</p>
+
+        <p>The quote above, spotted in a right-column ad gracing the border of the <a class="blog_post_link" href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/" target="_blank">article</a> this blog-post is about, rang true to me as I reflected upon <a class="blog_post_link" href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/" target="_blank">Carol Dweck&#8217;s Fixed Mindset vs Growth Mindset.</a></p>
+
+        <img class="blog_post_img" src="http://i.imgur.com/rVo7IMl.jpg" alt="Title" />
+
+        <p>Here&#8217;s the difference between the two mindsets - first the what-I-sometimes-say-to-myself fixed-mindset stuff, and then the how-I'm-learning-to-speak-to-myself-like-someone-I-actually-like growth-mindset goodness.</p>
+
+        <h3>Fixed Mindset</h3>
+
+        <ul>
+          <li>&quot;Learning how to use Git will be tough. I don&#8217;t wanna.&quot;</li>
+          <li>&quot;Arrays are kind of confusing. &amp;#%!@?! arrays.&quot;</li>
+          <li>&quot;Spending more than 20 minutes on this method might prove that I&#8217;m a moron.&quot;</li>
+          <li>&quot;Use Version Control, you say? Sounds like you just said that you hate me.&quot;</li>
+          <li>&quot;Oh, you built this? I guess I suck.&quot;</li>
+        </ul>
+
+        <h3>Growth Mindset</h3>
+
+        <ul>
+          <li>&quot;Learning how to use Git will be tough. Bring it on.&quot;</li>
+          <li>&quot;Arrays are kind of confusing. Time to buckle down.&quot;</li>
+          <li>&quot;The 3 hours I&#8217;ve spent on this method have served as important learning time. I&#8217;m heading in the right direction!&quot;</li>
+          <li>&quot;Use Version Control, you say? Makes sense. Sounds good.&quot;</li>
+          <li>&quot;Oh, you built this? Can&#8217;t wait to tackle a big project of my own!&quot;</li>
+        </ul>
+
+        <p>Keep that positive self-talk coming! Don&#8217;t forget that someone is listening.</p>
+
+        <div class="blog_post_footer">October 26th, 2014</div>
+
+      </div>
+    </div>
+
+    <div id="blog_post">
+
+      <div id="tagline">
+        <div id="tagline_1"><a id="blog_single" href="blog/t3-arrays-hashes.html">Hashes &amp; Arrays</div>
+        <div id="tagline_2">Call it like you mean it.</div>
+      </div>
+
+      <div id="content">
+        <p>This past Wednesday, I had the pleasure of spending a ridiculous amount of super-fun and extra-educational quality time with DBC cohort-mate and brand-new alpaca-loving friend <a>Mai</a>.<p>
+
+        <img class="blog_post_img" src="imgs/alpaca.png" alt="Title" /
+
+        <p>As she was visiting NYC from Virginia, I chose our meeting place. We naturally found ourselves at Manhattan's favorite how-is-this-so-freaking-delicious bagel shop.</p>
+
+        <p>It also so happened that I had a gross cold on this particular outing. So, let's say I was going to write a program to ease up the order process. Just so I don't have to repeat myself too much with my sore throat.</p>
+
+        <p>I'm gonna write two programs. I'm gonna write one with an <b>array</b>. Then I'm gonna write one with a <b>hash</b>.</p>
+
+        <h3>Arrays</h3>
+        <p>Objects in an array are indexed with integers starting at 0. You can't really associate them with anything else besides those numbers, so they're great for lists of really similar things. I'll use them to pile on the tofu spreads (that's cream cheese for vegans &amp; lactose-intolerant people).</p>
+
+<pre><code>tofu_spread = ["plain", "spinach", "honey walnut"]
+
+tofu_spread.each do |flavor|
+  puts "I want some #{flavor} tofu spread!"
+  puts "Just add it on top."
+end
+
+puts "That's all! Thanks!"
+
+=> I want some plain tofu spread!
+=> Just add it on top.
+=> I want some spinach tofu spread!
+=> Just add it on top.
+=> I want some honey walnut tofu spread!
+=> Just add it on top.
+=> That's all! Thanks!</code></pre>
+
+        <p>Ahh, the classic plain-spinach-honey-walnut combo. Since all of my objects are tofu spreads, an array worked pretty well here.</p>
+
+        <p>However, ordering a bagel is never so simple. Not only must I choose a spread - I also better pick out a bagel and figure out if I want that sucker toasted. This is a  great job for...</p>
+
+        <h3>Hashes</h3>
+        <p>Objects in a hash are indexed with the keys assigned to them (key-value pairs). They're great if you want to call your objects in any order without having to remember a number associatd with them. Instead, just come up with a key that makes a lot of sense for its associated value. I'll use hashes to associate different categories of the bagel-ordering process with my preferences for each.</p>
+
+<pre><code>order = {
+  "bagel" => "chocolate chip",
+  "spread" => "lox",
+  "preparation" => "toasted",
+}
+
+order.each do |category, preference|
+  puts "I'll take #{preference} for my #{category}."
+end
+
+puts "That's it! Great!"
+
+=> I'll take chocolate chip for my bagel.
+=> I'll take lox for my spread.
+=> I'll take toasted for my preparation.
+=> That's it! Great!</code></pre>
+
+        <p>So, that's a little bit about arrays &amp; hashes! both are great for working with a bunch of objects at once; it just depends on how you want to index those objects. Save your voice and your fingers! Avoid redundancies with these epic iterators.</p>
+
+        <div class="blog_post_footer">October 24th, 2014</div>
+      </div>
+    </div>
+
+    <div id="blog_post">
+
+      <div id="tagline">
+        <div id="tagline_1"><a id="blog_single" href="blog/t2-css-design.html">Margin, Border, and Padding</a></div>
+        <div id="tagline_2">Build your content a sweet crib of CSS.</div>
+      </div>
+
+      <div id="content">
+        <p class="blog_post_quote">"Art is like a border of flowers along the course of civilization."<br>-Lincoln Steffens</p>
+
+        <p>Let's say you've got some <b>content</b> worthy of a place to call its own.</p>
+
+        <img class="blog_post_img" src="imgs/content.png" alt="Title" />
+
+        <p>Before we glam up with stylesheet condiments, we've got to start with the basics. That's the HTML-hand-crafted, artisinal, fresh-out-the oven goodness in the middle.</p>
+
+        <img class="blog_post_img" src="imgs/html.png" alt="Title" />
+
+        <p>Then, we can use CSS to add some <b>padding</b> to our content.</p>
+
+        <img class="blog_post_img" src="imgs/padding.png" alt="Title" />
+
+        <p>Padding is the space between our element border and the element content. Here, it's the plate serving as extra space holding our bagel-content in its luxurous ceramic arms. The padding property's CSS sometimes looks like this.</p>
+
+        <img class="blog_post_img" src="imgs/padding_css.png" alt="Title" />
+
+        <p>We've also got a lil' <b>border</b>, the space between the edge of the plate (the edge of the padding) and the world beyond our element.</p>
+
+        <img class="blog_post_img" src="imgs/border.png" alt="Title" />
+
+        <p>Take a peak at the border property's CSS.</p>
+
+        <img class="blog_post_img" src="imgs/border_css.png" alt="Title" />
+
+        <p>lastly, we've got our <b>margin</b>. We're talking the space around elements. It's completely transparent - just a little bit of breathing room for your precious material.</p>
+
+        <img class="blog_post_img" src="imgs/margin.png" alt="Title" />
+
+        <p>The margin property's CSS sometimes looks like this.</p>
+
+        <img class="blog_post_img" src="imgs/margin_css.png" alt="Title" />
+
+        <p>That's a little bit about margin, border, and padding properties! Don't hesitate to give your stuff all the love, clearance and artsy sparkle you see fit.</p>
+
+        <div class="blog_post_footer">October 18th, 2014</div>
+      </div>
+    </div>
+
+    <div id="footer_nav">
+      <a id="left-arrow" href="index-blog.html">
+        <img class="arrow" src="imgs/icon_6976.png" />
+      </a>
+      <a id="right-arrow" href="index-blog-1.html">
+        <img class="arrow" src="imgs/icon_6977.png" />
+      </a>
+    </div>
+
+
+    <footer class="clearfix">
+      Made by Rosa Pergams
+    </footer>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){
+                $('header').addClass("sticky");
+            }
+            else{
+                $('header').removeClass("sticky");
+            }
+        });
+      </script>
+    </body>
+
+  </html>
