@@ -58,28 +58,28 @@
 
       <div id="content">
 
-        <p>I moved a stone's throw South of Brooklyn's Prospect Park about six months ago, and I've fallen in love with the neighborhood's WILDLIFE. We're talking squirrels. Chickadees (super-tiny bouncy brown birds). And to my purest delight, we've got cats on cats on cats EVERYWHERE.</p>
+        <p>I moved a stone's throw South of Brooklyn's Prospect Park about six months ago, and I've fallen in love with the neighborhood's WILDLIFE. We're talking squirrels. Sparrows. And to my purest delight, we've got cats on cats on cats EVERYWHERE.</p>
 
         <p>To Ruby-document some of my favorite feline neightbors, I've created the following <b>class</b> called <code class="inline_code">Neighborhood_Cat</code>.
 
         <pre><code>class Neighborhood_Cat
-  def initialize(location, behavior)
+  def initialize(location, favorite_activity)
     @location = location
-    @behavior = behavior
+    @favorite_activity = favorite_activity
   end
   def hang_out
-    puts "My favorite hangout spot is the #{@location}! Next time we meet, I'll definitely #{@behavior}."
+    puts "My favorite hangout spot is the #{@location}! Next time we meet, I'll definitely #{@favorite_activity}."
   end
   def meow
     puts "Meow! Meow!"
   end
 endd</pre></code>
 
-          <p>Classes are perfect for grouping behaviors (methods) into convenient bundles that allow you to effortlessly create many objects that behave in basically the same way. By creating the class <code class="inline_code">Neighborhood_Cat</code>, I can now create objects that are <b>instances</b> of this class - different neightborhood cats that all <code class="inline_code">meow</code> and <code class="inline_code">hang_out</code> (these are the methods bundled in the class), but have different <code class="inline_code">location</code>s and <code class="inline_code">behavior</code>s (these are the arguments passed into the <code class="inline_code">initialize</code> method).</p>
+          <p>Classes are perfect for grouping behaviors (methods) into convenient bundles that allow you to effortlessly create many objects that behave in basically the same way. By creating the class <code class="inline_code">Neighborhood_Cat</code>, I can now create objects that are <b>instances</b> of this class - different neightborhood cats that all <code class="inline_code">meow</code> and <code class="inline_code">hang_out</code> (these are the methods bundled in the class), but have different <code class="inline_code">location</code>s and <code class="inline_code">favorite_activity</code>s (these are the arguments passed into the <code class="inline_code">initialize</code> method).</p>
 
         <img class="blog_post_img" src="../imgs/neighborhood_cat.png" alt="Title" />
 
-          <p>Each Neighborhood cat has a favorite <code class="inline_code">location</code> and an expected <code class="inline_code">behavior</code>, so I'll make those the arguments for <code class="inline_code">Neighborhood_Cat</code>'s <code class="inline_code">initialize</code> method (<code class="inline_code">initialize</code> gets called each time we create a new instance of a class).</p>
+          <p>Each Neighborhood cat has a favorite <code class="inline_code">location</code> and an expected <code class="inline_code">favorite_activity</code>, so I'll make those the arguments for <code class="inline_code">Neighborhood_Cat</code>'s <code class="inline_code">initialize</code> method (<code class="inline_code">initialize</code> gets called each time we create a new instance of a class).</p>
 
 <p></p>
 
