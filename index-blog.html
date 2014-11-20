@@ -48,7 +48,56 @@
 
       <div id="just_space"></div>
 
-     <div id="blog_post">
+      <div id="blog_post">
+
+      <div id="tagline">
+        <div id="tagline_1">Stereotype threat</div>
+        <div id="tagline_2">Let's talk about racism.</div>
+      </div>
+
+      <div id="content">
+
+        <p class="blog_post_quote">"Never trust anyone who says they do not see color. This means to them, you are invisible."
+        <br>
+        - Nayyirah Waheed</p>
+
+        <p>Let me tell you a story about the most racist thing I've ever done. That I'm aware of, anyways.</p>
+
+        <p>Imagine a steamy Mid-July in Washington, DC. The vegan restaurant where I bartended while completing an internship blocks away. A legend amongst the waiters by the name of John Cho (I'd never met him, but he was clearly the king of infamy). And a former waiter at the same establishment, Callaway Don.</p>
+
+        <p>Callaway Don enters the vegan restaurant, hoping to run into old co-workers. Upon noticing him chatting up the staff from behind the bar, a twisted and shameful lightbulb goes off in my head.</p>
+
+        <p>Before I knew it, I had word-puked all over the poor guy.</p>
+
+        <p>"Are you John Cho?" I asked Callaway Don with earnest. He was not.</p>
+        <p>It just so happens that <code class="inline_code">one_asian_person != another_asian_person</code>. There can even be multiple Asian people who've worked at the same restaurant! Apparently, these were both revelations to me.</p>
+
+        <p>When we do <i>racist things</i> (and they are VERY easy to do), we isolate other people. We send them the message that they don't belong, and that we don't see their personhood with the same validity with which we perceive our own. <i>Racist things</i> can minimize intelligence, deny individuality, and violate self-worth. And most of the time, <i>racist things</i> just kind of come out when our intentions are only the best.</p>
+
+        <p>With that in mind, here are some <i>racist things</i> (all very, very common) that I (a black person) am hurt by. If you've done any of these <i>racist things</i>, don't freak! I was forgiven for my <i>racist thing</i> in spades (Callaway Don and I just celebrated our two-year anniversary). Everyone knows that no one is born knowing everything (just, you know, try to cut it out from now on).</p>
+
+        <img class="blog_post_img" src="http://s3-ec.buzzfed.com/static/2014-02/enhanced/webdr07/26/20/enhanced-4769-1393464518-8.jpg" />
+        <p><b>Sticking your fingers into my hair.</b> I'm a person, not a petting zoo. Personal space, y'all.</p>
+
+        <img class="blog_post_img" src="http://media2.giphy.com/media/hRSTZvUpaUC0E/giphy.gif" />
+        <p><b>"You don't sound black at all."</b> I Apologize. Please provide me with lessons on how to be 'more black.'</p>
+
+        <img class="blog_post_img" src="http://themilwaukeedrum.files.wordpress.com/2012/10/mr-vegas-black-and-proud.jpg" />
+        <p><b>"You know, I don't even really see you as black."</b> OPEN YOUR EYES.</p>
+
+        <img class="blog_post_img" src="http://s3-ec.buzzfed.com/static/enhanced/webdr01/2013/5/2/10/anigif_enhanced-buzz-2053-1367505162-0.gif" />
+        <p><b>Exaggeratedly snapping your neck in my direction.</b> I have never even seen a black person do this.</p>
+
+        <p>So, that's my abbreviated list of <i>racist things</i> that make me sad. Racial microagressions such as these imply that being black makes me anything besides awesome, and they take a lot of energy to deal with. Do I speak strangely? Do I look weird? Or am I just in the wrong place? You can start to see how stereotypes can make one feel like an outsider, and there's nothing more detrimental to success than the belief that you're not welcome.</p>
+
+        <p>Let's learn our lessons, forgive ourselves, and do our best to crush the stereotypes we hold before they smother our friends. It's easier said than done, but we've all got to start somewhere.</p>
+
+        <div class="blog_post_footer">November 14th, 2014</div>
+
+      </div>
+    </div>
+
+      <div id="blog_post">
 
       <div id="tagline">
         <div id="tagline_1"><a id="blog_single" href="blog/t6-oop-concepts.html">Blocs, Procs, &amp; Lambdas</a></div>
@@ -63,7 +112,8 @@
 
         <p>As a college student with a bizaar schedule, I came to appreciate the art of napping. So much so, that I even attempted to fill a miniature dictionary documenting distinct doze-types. This project (and its inspiration, the naps themselves) stopped almost immediately when I moved to New York City, and the reason is coffee.</p>
 
-        <img class="blog_post_img" src="imgs/coffee_heart.png" alt="Title" />
+        <!--<img class="blog_post_img" src="../imgs/coffee_heart.png" alt="Title" />-->
+        <img class="blog_post_img" src="http://media3.giphy.com/media/U6P1Lp8tbZBfy/giphy.gif" alt="Title" />
 
         <p>It's not like I started drinking coffee <i>because</i> I wanted stay awake for twelve-hour bouts. It's just that, bugging out at a tiny screen in my bedroom was getting a little lonely. When I discovered the fellowship championed by my local coffee shops, I sauntered right in and ordered myself... a coffee, just because I wasn't really sure what else I could get on the cheap. The rest, if I may, is history.</p>
 
@@ -81,7 +131,7 @@ proverbs.each { |proverb| puts proverb }</code></pre>
 
         <p>You can think of blocs as a way to create nameless methods. Since they don't have a name, we can only call them once - meaning that after the blocs above <code class="inline_code">puts</code> our <code class="inline_code">proverbs</code>, they'll vanish forever.</p>
 
-        <p>That's great - except wisdom should be shared, not liquefied. That's why we'll wrap our bloc in an object called a <b>proc</b>, which is a lot like a method. Awesome! Our bloc now has a name, and that name is <code class="inline_code">coffee</code>.</p>
+        <p>That's great - except wisdom should be shared, not liquefied. Let's wrap our bloc in an object called a <b>proc</b>, which is a lot like a method. Awesome! Our bloc now has a name, and that name is <code class="inline_code">coffee</code>.</p>
 
         <pre><code>pass_it_on = Proc.new { |proverb| puts proverb }
 coffee = proverbs.each(&amp;pass_it_on)</code></pre>
@@ -91,9 +141,9 @@ coffee = proverbs.each(&amp;pass_it_on)</code></pre>
         <pre><code>pass_it_on = lambda { |proverb| puts proverb }
 coffee = proverbs.each(&amp;pass_it_on)</code></pre>
 
-      <p>However, there are a <i>couple</i> of ifferences between procs and lambdas. Lambdas keep track of the arguments passed to them (procs do not) and return an error if there's an inconsistemncy. Also, when they return, lambdas pass control back to the calling method (procs return immediately without going back to the calling method).</p>
+      <p>However, there are a <i>couple</i> of differences between procs and lambdas. Lambdas keep track of the arguments passed to them (procs do not) and return an error if there's an inconsistemncy. Also, when they return, lambdas pass control back to the calling method (procs return immediately without going back to the calling method).</p>
 
-      <p>That's a little about procs, blocs, and lambdas! There's always more than one fantastic way to reach any goal - and maybe a lot of other ways, too.</p>
+      <p>That's a little about procs, blocs, lambdas, naps, and coffee! There's always more than one fantastic way to reach any goal - and maybe a lot of other ways, too.</p>
 
         <div class="blog_post_footer">November 14th, 2014</div>
 
@@ -143,178 +193,6 @@ coffee = proverbs.each(&amp;pass_it_on)</code></pre>
       </div>
     </div>
 
-     <div id="blog_post">
-
-      <div id="tagline">
-        <div id="tagline_1"><a id="blog_single" href="blog/t5-ruby-classes.html">Ruby Classes</a></div>
-        <div id="tagline_2">Greeting the wildlife with ordered expectations.</div>
-      </div>
-
-      <div id="content">
-
-        <p>Not long after moving a stone's throw South of Brooklyn's Prospect Park about six months ago, I fell in love with the neighborhood's WILDLIFE. We're talking squirrels. Sparrows. And to my purest delight, we've got cats on cats on cats EVERYWHERE.</p>
-
-        <p>To Ruby-document some of my favorite feline neighbors, I've created the following <b>class</b> called <code class="inline_code">Neighborhood_Cat</code>.
-
-        <pre><code>class Neighborhood_Cat
-  def initialize(location, favorite_activity)
-    @location = location
-    @favorite_activity = favorite_activity
-  end
-  def hang_out
-    puts "My favorite hangout spot is the #{@location}! Next time we meet, I'll definitely #{@favorite_activity}."
-  end
-  def meow
-    puts "Meow! Meow!"
-  end
-end</pre></code>
-
-          <p>Classes are perfect for grouping behaviors (methods) into convenient bundles that allow you to effortlessly create many objects that behave in basically the same way. By creating the class <code class="inline_code">Neighborhood_Cat</code>, I can now create objects that are <b>instances</b> of this class - different neightborhood cats that all <code class="inline_code">meow</code> and <code class="inline_code">hang_out</code> (these are the methods bundled in the class), but have different <code class="inline_code">location</code>s and <code class="inline_code">favorite_activity</code>s (these are the arguments passed into the <code class="inline_code">initialize</code> method).</p>
-
-        <img class="blog_post_img" src="imgs/neighborhood_cat.png" alt="Title" />
-
-          <p>Each Neighborhood cat has a favorite <code class="inline_code">location</code> and an expected <code class="inline_code">favorite_activity</code>, so I'll make those the arguments for <code class="inline_code">Neighborhood_Cat</code>'s <code class="inline_code">initialize</code> method (<code class="inline_code">initialize</code> gets called each time we create a new instance of a class).</p>
-
-<p></p>
-
-        <pre><code>brown_cat = Neighborhood_Cat.new("corner deli checkout counter", "stay asleep while you try to get my attention")
-brown_cat.hang_out
-brown_cat.meow
-
-black_cat = Neighborhood_Cat.new("overgrown lot next to the Catholic School", "run away and then look back at you like I want you to chase me")
-black_cat.hang_out
-black_cat.meow
-
-grey_cat = Neighborhood_Cat.new("new duplex close to the subway stop", "butt my head against your hand")
-grey_cat.hang_out
-grey_cat.meow</pre></code>
-
-        <p>Sweet! We created new instances of our <code class="inline_code">Neighborhood_cats</code> class and called the methods on each instance. Here's what we'll get when we run this in our terminal:</p>
-
-        <pre><code>=> My favorite hangout spot is the corner deli checkout counter! Next time we meet, I'll definitely stay asleep while you try to get my attention.
-=> Meow! Meow!
-=> My favorite hangout spot is the overgrown lot next to the Catholic School! Next time we meet, I'll definitely run away and then look back at you like I want you to chase me.
-=> Meow! Meow!
-=> My favorite hangout spot is the new duplex close to the subway stop! Next time we meet, I'll definitely butt my head against your hand.
-=> Meow! Meow!</pre></code>
-
-        <p>Awesome! Keeping all those cats straight is pretty simple with a class. Don't forget to greet your furry neighbors!</p>
-
-        <div class="blog_post_footer">November 9th, 2014</div>
-
-      </div>
-    </div>
-
-    <div id="blog_post">
-
-      <div id="tagline">
-        <div id="tagline_1"><a id="blog_single" href="blog/c4-tech-issues.html">Lighting the Fire</a></div>
-        <div id="tagline_2">Seven Women of Color Opening The Doors to Web Development.</div>
-      </div>
-
-      <div id="content">
-        <p class="blog_post_quote">"I would tell her, never apologize for the space you occupy in the world. Make your strides long, wide and sure."
-        <br>- Chimamanda Ngozi Adichie
-        </p>
-        <p>So, I must say that I've been a black woman for quite a while now (I'm certain that twenty-two years is a very, very long time).</p>
-
-        <p>I've studied Anthropology at a fancy liberal arts school, and spent summers teaching bicycle mechanics. Now, I'm doing my best to shove my foot into the door of computer programming as a student at the oh-so-awesome <a class="blog_post_link" href="http://devbootcamp.com/" target="_blank">Dev Bootcamp.</a></p>
-
-        <p>Let me tell you, that even with access to Dev Bootcamp's infinitely supportive community, the gateway to the Code-World is hefty when your peers (and most of your role models ) never seem to look like you. I believe I've developed mid-sized  <a class="blog_post_link" href="https://medium.com/@aliciatweet/overcoming-impostor-syndrome-bdae04e46ec5" target="_blank">imposter-syndrome-shaped,</a> eggplant-esque bruises on both pinky toes.</p>
-
-        <p>I'm certain, however, that this door is beginning to open for women and People of Color due to the amazing work of folks like the seven bad-ass hackers (listed in no particular order) you're about to read about. These ladies are commited to spreading the tech love around, and they are changing the face of computer programming.</p>
-
-        <div id="blog_list_info" class="clearfix">
-          <img id="blog_list_img" class="blog_list_stuff" src="imgs/saron_yitbarek.png" />
-
-          <div id="blog_list_text" class="blog_list_stuff">
-            <h3><span class="number">1</span> Saron Yitbarek</h3>
-            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/saronyitbarek" target="_blank">@saronyitbarek</a></p>
-            <p>Creator, <a class="blog_post_link" href="http://www.codenewbie.org/" target="_blank">CodeNewbie</a></p>
-            <p>Saron Yitbarek runs the weekly <a class="blog_post_link" href="https://twitter.com/CodeNewbies" target="_blank">#CodeNewbie</a> TwitterChat with fellow Web Dev <a class="blog_post_link" href="https://twitter.com/CarlosPlusPlus" target="_blank">Carlos Lazo.</a> This supportive community of programmers and people learning to code gathers every Wednesday at 9PM EST to connect through resources, stories, and support.
-            <p><b>QUOTE</b> "Take every opportunity you can, especially if it scares you."</p>
-          </div>
-        </div>
-
-        <div id="blog_list_info" class="clearfix">
-          <img id="blog_list_img" class="blog_list_stuff" src="imgs/kathryn_finney.png" />
-
-          <div id="blog_list_text" class="blog_list_stuff">
-            <h3><span class="number">2</span> Kathryn Finney</h3>
-            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/kathrynfinney" target="_blank">@kathrynfinney</a></p>
-            <p>Founder, <a class="blog_post_link" href="http://www.digitalundivided.com/" target="_blank">DigitalUndivided</a></p>
-            <p>Kathryn Finney is the founder of DigitalUndivided, an organization that produces programs and events aimed at increasing the number of women of color in the tech industry.</a></p>
-            <p><b>QUOTE</b> "Diversity in tech is important for everyone ... Be on the cutting edge, go where people aren&#8217;t looking. You&#8217;re going to have a very difficult time if you&#8217;re looking in the same pool as everyone else."</p>
-          </div>
-        </div>
-
-        <div id="blog_list_info" class="clearfix">
-          <img id="blog_list_img" class="blog_list_stuff" src="imgs/amanda_spann.png" />
-
-          <div id="blog_list_text" class="blog_list_stuff">
-            <h3><span class="number">3</span> Amanda Spann</h3>
-            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/amandaspann" target="_blank">@amandaspann</a></p>
-            <p>Co-Founder, Black Girls Hack</p>
-            <p>Inspired by <a class="blog_post_link" href="http://www.blackgirlscode.com/" target="_blank">Black Girls Code</a> in San Francisco, Amanda Spann founded Black Girls Hack with three others. Black Girls Hack supports black women working towards careers as software developers and startup founders, and was the first non-profit hackathon series specifically targeting Women of Color.</p>
-            <p><b>QUOTE</b> "We&#8217;re all African American, and we all have tech startups. One thing we all struggle with is feeling like we&#8217;re the only ones ... there are so few blacks in technology."</p>
-          </div>
-        </div>
-
-        <div id="blog_list_info" class="clearfix">
-          <img id="blog_list_img" class="blog_list_stuff" src="imgs/felicia_ogarrio.png" />
-
-          <div id="blog_list_text" class="blog_list_stuff">
-            <h3><span class="number">4</span> Felicia O&#8217;Garro</h3>
-            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/feliciaogarro" target="_blank">@feliciaogarro</a></p>
-            <p>Co-Founder, <a class="blog_post_link" href="http://codecrew.co/" target="_blank">Code Crew</a></p>
-            <p>Felicia O&#8217;Garro decided to teach herself how to code while working full-time. She and her <a class="blog_post_link" href="https://twitter.com/jsogarro" target="_blank">husband</a> founded Code Crew, a flourishing learning space that has already taught thousands how to code in a year and a half.</p>
-            <p><b>QUOTE</b> "When we found out that coding is something that you can teach yourself, we were overly excited."</p>
-          </div>
-        </div>
-
-        <div id="blog_list_info" class="clearfix">
-          <img id="blog_list_img" class="blog_list_stuff" src="imgs/courtney_ervin.png" />
-
-          <div id="blog_list_text" class="blog_list_stuff">
-            <h3><span class="number">5</span> Courtney Ervin</h3>
-            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/courteneyervin" target="_blank">@courteneyervin</a></p>
-            <p>Teacher, <a class="blog_post_link" href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a></p>
-            <p>Courtney Ervin is a teacher at <a class="blog_post_link" href="http://devbootcamp.com/learn-more/" target="_blank">Dev Bootcamp&#8217;s Web Development Immersive.</a> Because of her self-taught programming background, she loves having the opportunity to create supportive and challenging environments for new programmers.</p>
-            <p><b>QUOTE</b> "Life goal: I want to be the @NICKIMINAJ of software engineering."</p>
-          </div>
-        </div>
-
-        <div id="blog_list_info" class="clearfix">
-          <img id="blog_list_img" class="blog_list_stuff" src="imgs/kimberly_bryant.png" />
-
-          <div id="blog_list_text" class="blog_list_stuff">
-            <h3><span class="number">6</span> Kimberly Bryant</h3>
-            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/6gems" target="_blank">@6gems</a></p>
-            <p>Founder, <a class="blog_post_link" href="http://www.blackgirlscode.com/" target="_blank">Black Girls Code</a></p>
-            <p>Kimberly Bryant launched Black Girls Code to empower and mentor young women of color by highlighting the achievement of women in tech. Since 2011, this non-profit has taught over two thousand girls ages 7-17 about computer programming and digital technology.</p>
-            <p><b>QUOTE</b> "When bringing a new idea to life, be sure you start the journey with integrity. It&#8217;s equally if not more important than the idea itself."</p>
-          </div>
-        </div>
-
-        <div id="blog_list_info" class="clearfix">
-          <img id="blog_list_img" class="blog_list_stuff" src="imgs/christina_l_h.png" />
-
-          <div id="blog_list_text" class="blog_list_stuff">
-            <h3><span class="number">7</span> Christina Lewis Halpern</h3>
-            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/clewishalpern" target="_blank">@clewishalpern</a></p>
-            <p>Founder and President, <a class="blog_post_link" href="http://www.allstarcode.org/" target="_blank">All Star Code</a></p>
-            <p>An idealist based in New York City, Lewis Halpern prepares black and Latino teenage boys for awesome tech careers through her non-profit All Star Code.</p>
-            <p><b>QUOTE</b> "I thought, If my father were a young man today, where would he want to go? He wouldn't want to go to law school. He'd want to be in Silicon Valley. So I thought, well, are there any black people in the space? No. Has it already been diversified? No."</p>
-          </div>
-        </div>
-
-        <p>So, that's my list! Be sure to follow these game-changers on twitter, and be proud to be you.</p>
-
-        <div class="blog_post_footer">November 2nd, 2014</div>
-
-      </div>
-    </div>
-
     <div id="footer_nav">
       <a id="left-arrow-new" href="#">
         <img class="arrow" src="imgs/icon_6976.png" />
@@ -329,17 +207,6 @@ grey_cat.meow</pre></code>
       Made by Rosa Pergams
     </footer>
 
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script>
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 1){
-                $('header').addClass("sticky");
-            }
-            else{
-                $('header').removeClass("sticky");
-            }
-        });
-      </script>
     </body>
 
   </html>

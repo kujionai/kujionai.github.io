@@ -48,6 +48,178 @@
 
       <div id="just_space"></div>
 
+     <div id="blog_post">
+
+      <div id="tagline">
+        <div id="tagline_1"><a id="blog_single" href="blog/t5-ruby-classes.html">Ruby Classes</a></div>
+        <div id="tagline_2">Greeting the wildlife with ordered expectations.</div>
+      </div>
+
+      <div id="content">
+
+        <p>Not long after moving a stone's throw South of Brooklyn's Prospect Park about six months ago, I fell in love with the neighborhood's WILDLIFE. We're talking squirrels. Sparrows. And to my purest delight, we've got cats on cats on cats EVERYWHERE.</p>
+
+        <p>To Ruby-document some of my favorite feline neighbors, I've created the following <b>class</b> called <code class="inline_code">Neighborhood_Cat</code>.
+
+        <pre><code>class Neighborhood_Cat
+  def initialize(location, favorite_activity)
+    @location = location
+    @favorite_activity = favorite_activity
+  end
+  def hang_out
+    puts "My favorite hangout spot is the #{@location}! Next time we meet, I'll definitely #{@favorite_activity}."
+  end
+  def meow
+    puts "Meow! Meow!"
+  end
+end</pre></code>
+
+          <p>Classes are perfect for grouping behaviors (methods) into convenient bundles that allow you to effortlessly create many objects that behave in basically the same way. By creating the class <code class="inline_code">Neighborhood_Cat</code>, I can now create objects that are <b>instances</b> of this class - different neightborhood cats that all <code class="inline_code">meow</code> and <code class="inline_code">hang_out</code> (these are the methods bundled in the class), but have different <code class="inline_code">location</code>s and <code class="inline_code">favorite_activity</code>s (these are the arguments passed into the <code class="inline_code">initialize</code> method).</p>
+
+        <img class="blog_post_img" src="imgs/neighborhood_cat.png" alt="Title" />
+
+          <p>Each Neighborhood cat has a favorite <code class="inline_code">location</code> and an expected <code class="inline_code">favorite_activity</code>, so I'll make those the arguments for <code class="inline_code">Neighborhood_Cat</code>'s <code class="inline_code">initialize</code> method (<code class="inline_code">initialize</code> gets called each time we create a new instance of a class).</p>
+
+<p></p>
+
+        <pre><code>brown_cat = Neighborhood_Cat.new("corner deli checkout counter", "stay asleep while you try to get my attention")
+brown_cat.hang_out
+brown_cat.meow
+
+black_cat = Neighborhood_Cat.new("overgrown lot next to the Catholic School", "run away and then look back at you like I want you to chase me")
+black_cat.hang_out
+black_cat.meow
+
+grey_cat = Neighborhood_Cat.new("new duplex close to the subway stop", "butt my head against your hand")
+grey_cat.hang_out
+grey_cat.meow</pre></code>
+
+        <p>Sweet! We created new instances of our <code class="inline_code">Neighborhood_cats</code> class and called the methods on each instance. Here's what we'll get when we run this in our terminal:</p>
+
+        <pre><code>=> My favorite hangout spot is the corner deli checkout counter! Next time we meet, I'll definitely stay asleep while you try to get my attention.
+=> Meow! Meow!
+=> My favorite hangout spot is the overgrown lot next to the Catholic School! Next time we meet, I'll definitely run away and then look back at you like I want you to chase me.
+=> Meow! Meow!
+=> My favorite hangout spot is the new duplex close to the subway stop! Next time we meet, I'll definitely butt my head against your hand.
+=> Meow! Meow!</pre></code>
+
+        <p>Awesome! Keeping all those cats straight is pretty simple with a class. Don't forget to greet your furry neighbors!</p>
+
+        <div class="blog_post_footer">November 9th, 2014</div>
+
+      </div>
+    </div>
+
+    <div id="blog_post">
+
+      <div id="tagline">
+        <div id="tagline_1"><a id="blog_single" href="blog/c4-tech-issues.html">Lighting the Fire</a></div>
+        <div id="tagline_2">Seven Women of Color Opening The Doors to Web Development.</div>
+      </div>
+
+      <div id="content">
+        <p class="blog_post_quote">"I would tell her, never apologize for the space you occupy in the world. Make your strides long, wide and sure."
+        <br>- Chimamanda Ngozi Adichie
+        </p>
+        <p>So, I must say that I've been a black woman for quite a while now (I'm certain that twenty-two years is a very, very long time).</p>
+
+        <p>I've studied Anthropology at a fancy liberal arts school, and spent summers teaching bicycle mechanics. Now, I'm doing my best to shove my foot into the door of computer programming as a student at the oh-so-awesome <a class="blog_post_link" href="http://devbootcamp.com/" target="_blank">Dev Bootcamp.</a></p>
+
+        <p>Let me tell you, that even with access to Dev Bootcamp's infinitely supportive community, the gateway to the Code-World is hefty when your peers (and most of your role models ) never seem to look like you. I believe I've developed mid-sized  <a class="blog_post_link" href="https://medium.com/@aliciatweet/overcoming-impostor-syndrome-bdae04e46ec5" target="_blank">imposter-syndrome-shaped,</a> eggplant-esque bruises on both pinky toes.</p>
+
+        <p>I'm certain, however, that this door is beginning to open for women and People of Color due to the amazing work of folks like the seven bad-ass hackers (listed in no particular order) you're about to read about. These ladies are commited to spreading the tech love around, and they are changing the face of computer programming.</p>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/saron_yitbarek.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><span class="number">1</span> Saron Yitbarek</h3>
+            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/saronyitbarek" target="_blank">@saronyitbarek</a></p>
+            <p>Creator, <a class="blog_post_link" href="http://www.codenewbie.org/" target="_blank">CodeNewbie</a></p>
+            <p>Saron Yitbarek runs the weekly <a class="blog_post_link" href="https://twitter.com/CodeNewbies" target="_blank">#CodeNewbie</a> TwitterChat with fellow Web Dev <a class="blog_post_link" href="https://twitter.com/CarlosPlusPlus" target="_blank">Carlos Lazo.</a> This supportive community of programmers and people learning to code gathers every Wednesday at 9PM EST to connect through resources, stories, and support.
+            <p><b>QUOTE</b> "Take every opportunity you can, especially if it scares you."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/kathryn_finney.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><span class="number">2</span> Kathryn Finney</h3>
+            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/kathrynfinney" target="_blank">@kathrynfinney</a></p>
+            <p>Founder, <a class="blog_post_link" href="http://www.digitalundivided.com/" target="_blank">DigitalUndivided</a></p>
+            <p>Kathryn Finney is the founder of DigitalUndivided, an organization that produces programs and events aimed at increasing the number of women of color in the tech industry.</a></p>
+            <p><b>QUOTE</b> "Diversity in tech is important for everyone ... Be on the cutting edge, go where people aren&#8217;t looking. You&#8217;re going to have a very difficult time if you&#8217;re looking in the same pool as everyone else."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/amanda_spann.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><span class="number">3</span> Amanda Spann</h3>
+            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/amandaspann" target="_blank">@amandaspann</a></p>
+            <p>Co-Founder, Black Girls Hack</p>
+            <p>Inspired by <a class="blog_post_link" href="http://www.blackgirlscode.com/" target="_blank">Black Girls Code</a> in San Francisco, Amanda Spann founded Black Girls Hack with three others. Black Girls Hack supports black women working towards careers as software developers and startup founders, and was the first non-profit hackathon series specifically targeting Women of Color.</p>
+            <p><b>QUOTE</b> "We&#8217;re all African American, and we all have tech startups. One thing we all struggle with is feeling like we&#8217;re the only ones ... there are so few blacks in technology."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/felicia_ogarrio.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><span class="number">4</span> Felicia O&#8217;Garro</h3>
+            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/feliciaogarro" target="_blank">@feliciaogarro</a></p>
+            <p>Co-Founder, <a class="blog_post_link" href="http://codecrew.co/" target="_blank">Code Crew</a></p>
+            <p>Felicia O&#8217;Garro decided to teach herself how to code while working full-time. She and her <a class="blog_post_link" href="https://twitter.com/jsogarro" target="_blank">husband</a> founded Code Crew, a flourishing learning space that has already taught thousands how to code in a year and a half.</p>
+            <p><b>QUOTE</b> "When we found out that coding is something that you can teach yourself, we were overly excited."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/courtney_ervin.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><span class="number">5</span> Courtney Ervin</h3>
+            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/courteneyervin" target="_blank">@courteneyervin</a></p>
+            <p>Teacher, <a class="blog_post_link" href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a></p>
+            <p>Courtney Ervin is a teacher at <a class="blog_post_link" href="http://devbootcamp.com/learn-more/" target="_blank">Dev Bootcamp&#8217;s Web Development Immersive.</a> Because of her self-taught programming background, she loves having the opportunity to create supportive and challenging environments for new programmers.</p>
+            <p><b>QUOTE</b> "Life goal: I want to be the @NICKIMINAJ of software engineering."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/kimberly_bryant.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><span class="number">6</span> Kimberly Bryant</h3>
+            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/6gems" target="_blank">@6gems</a></p>
+            <p>Founder, <a class="blog_post_link" href="http://www.blackgirlscode.com/" target="_blank">Black Girls Code</a></p>
+            <p>Kimberly Bryant launched Black Girls Code to empower and mentor young women of color by highlighting the achievement of women in tech. Since 2011, this non-profit has taught over two thousand girls ages 7-17 about computer programming and digital technology.</p>
+            <p><b>QUOTE</b> "When bringing a new idea to life, be sure you start the journey with integrity. It&#8217;s equally if not more important than the idea itself."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/christina_l_h.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><span class="number">7</span> Christina Lewis Halpern</h3>
+            <p class="twitter_line"><a class="blog_post_link" href="https://twitter.com/clewishalpern" target="_blank">@clewishalpern</a></p>
+            <p>Founder and President, <a class="blog_post_link" href="http://www.allstarcode.org/" target="_blank">All Star Code</a></p>
+            <p>An idealist based in New York City, Lewis Halpern prepares black and Latino teenage boys for awesome tech careers through her non-profit All Star Code.</p>
+            <p><b>QUOTE</b> "I thought, If my father were a young man today, where would he want to go? He wouldn't want to go to law school. He'd want to be in Silicon Valley. So I thought, well, are there any black people in the space? No. Has it already been diversified? No."</p>
+          </div>
+        </div>
+
+        <p>So, that's my list! Be sure to follow these game-changers on twitter, and be proud to be you.</p>
+
+        <div class="blog_post_footer">November 2nd, 2014</div>
+
+      </div>
+    </div>
+
     <div id="blog_post">
 
       <div id="tagline">
@@ -94,157 +266,6 @@ end</pre></code>
 
         <div class="blog_post_footer">November 2nd, 2014</div>
 
-      </div>
-    </div>
-
-    <div id="blog_post">
-
-      <div id="tagline">
-        <div id="tagline_1"><a id="blog_single" href="blog/c3_thinking-style.html">Fixed Mindset Vs. Growth Mindset</a></div>
-        <div id="tagline_2">Give Yourself Permission to Grow.</div>
-      </div>
-
-      <div id="content">
-
-        <p class="blog_post_quote">"Be careful how you are talking to yourself because you are listening."
-        <br>
-        - Lisa M. Hayes</p>
-
-        <p>The quote above, spotted in a right-column ad gracing the border of the <a class="blog_post_link" href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/" target="_blank">article</a> this blog-post is about, rang true to me as I reflected upon <a class="blog_post_link" href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/" target="_blank">Carol Dweck&#8217;s Fixed Mindset vs Growth Mindset.</a></p>
-
-        <img class="blog_post_img" src="http://i.imgur.com/rVo7IMl.jpg" alt="Title" />
-
-        <p>Here&#8217;s the difference between the two mindsets - first the what-I-sometimes-say-to-myself fixed-mindset stuff, and then the how-I'm-learning-to-speak-to-myself-like-someone-I-actually-like growth-mindset goodness.</p>
-
-        <h3>Fixed Mindset</h3>
-
-        <ul>
-          <li>&quot;Learning how to use Git will be tough. I don&#8217;t wanna.&quot;</li>
-          <li>&quot;Arrays are kind of confusing. &amp;#%!@?! arrays.&quot;</li>
-          <li>&quot;Spending more than 20 minutes on this method might prove that I&#8217;m a moron.&quot;</li>
-          <li>&quot;Use Version Control, you say? Sounds like you just said that you hate me.&quot;</li>
-          <li>&quot;Oh, you built this? I guess I suck.&quot;</li>
-        </ul>
-
-        <h3>Growth Mindset</h3>
-
-        <ul>
-          <li>&quot;Learning how to use Git will be tough. Bring it on.&quot;</li>
-          <li>&quot;Arrays are kind of confusing. Time to buckle down.&quot;</li>
-          <li>&quot;The 3 hours I&#8217;ve spent on this method have served as important learning time. I&#8217;m heading in the right direction!&quot;</li>
-          <li>&quot;Use Version Control, you say? Makes sense. Sounds good.&quot;</li>
-          <li>&quot;Oh, you built this? Can&#8217;t wait to tackle a big project of my own!&quot;</li>
-        </ul>
-
-        <p>Keep that positive self-talk coming! Don&#8217;t forget that someone is listening.</p>
-
-        <div class="blog_post_footer">October 26th, 2014</div>
-
-      </div>
-    </div>
-
-    <div id="blog_post">
-
-      <div id="tagline">
-        <div id="tagline_1">Hashes &amp; Arrays</div>
-        <div id="tagline_2">Call it like you mean it.</div>
-      </div>
-
-      <div id="content">
-        <p>This past Wednesday, I had the pleasure of spending a ridiculous amount of super-fun and extra-educational quality time with DBC cohort-mate and brand-new alpaca-loving friend <a>Mai</a>.<p>
-
-        <img class="blog_post_img" src="imgs/alpaca.jpeg" alt="Title" />
-
-        <p>As she was visiting NYC from Virginia, I chose our meeting place. We naturally found ourselves at Manhattan's favorite how-is-this-so-freaking-delicious bagel shop.</p>
-
-        <p>It also so happened that I had a gross cold on this particular outing. So, let's say I was going to write a program to ease up the order process. Just so I don't have to repeat myself too much with my sore throat.</p>
-
-        <p>I'm gonna write two programs. I'm gonna write one with an <b>array</b>. Then I'm gonna write one with a <b>hash</b>.</p>
-
-        <h3>Arrays</h3>
-        <p>Objects in an array are indexed with integers starting at 0. You can't really associate them with anything else besides those numbers, so they're great for lists of really similar things. I'll use them to pile on the tofu spreads (that's cream cheese for vegans &amp; lactose-intolerant people).</p>
-
-<!--         <img class="blog_post_img" src="../imgs/array.png" alt="Title" /> -->
-         <pre><code>tofu_spread = ["plain", "spinach", "honey walnut"]
-
-tofu_spread.each do |flavor|
-  puts "I want some #{flavor} tofu spread!"
-  puts "Just add it on top."
-end
-
-puts "That's all! Thanks!"</code></pre>
-
-<pre><code>=> I want some plain tofu spread!
-=> Just add it on top.
-=> I want some spinach tofu spread!
-=> Just add it on top.
-=> I want some honey walnut tofu spread!
-=> Just add it on top.
-=> That's all! Thanks!</code></pre>
-
-        <p>Ahh, the classic plain-spinach-honey-walnut combo. Since all of my objects are tofu spreads, an array worked pretty well here.</p>
-
-        <p>However, ordering a bagel is never so simple. Not only must I choose a spread - I also better pick out a bagel and figure out if I want that sucker toasted. This is a  great job for...</p>
-
-        <h3>Hashes</h3>
-        <p>Objects in a hash are indexed with the keys assigned to them (key-value pairs). They're great if you want to call your objects in any order without having to remember a number associatd with them. Instead, just come up with a key that makes a lot of sense for its associated value. I'll use hashes to associate different categories of the bagel-ordering process with my preferences for each.</p>
-
-        <pre><code>order = {
-  "bagel" => "chocolate chip",
-  "spread" => "lox",
-  "preparation" => "toasted",
-}
-
-order.each do |category, preference|
-  puts "I'll take #{preference} for my #{category}."
-end
-
-puts "That's it! Great!"</code></pre>
-
-<pre><code>=> I'll take chocolate chip for my bagel.
-=> I'll take lox for my spread.
-=> I'll take toasted for my preparation.
-=> That's it! Great!</code></pre>
-
-        <p>So, that's a little bit about arrays &amp; hashes! Both are great for working with a bunch of objects at once; it just depends on how you want to index those objects. Save your voice and your fingers! Avoid redundancies with these epic iterators.</p>
-
-        <div class="blog_post_footer">October 24, 2014</div>
-      </div>
-    </div>
-
-    <div id="blog_post">
-
-      <div id="tagline">
-        <div id="tagline_1"><a id="blog_single" href="blog/t2-css-design.html">Margin, Border, and Padding</a></div>
-        <div id="tagline_2">Build your content a sweet crib of CSS.</div>
-      </div>
-
-      <div id="content">
-        <p class="blog_post_quote">"Art is like a border of flowers along the course of civilization."<br>-Lincoln Steffens</p>
-
-        <p>Let's say you've got some <b>content</b> worthy of a place to call its own.</p>
-
-        <img class="blog_post_img" src="imgs/content.png" alt="Title" />
-
-        <p>Before we glam up with stylesheet condiments, we've got to start with the basics. That's the HTML-hand-crafted, artisinal, fresh-out-the oven goodness in the middle.</p>
-
-        <p>Then, we can use CSS to add some <b>padding</b> to our content.</p>
-
-        <img class="blog_post_img" src="imgs/padding.png" alt="Title" />
-
-        <p>Padding is the space between our element border and the element content. Here, it's the plate serving as extra space holding our bagel-content in its luxurous ceramic arms.</p>
-
-        <p>We've also got a lil' <b>border</b>, the space between the edge of the plate (the edge of the padding) and the world beyond our element.</p>
-
-        <img class="blog_post_img" src="imgs/border.png" alt="Title" />
-
-        <p>lastly, we've got our <b>margin</b>. We're talking the space around elements. It's completely transparent - just a little bit of breathing room for your precious material.</p>
-
-        <img class="blog_post_img" src="imgs/margin.png" alt="Title" />
-
-        <p>That's a little bit about margin, border, and padding properties! Don't hesitate to give your stuff all the love, clearance and artsy sparkle you see fit.</p>
-
-        <div class="blog_post_footer">October 18th, 2014</div>
       </div>
     </div>
 
