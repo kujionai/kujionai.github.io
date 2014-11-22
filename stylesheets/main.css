@@ -98,7 +98,7 @@ a {
 }
 
 #archive {
-  display: none;
+  opacity: .5;
 }
 
 #main_button {
@@ -125,11 +125,24 @@ header {
   padding-bottom: 125px;
 }
 
-#rosa_pergams img {
+#rosa_pergams a {
+  color: #FFF;
+}
+
+#rosa_pergams a:hover {
+  opacity: 1;
+}
+
+#rosa_pergams {
   width: 500px;
   opacity: .95;
   display: block;
   margin: 0 auto;
+  text-align: center;
+  font-size: 75px;
+  border: 10px solid #fff;
+  padding: 75px 10px 60px 10px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /****************************************************************/
@@ -212,9 +225,6 @@ footer {
 #new_blog_img {
   margin-right: 5%;
   width: 23%;
-  background-position: 50% 50%;
-  background-size: cover;
-  overflow: hidden;
   opacity: .85;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
@@ -234,9 +244,58 @@ footer {
   display: inline-block;
 }
 
+.new_blog_post_footer {
+  font-family: 'PT Sans Narrow';
+  text-transform: uppercase;
+  font-size: 12.5px;
+  color: #999;
+  margin-right: 5px;
+}
+
 #new_tagline {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
+}
+
+.archive_info {
+  padding: 30px 50px;
+  border-top: 1px solid #E0E0E0;
+}
+
+.archive_stuff {
+  display: inline-block;
+  width: 50%;
+}
+
+.archive_img {
+  margin-right: 5%;
+  width: 23%;
+  opacity: .85;
+  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+  transition: .75s;
+}
+
+.archive_img:hover {
+  opacity: .5;
+  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+  transition: .75s;
+}
+
+.archive_text {
+  font-family: 'PT Sans Narrow';
+  text-align: justify;
+  color: #333;
+  font-size: 17.5px;
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+}
+
+.archive_post_footer {
+  font-family: 'PT Sans Narrow';
+  text-transform: uppercase;
+  font-size: 12.5px;
+  color: #999;
 }
 
 /**************************************************************/
@@ -304,7 +363,7 @@ a {
 }
 
 a:hover {
-  opacity: .75;
+  opacity: .65;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
@@ -564,6 +623,39 @@ pre {
     width: 50%;
     margin-top: 0px;
   }
+  .new_blog_stuff {
+    width: 100%;
+  }
+  #new_blog_img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+    margin-bottom: 35px;
+  }
+  .archive_stuff {
+    width: 100%;
+  }
+  .archive_img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    margin-bottom: 35px;
+  }
+  .archive_text {
+    font-family: 'PT Sans Narrow';
+    text-align: center;
+    display: block;
+    vertical-align: none;
+    width: 100%;
+  }
+  .archive_text p{
+    display: none;
+  }
+  .archive_post_footer {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -576,17 +668,27 @@ pre {
     margin-top: 25px;
     vertical-align: top;
   }
+  #rosa_pergams {
+    width: 350px;
+    opacity: .95;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    border: 5px solid #fff;
+    padding: 50px 5px 45px 5px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
 }
 
 @media (max-width: 500px) {
-  #rosa_pergams img {
-    width: 300px;
-  }
+
   #main_nav_bar ul li a {
     margin-left: 7.5px;
     margin-right: 7.5px;
     font-size: 16.5px;
   }
+
   #social {
     margin-left: 50px;
   }
@@ -620,6 +722,16 @@ pre {
   .main_visual_link {
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+  #new_blog_img {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .archive_img {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 35px;
   }
 }
 
