@@ -117,12 +117,13 @@ header {
 }
 
 #headline {
-  background: url(http://i.imgur.com/L41gisR.jpg);
+ /*background: url(http://i.imgur.com/L41gisR.jpg);*/
+  background: url(../imgs/alex&rosa_2.jpg);
   background-position: 50% 50%;
   border-bottom: 1px solid #F0F0F0;
   background-size: cover;
   padding-top: 225px;
-  padding-bottom: 125px;
+  padding-bottom: 110px;
 }
 
 #rosa_pergams a {
@@ -239,7 +240,7 @@ footer {
 #new_blog_text {
   font-family: 'PT Sans Narrow';
   text-align: justify;
-  color: #333;
+  color: #555;
   font-size: 17.5px;
   display: inline-block;
 }
@@ -284,7 +285,7 @@ footer {
 .archive_text {
   font-family: 'PT Sans Narrow';
   text-align: justify;
-  color: #333;
+  color: #555;
   font-size: 17.5px;
   display: inline-block;
   vertical-align: top;
@@ -314,19 +315,19 @@ footer {
 #tagline_1 {
   font-size: 50px;
   padding-bottom: 15px;
-  color: #333;
+  color: #777;
 }
 
 #tagline_2 {
   font-size: 30px;
-  color: #555;
+  color: #777;
 
 }
 
 #content {
   font-family: 'PT Sans Narrow';
   text-align: justify;
-  color: #333;
+  color: #555;
   margin-right: 250px;
   margin-left: 250px;
   padding-bottom: 25px;
@@ -353,11 +354,11 @@ footer {
 
 .blog_post_quote {
   padding-left: 25px;
-  border-left: 1.75px solid #333;
+  border-left: 1.75px solid #555;
 }
 
 a {
-  color: rgb(205, 147, 101);
+  color: rgb(188, 155, 116);
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
@@ -376,7 +377,7 @@ a:hover {
 }
 
 #blog_single {
-  color: #333
+  color: #777
 }
 
 .arrow {
@@ -421,7 +422,7 @@ a:hover {
   margin-left: 10px;
   font-family: 'PT Sans Narrow';
   text-align: justify;
-  color: #333;
+  color: #555;
   font-size: 17.5px;
   display: inline-block;
   line-height: 20px;
@@ -547,7 +548,7 @@ pre {
   margin-left: 25px;
   font-family: 'PT Sans Narrow';
   text-align: justify;
-  color: #333;
+  color: #555;
   font-size: 17.5px;
   display: inline-block;
   border-top: 1px solid #555;
@@ -633,29 +634,6 @@ pre {
     width: 75%;
     margin-bottom: 35px;
   }
-  .archive_stuff {
-    width: 100%;
-  }
-  .archive_img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
-    margin-bottom: 35px;
-  }
-  .archive_text {
-    font-family: 'PT Sans Narrow';
-    text-align: center;
-    display: block;
-    vertical-align: none;
-    width: 100%;
-  }
-  .archive_text p{
-    display: none;
-  }
-  .archive_post_footer {
-    margin-top: 5px;
-  }
 }
 
 @media (max-width: 800px) {
@@ -678,6 +656,27 @@ pre {
     border: 5px solid #fff;
     padding: 50px 5px 45px 5px;
     font-family: 'Josefin Sans', sans-serif;
+  }
+  .archive_stuff {
+    width: 100%;
+  }
+  .archive_text {
+    text-align: center;
+    display: block;
+    vertical-align: none;
+    width: 100%;
+    margin-bottom: -5px;
+  }
+  .archive_text p {
+    display: none;
+  }
+  .archive_img {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .archive_post_footer {
+    display: none;
   }
 }
 
@@ -724,11 +723,6 @@ pre {
     padding-bottom: 35px;
   }
   #new_blog_img {
-    margin-right: 0px;
-    width: 100%;
-    margin-bottom: 35px;
-  }
-  .archive_img {
     margin-right: 0px;
     width: 100%;
     margin-bottom: 35px;
