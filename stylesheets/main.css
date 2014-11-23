@@ -63,13 +63,13 @@ a {
   display: inline;
   height: 30px;
   vertical-align: top;
-  margin-top: -10px;
-  margin-left: -5px;
+  margin-top: -3.5px;
 }
 
 #main_nav_bar ul li {
   list-style: none;
   float: right;
+  margin-top: -10px;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
@@ -81,11 +81,11 @@ a {
 #main_nav_bar a {
   text-decoration: none;
   color: #555;
-  font-size: 17.5px;
+  font-size: 20px;
   margin-left: 15px;
   margin-right: 15px;
   float: right;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
@@ -118,12 +118,12 @@ header {
 
 #headline {
  /*background: url(http://i.imgur.com/L41gisR.jpg);*/
-  background: url(../imgs/alex&rosa_2.jpg);
+  background: url(../imgs/alex&rosa.jpg);
   background-position: 50% 50%;
   border-bottom: 1px solid #F0F0F0;
   background-size: cover;
-  padding-top: 225px;
-  padding-bottom: 110px;
+  padding-top: 275px;
+  padding-bottom: 175px;
 }
 
 #rosa_pergams a {
@@ -143,7 +143,7 @@ header {
   font-size: 75px;
   border: 10px solid #fff;
   padding: 75px 10px 60px 10px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /****************************************************************/
@@ -170,7 +170,7 @@ footer {
   text-align: center;
   color: #666;
   font-size: 15px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .main_link_img {
@@ -254,8 +254,7 @@ footer {
 }
 
 #new_tagline {
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .archive_info {
@@ -306,22 +305,19 @@ footer {
 /* TAGLINE */
 
 #tagline {
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 75px 125px 25px 125px;
-  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 50px 125px 15px 125px;
   text-align: center;
 }
 
 #tagline_1 {
-  font-size: 50px;
-  padding-bottom: 15px;
+  font-size: 60px;
   color: #777;
 }
 
 #tagline_2 {
-  font-size: 30px;
+  font-size: 40px;
   color: #777;
-
 }
 
 #content {
@@ -655,7 +651,7 @@ pre {
     font-size: 50px;
     border: 5px solid #fff;
     padding: 50px 5px 45px 5px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   .archive_stuff {
     width: 100%;
