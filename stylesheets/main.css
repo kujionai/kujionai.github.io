@@ -214,7 +214,7 @@ footer {
   margin-right: 50px;
   margin-left: 50px;
   margin-top: 30px;
-  margin-bottom: -45px;
+  margin-bottom: 30px;
 }
 
 .new_blog_stuff {
@@ -559,39 +559,76 @@ pre {
 /************************* CONTACT *************************/
 /*****************************************************************/
 
+#contact {
+  background: #E0E0E0;
+  padding-top: 100px;
+  padding-bottom: 125px;
+  margin-bottom: -75px;
+}
+
+#contact_tagline #tagline_1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  color: #FFF;
+}
+
+#contact_tagline #tagline_2 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  color: #FFF;
+}
+
+#contact_tagline {
+  margin: 0px 50px 25px 50px;
+
+}
+
 #contact_info {
-  margin-right: 125px;
-  margin-left: 125px;
-  margin-bottom: 75px;
-  margin-top: 75px;
+  text-align: center;
 }
 
 .contact_img {
-  padding-top: 0px;
-  height: 100px;
-  opacity: .75;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: -25px;
-}
-
-.contact_method {
-  margin-bottom: 50px;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
-}
-
-.contact_method:hover {
-  opacity: .9;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
+  transition: opacity 0.5s linear;
 }
 
 .contact_method_description {
   font-family: 'PT Sans Narrow';
-  text-align: center;
-  color: #555;
+  color: #fff;
+  font-size: 25px;
+  margin-top: -120px;
+  opacity: 0;
+  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+  transition: .75s;
+}
+
+.contact_method {
+  display: inline-block;
+  margin: 0px 5%;
+  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+  transition: .75s;
+}
+
+#email img {
+  height: 200px;
+  -webkit-filter: invert(100%) !important;
+}
+
+#phone img {
+  margin-bottom: 7.5px;
+  height: 190px;
+  -webkit-filter: invert(100%) !important;
+  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+  transition: .75s;
+}
+
+.contact_method:hover .contact_img {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.contact_method:hover .contact_method_description {
+  opacity: 1;
+  transition: opacity 0.5s linear;
 }
 
 /*****************************************************************/
@@ -673,10 +710,29 @@ pre {
   .archive_img {
     margin-right: 0px;
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
   .archive_post_footer {
     display: none;
+  }
+  #email img {
+    width: 150px;
+    height: 100%;
+  }
+  #phone img {
+    margin-bottom: 50px;
+    width: 150px;
+    height: 100%;
+  }
+  .contact_method {
+    display: block;
+    margin: 0px 5%;
+  }
+  #phone .contact_method_description {
+    margin-top: -135px;
+  }
+  #email .contact_method_description {
+    margin-top: -95px;
   }
 }
 
