@@ -63,13 +63,13 @@ a {
   display: inline;
   height: 30px;
   vertical-align: top;
-  margin-top: -3.5px;
+  margin-top: -2.25px;
 }
 
 #main_nav_bar ul li {
   list-style: none;
   float: right;
-  margin-top: -10px;
+  margin-top: -12.5px;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
@@ -122,8 +122,8 @@ header {
   background-position: 50% 50%;
   border-bottom: 1px solid #F0F0F0;
   background-size: cover;
-  padding-top: 275px;
-  padding-bottom: 175px;
+  padding-top: 200px;
+  padding-bottom: 100px;
 }
 
 #rosa_pergams a {
@@ -143,7 +143,7 @@ header {
   font-size: 75px;
   border: 10px solid #fff;
   padding: 75px 10px 60px 10px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /****************************************************************/
@@ -254,7 +254,7 @@ footer {
 }
 
 #new_tagline {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .archive_info {
@@ -305,19 +305,22 @@ footer {
 /* TAGLINE */
 
 #tagline {
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 50px 125px 15px 125px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 75px 125px 15px 125px;
   text-align: center;
 }
 
 #tagline_1 {
-  font-size: 60px;
-  color: #777;
+  font-size: 50px;
+  color: #555;
+  text-transform: uppercase;
 }
 
 #tagline_2 {
-  font-size: 40px;
-  color: #777;
+  font-size: 27.5px;
+  color: #666;
+  margin-top: 5px;
+  text-transform: uppercase;
 }
 
 #content {
@@ -373,7 +376,8 @@ a:hover {
 }
 
 #blog_single {
-  color: #777
+  color: #555;
+  text-transform: uppercase;
 }
 
 .arrow {
