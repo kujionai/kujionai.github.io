@@ -20,7 +20,7 @@ a {
 #social {
   margin-left: 50px;
   float: left;
-  margin-top: 7.5px;
+  margin-top: 5px;
 }
 
 .social_icon a img {
@@ -56,36 +56,38 @@ a {
 
 .header ul li {
   display: inline;
-  margin-top: -5px;
+  /*margin-top: -5px;*/
 }
 
 #home_img {
   display: inline;
   height: 30px;
-  vertical-align: top;
-  margin-top: -2.25px;
+  /*vertical-align: top;*/
+  margin-top: -8.5px;
+  margin-bottom: -5px;
 }
 
 #main_nav_bar ul li {
   list-style: none;
   float: right;
-  margin-top: -12.5px;
+  padding-top: 4px;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
 
 #main_nav_bar {
   margin-right: 35px;
+  margin-bottom: -12.5px;
 }
 
 #main_nav_bar a {
   text-decoration: none;
   color: #555;
   font-size: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 12.5px;
+  margin-right: 12.5px;
   float: right;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
@@ -109,21 +111,52 @@ header {
   position: fixed;
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background: #f9f9f9;
-  opacity: .85;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  background: #FFF;
+  opacity: .95;
   z-index: 1;
+  border-bottom: 1.5px solid #E5E5E5;
 }
 
 #headline {
  /*background: url(http://i.imgur.com/L41gisR.jpg);*/
-  background: url(../imgs/alex&rosa.jpg);
+  background: url(../imgs/brooklyn.png);
   background-position: 50% 50%;
   border-bottom: 1px solid #F0F0F0;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding-top: 325px;
+  padding-bottom: 175px;
+}
+
+#headline_2 {
+ /*background: url(http://i.imgur.com/L41gisR.jpg);*/
+  background: url(../imgs/rosa.png);
+  background-position: 50% 50%;
+  border-bottom: 1px solid #F0F0F0;
+  background-size: cover;
+  padding-top: 425px;
+  padding-bottom: 135px;
+  text-align: center;
+}
+
+#loves {
+  display: block;
+  margin: 0 auto;
+  font-size: 75px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FFF;
+}
+
+.love {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#love_img {
+  width: 150px;
+  -webkit-filter: invert(100%) !important;
+  margin-right: 15px;
 }
 
 #rosa_pergams a {
@@ -136,7 +169,6 @@ header {
 
 #rosa_pergams {
   width: 500px;
-  opacity: .95;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -170,7 +202,7 @@ footer {
   text-align: center;
   color: #666;
   font-size: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .main_link_img {
@@ -212,20 +244,17 @@ footer {
 
 #new_blog_info {
   margin-right: 50px;
-  margin-left: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .new_blog_stuff {
   display: inline-block;
-  width: 68%;
+  width: 47%;
   vertical-align: middle;
 }
 
 #new_blog_img {
-  margin-right: 5%;
-  width: 23%;
+  margin-right: 2.5%;
+  width: 50%;
   opacity: .85;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
@@ -245,16 +274,35 @@ footer {
   display: inline-block;
 }
 
-.new_blog_post_footer {
+/*.new_blog_post_footer {
   font-family: 'PT Sans Narrow';
   text-transform: uppercase;
   font-size: 12.5px;
   color: #999;
   margin-right: 5px;
-}
+}*/
 
 #new_tagline {
   font-family: 'Josefin Sans', sans-serif;
+  margin-top: 5%;
+  text-align: left;
+}
+
+#about_tagline_1 {
+  font-size: 65px;
+  color: #555;
+  text-transform: uppercase;
+}
+
+#about_tagline_2 {
+  font-size: 45px;
+  color: #666;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.about_p {
+  font-size: 20px;
 }
 
 .archive_info {
@@ -311,13 +359,13 @@ footer {
 }
 
 #tagline_1 {
-  font-size: 50px;
+  font-size: 65px;
   color: #555;
   text-transform: uppercase;
 }
 
 #tagline_2 {
-  font-size: 27.5px;
+  font-size: 35px;
   color: #666;
   margin-top: 5px;
   text-transform: uppercase;
@@ -555,12 +603,34 @@ pre {
   border-bottom: 1px solid #555;
 }
 
+#alex_rosa {
+  width: 50%;
+  margin-bottom: -3.75px;
+  display: inline-block;
+}
+
+#about_container {
+  width: 50%;
+  float: right;
+}
+
+#all_about {
+  font-family: 'PT Sans Narrow';
+  color: #777;
+  font-size: 20px;
+  display: inline-block;
+  padding: 30px;
+}
+
+#about_p {
+  font-size: 20px;
+}
 /*****************************************************************/
 /************************* CONTACT *************************/
 /*****************************************************************/
 
 #contact {
-  background: #E0E0E0;
+  /*background: #E0E0E0;*/
   padding-top: 100px;
   padding-bottom: 125px;
   margin-bottom: -75px;
@@ -569,18 +639,20 @@ pre {
 #contact_tagline #tagline_1 {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  color: #FFF;
+  /*color: #FFF;*/
+  color: #555;
+  margin-top: 35px;
 }
 
 #contact_tagline #tagline_2 {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  color: #FFF;
+  /*color: #FFF;*/
+  color: #555;
 }
 
 #contact_tagline {
   margin: 0px 50px 25px 50px;
-
 }
 
 #contact_info {
@@ -593,7 +665,7 @@ pre {
 
 .contact_method_description {
   font-family: 'PT Sans Narrow';
-  color: #fff;
+  color: #555;
   font-size: 25px;
   margin-top: -120px;
   opacity: 0;
@@ -603,20 +675,20 @@ pre {
 
 .contact_method {
   display: inline-block;
-  margin: 0px 5%;
+  margin: 50px;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
 
 #email img {
   height: 200px;
-  -webkit-filter: invert(100%) !important;
+  /*-webkit-filter: invert(100%) !important;*/
 }
 
 #phone img {
   margin-bottom: 7.5px;
   height: 190px;
-  -webkit-filter: invert(100%) !important;
+  /*-webkit-filter: invert(100%) !important;*/
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
@@ -640,9 +712,17 @@ pre {
     margin-right: 50px;
     margin-left: 50px;
   }
-  #main_nav_bar {
-    margin-right: 35px;
-    margin-left: 35px;
+  #main_nav_bar ul li a {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    font-size: 16.5px;
+  }
+  #main_nav_bar ul li {
+    list-style: none;
+    float: right;
+    padding-top: 4px;
+    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+    transition: .75s;
   }
   #social {
     margin-left: 50px;
@@ -665,11 +745,39 @@ pre {
     width: 100%;
   }
   #new_blog_img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 75%;
-    margin-bottom: 35px;
+    display: none;
+  }
+  #new_blog_text {
+    font-family: 'PT Sans Narrow';
+    text-align: center;
+    color: #555;
+    font-size: 17.5px;
+    display: inline-block;
+  }
+  #new_tagline {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  #about_tagline_1 {
+    font-size: 50px;
+    color: #555;
+    text-transform: uppercase;
+  }
+
+  #about_tagline_2 {
+    font-size: 27.5px;
+    color: #666;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+  .about_p {
+    font-size: 17.5px;
+  }
+  #new_blog_info {
+    margin: 50px 50px 25px 50px;
+    vertical-align: center;
   }
 }
 
@@ -685,14 +793,9 @@ pre {
   }
   #rosa_pergams {
     width: 350px;
-    opacity: .95;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
     font-size: 50px;
     border: 5px solid #fff;
-    padding: 50px 5px 45px 5px;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding: 50px 5px 35px 5px;
   }
   .archive_stuff {
     width: 100%;
@@ -726,7 +829,6 @@ pre {
   }
   .contact_method {
     display: block;
-    margin: 0px 5%;
   }
   #phone .contact_method_description {
     margin-top: -135px;
@@ -737,12 +839,6 @@ pre {
 }
 
 @media (max-width: 500px) {
-
-  #main_nav_bar ul li a {
-    margin-left: 7.5px;
-    margin-right: 7.5px;
-    font-size: 16.5px;
-  }
 
   #social {
     margin-left: 50px;
@@ -800,4 +896,3 @@ pre {
 
 * html .clearfix{ zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
-
