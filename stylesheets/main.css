@@ -229,6 +229,10 @@ footer {
   text-transform: uppercase;
 }
 
+#blog_single:hover {
+  color: rgb(188, 155, 116);
+}
+
 /* TAGLINE */
 
 #tagline {
@@ -245,7 +249,7 @@ footer {
 
 #tagline_2 {
   font-size: 35px;
-  color: #666;
+  color: #555;
   margin-top: 5px;
   text-transform: uppercase;
 }
@@ -255,7 +259,7 @@ footer {
 #content {
   font-family: 'PT Sans Narrow';
   text-align: justify;
-  color: #555;
+  color: #333;
   margin-right: 250px;
   margin-left: 250px;
   padding-bottom: 25px;
@@ -284,7 +288,7 @@ a {
 }
 
 a:hover {
-  opacity: .65;
+  opacity: .85;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
@@ -453,8 +457,8 @@ pre {
   background-position: 25% 50%;
   border-bottom: 1px solid #F0F0F0;
   background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 200px;
+  padding-top: 162.5px;
+  padding-bottom: 212.5px;
   text-align: center;
   margin-top: 2.5px;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
@@ -478,7 +482,7 @@ pre {
 
 
 #love_img {
-  width: 200px;
+  width: 175px;
   -webkit-filter: invert(100%) !important;
   margin-right: 20px;
   padding-top: 45px;
