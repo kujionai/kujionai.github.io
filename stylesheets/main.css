@@ -12,10 +12,10 @@ a {
 }
 
 /****************************************************************/
-/**************************** HEADER ****************************/
+/**************************** MAIN NAV ****************************/
 /****************************************************************/
 
-/* SOCIAL MEDIA & ORDER ONLINE */
+/* SOCIAL MEDIA */
 
 #social {
   margin-left: 50px;
@@ -53,6 +53,8 @@ a {
   display: inline;
   margin-left: 10px;
 }
+
+/* PAGE LINKS */
 
 .header ul li {
   display: inline;
@@ -99,10 +101,6 @@ a {
   transition: .75s;
 }
 
-#archive {
-  opacity: .5;
-}
-
 #main_button {
   padding-right: 0px;
 }
@@ -119,6 +117,10 @@ header {
   border-bottom: 1.5px solid #E5E5E5;
 }
 
+/****************************************************************/
+/************************** COVER IMAGE **************************/
+/****************************************************************/
+
 #headline {
  /*background: url(http://i.imgur.com/L41gisR.jpg);*/
   background: url(../imgs/brooklyn.png);
@@ -127,36 +129,6 @@ header {
   background-size: cover;
   padding-top: 325px;
   padding-bottom: 175px;
-}
-
-#headline_2 {
- /*background: url(http://i.imgur.com/L41gisR.jpg);*/
-  background: url(../imgs/rosa.png);
-  background-position: 50% 50%;
-  border-bottom: 1px solid #F0F0F0;
-  background-size: cover;
-  padding-top: 425px;
-  padding-bottom: 135px;
-  text-align: center;
-}
-
-#loves {
-  display: block;
-  margin: 0 auto;
-  font-size: 75px;
-  font-family: 'Josefin Sans', sans-serif;
-  color: #FFF;
-}
-
-.love {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#love_img {
-  width: 150px;
-  -webkit-filter: invert(100%) !important;
-  margin-right: 15px;
 }
 
 #rosa_pergams a {
@@ -179,23 +151,8 @@ header {
 }
 
 /****************************************************************/
-/**************************** FOOTER ****************************/
+/************************** VISUAL NAVIGATION BAR **************************/
 /****************************************************************/
-
-footer {
-  font-family: 'PT Sans Narrow';
-  color: #777;
-  padding: 25px 0px;
-  margin: 0px;
-  margin-top: 75px;
-  font-size: 15px;
-  border-top: 1.75px solid #E0E0E0;
-  text-align: center;
-}
-
-#just_space {
-  height: 50px;
-}
 
 .main_link_text {
   text-transform: uppercase;
@@ -211,12 +168,13 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  vertical-align: middle;
 }
 
 .main_visual_link {
   padding: 45px 0px 45px 0px;
   width: 25%;
-  height: 25%;
+  min-height: 200px;
   display: inline-block;
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
@@ -227,7 +185,7 @@ footer {
 }
 
 .main_visual_link:hover {
-  background: #F0F0F0;
+  background: #E0E0E0;
   opacity: .65;
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
@@ -237,118 +195,38 @@ footer {
   text-align: center;
 }
 
+/****************************************************************/
+/**************************** FOOTER ****************************/
+/****************************************************************/
+
+footer {
+  font-family: 'PT Sans Narrow';
+  color: #777;
+  padding: 25px 0px;
+  margin: 0px;
+  margin-top: 75px;
+  font-size: 15px;
+  border-top: 1.75px solid #E0E0E0;
+  text-align: center;
+}
+
 #icon_credits a {
   color: #D0D0D0;
   margin-left: 15px;
 }
 
-#new_blog_info {
-  margin-right: 50px;
-}
-
-.new_blog_stuff {
-  display: inline-block;
-  width: 47%;
-  vertical-align: middle;
-}
-
-#new_blog_img {
-  margin-right: 2.5%;
-  width: 50%;
-  opacity: .85;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
-}
-
-#new_blog_img:hover {
-  opacity: .5;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
-}
-
-#new_blog_text {
-  font-family: 'PT Sans Narrow';
-  text-align: justify;
-  color: #555;
-  font-size: 17.5px;
-  display: inline-block;
-}
-
-/*.new_blog_post_footer {
-  font-family: 'PT Sans Narrow';
-  text-transform: uppercase;
-  font-size: 12.5px;
-  color: #999;
-  margin-right: 5px;
-}*/
-
-#new_tagline {
-  font-family: 'Josefin Sans', sans-serif;
-  margin-top: 5%;
-  text-align: left;
-}
-
-#about_tagline_1 {
-  font-size: 65px;
-  color: #555;
-  text-transform: uppercase;
-}
-
-#about_tagline_2 {
-  font-size: 45px;
-  color: #666;
-  margin-top: 5px;
-  text-transform: uppercase;
-}
-
-.about_p {
-  font-size: 20px;
-}
-
-.archive_info {
-  padding: 30px 50px;
-  border-top: 1px solid #E0E0E0;
-}
-
-.archive_stuff {
-  display: inline-block;
-  width: 50%;
-}
-
-.archive_img {
-  margin-right: 5%;
-  width: 23%;
-  opacity: .85;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
-}
-
-.archive_img:hover {
-  opacity: .5;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
-}
-
-.archive_text {
-  font-family: 'PT Sans Narrow';
-  text-align: justify;
-  color: #555;
-  font-size: 17.5px;
-  display: inline-block;
-  vertical-align: top;
-  width: 70%;
-}
-
-.archive_post_footer {
-  font-family: 'PT Sans Narrow';
-  text-transform: uppercase;
-  font-size: 12.5px;
-  color: #999;
-}
-
 /**************************************************************/
 /**************************** BLOG ****************************/
 /**************************************************************/
+
+#just_space {
+  height: 50px;
+}
+
+#blog_single {
+  color: #555;
+  text-transform: uppercase;
+}
 
 /* TAGLINE */
 
@@ -371,6 +249,8 @@ footer {
   text-transform: uppercase;
 }
 
+/* CONTENT */
+
 #content {
   font-family: 'PT Sans Narrow';
   text-align: justify;
@@ -381,14 +261,6 @@ footer {
   border-bottom: 1.75px solid #E0E0E0;
   font-size: 17.5px;
 }
-
-/*#nothing {
-  background: #D7D6C4;
-  background: #9D8773;
-  background: #DCBA75;
-  background: #743E46;
-  background: #BA6C56;
-}*/
 
 .blog_post_img {
   display: block;
@@ -416,6 +288,8 @@ a:hover {
   transition: .75s;
 }
 
+/* BLOG POST FOOTER */
+
 .blog_post_footer {
   text-transform: uppercase;
   font-size: 12.5px;
@@ -423,10 +297,7 @@ a:hover {
   text-align: right;
 }
 
-#blog_single {
-  color: #555;
-  text-transform: uppercase;
-}
+/* BLOG PAGE NAVIGATION */
 
 .arrow {
   display: inline-block;
@@ -444,6 +315,10 @@ a:hover {
 #left-arrow-new, #right-arrow-old {
   opacity: .125;
 }
+
+/****************************************************************/
+/******************* BUZZFEED-STYLE BLOG POSTS *******************/
+/****************************************************************/
 
 #blog_list_info {
   text-align: center;
@@ -478,9 +353,6 @@ a:hover {
 
 .twitter_line {
   line-height: 0px;
-}
-
-.number {
 }
 
 .signature {
@@ -575,71 +447,49 @@ pre {
 /**************************** ABOUT ****************************/
 /**************************************************************/
 
-#about_info {
+#headline_2 {
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.65) 100%), url(../imgs/rosa.png) no-repeat;
+  background-position: 50% 50%;
+  border-bottom: 1px solid #F0F0F0;
+  background-size: cover;
+  padding-top: 165px;
+  padding-bottom: 200px;
   text-align: center;
+  margin-top: 75px;
 }
 
-.about_stuff {
+#loves {
+  display: block;
+  margin: 0 auto;
+  font-size: 55px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FFF;
+}
+
+.love {
   display: inline-block;
-  width: 400px;
   vertical-align: middle;
 }
 
-#about_img {
-  margin-top: 20px;
-  margin-right: 25px;
-  width: 400px;
-  display: inline-block;
+
+#love_img {
+  width: 200px;
+  -webkit-filter: invert(100%) !important;
+  margin-right: 10px;
+  padding-top: 35px;
 }
 
-#about_text {
-  margin-left: 25px;
-  font-family: 'PT Sans Narrow';
-  text-align: justify;
-  color: #555;
-  font-size: 17.5px;
-  display: inline-block;
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #555;
-}
-
-#alex_rosa {
-  width: 50%;
-  margin-bottom: -3.75px;
-  display: inline-block;
-}
-
-#about_container {
-  width: 50%;
-  float: right;
-}
-
-#all_about {
-  font-family: 'PT Sans Narrow';
-  color: #777;
-  font-size: 20px;
-  display: inline-block;
-  padding: 30px;
-}
-
-#about_p {
-  font-size: 20px;
-}
 /*****************************************************************/
-/************************* CONTACT *************************/
+/************************* CONTACT (ALSO INLINE) *************************/
 /*****************************************************************/
 
 #contact {
-  /*background: #E0E0E0;*/
-  padding-top: 100px;
-  padding-bottom: 125px;
-  margin-bottom: -75px;
+  margin: 100px 0px 0px 0px;
 }
 
 #contact_tagline #tagline_1 {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  /*color: #FFF;*/
   color: #555;
   margin-top: 35px;
 }
@@ -647,7 +497,6 @@ pre {
 #contact_tagline #tagline_2 {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  /*color: #FFF;*/
   color: #555;
 }
 
@@ -655,52 +504,17 @@ pre {
   margin: 0px 50px 25px 50px;
 }
 
-#contact_info {
-  text-align: center;
-}
-
-.contact_img {
-  transition: opacity 0.5s linear;
-}
-
-.contact_method_description {
-  font-family: 'PT Sans Narrow';
-  color: #555;
-  font-size: 25px;
-  margin-top: -120px;
-  opacity: 0;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
-}
-
-.contact_method {
-  display: inline-block;
-  margin: 50px;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
-}
-
 #email img {
   height: 200px;
-  /*-webkit-filter: invert(100%) !important;*/
 }
 
 #phone img {
   margin-bottom: 7.5px;
   height: 190px;
-  /*-webkit-filter: invert(100%) !important;*/
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
 }
 
-.contact_method:hover .contact_img {
-  opacity: 0;
-  transition: opacity 0.5s linear;
-}
-
-.contact_method:hover .contact_method_description {
-  opacity: 1;
-  transition: opacity 0.5s linear;
+#contact_info {
+  text-align: center;
 }
 
 /*****************************************************************/
@@ -712,11 +526,13 @@ pre {
     margin-right: 50px;
     margin-left: 50px;
   }
+
   #main_nav_bar ul li a {
     margin-left: 7.5px;
     margin-right: 7.5px;
     font-size: 16.5px;
   }
+
   #main_nav_bar ul li {
     list-style: none;
     float: right;
@@ -724,9 +540,11 @@ pre {
     -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
     transition: .75s;
   }
+
   #social {
     margin-left: 50px;
   }
+
   #about_info {
     margin-right: 50px;
     margin-left: 50px;
@@ -779,6 +597,44 @@ pre {
     margin: 50px 50px 25px 50px;
     vertical-align: center;
   }
+
+  #headline_2 {
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.65) 100%), url(../imgs/rosa.png) no-repeat;
+    background-position: 50% 50%;
+    border-bottom: 1px solid #F0F0F0;
+    background-size: cover;
+    padding-top: 175px;
+    padding-bottom: 200px;
+    text-align: center;
+    margin-top: 75px;
+    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+    transition: .75s;
+  }
+
+  #loves {
+    display: block;
+    margin: 0 auto;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FFF;
+  }
+
+  #love_img {
+    width: 150px;
+    -webkit-filter: invert(100%) !important;
+    margin-right: 0px;
+    padding-top: 20px;
+    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+    transition: .75s;
+  }
+
+  .love {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+    transition: .75s;
+  }
 }
 
 @media (max-width: 800px) {
@@ -817,15 +673,6 @@ pre {
   }
   .archive_post_footer {
     display: none;
-  }
-  #email img {
-    width: 150px;
-    height: 100%;
-  }
-  #phone img {
-    margin-bottom: 50px;
-    width: 150px;
-    height: 100%;
   }
   .contact_method {
     display: block;
@@ -873,13 +720,60 @@ pre {
   .main_visual_link {
     padding-top: 35px;
     padding-bottom: 35px;
+    min-height: 150px;
   }
   #new_blog_img {
     margin-right: 0px;
     width: 100%;
     margin-bottom: 35px;
   }
+  #email img {
+    width: 175px;
+    height: auto;
+  }
+  #phone img {
+    width: 185px;
+    height: auto;
+  }
+  #headline_2 {
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.65) 100%), url(../imgs/rosa.png) no-repeat;
+    background-position: 50% 50%;
+    border-bottom: 1px solid #F0F0F0;
+    background-size: cover;
+    padding-top: 175px;
+    padding-bottom: 200px;
+    text-align: center;
+    margin-top: 75px;
+    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+    transition: .75s;
+  }
+
+  #loves {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FFF;
+  }
+
+  #love_img {
+    width: 100px;
+    -webkit-filter: invert(100%) !important;
+    margin-right: 0px;
+    padding-top: 10px;
+    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+    transition: .75s;
+  }
+
+  .love {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+    transition: .75s;
+  }
 }
+
 
 /****************************************************************/
 /*************************** CLEARFIX ***************************/
