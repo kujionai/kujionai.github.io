@@ -452,10 +452,12 @@ pre {
   background-position: 50% 50%;
   border-bottom: 1px solid #F0F0F0;
   background-size: cover;
-  padding-top: 155px;
+  padding-top: 150px;
   padding-bottom: 200px;
   text-align: center;
-  margin-top: 75px;
+  margin-top: 2.5px;
+  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+  transition: .75s;
 }
 
 #loves {
@@ -469,6 +471,8 @@ pre {
 .love {
   display: inline-block;
   vertical-align: middle;
+  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+  transition: .75s;
 }
 
 
@@ -477,6 +481,8 @@ pre {
   -webkit-filter: invert(100%) !important;
   margin-right: 20px;
   padding-top: 45px;
+  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
+  transition: .75s;
 }
 
 /*****************************************************************/
@@ -484,7 +490,7 @@ pre {
 /*****************************************************************/
 
 #contact {
-  margin: 100px 0px 0px 0px;
+  margin: 175px 0px 100px 0px;
 }
 
 #contact_tagline #tagline_1 {
@@ -545,7 +551,7 @@ pre {
 }
 
 @media (max-width: 800px) {
-  #about_button {
+  #projects_button, #about_button, #contact_button {
     display: none;
   }
   .project {
