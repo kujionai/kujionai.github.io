@@ -96,7 +96,7 @@ a {
 }
 
 #main_nav_bar ul li a:hover {
-  opacity: .75;
+  color: rgb(188, 155, 116);
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
@@ -316,9 +316,7 @@ a:hover {
   opacity: .125;
 }
 
-/****************************************************************/
-/******************* BUZZFEED-STYLE BLOG POSTS *******************/
-/****************************************************************/
+/* BUZZFEED-STYLE BLOG POSTS */
 
 #blog_list_info {
   text-align: center;
@@ -354,6 +352,8 @@ a:hover {
 .twitter_line {
   line-height: 0px;
 }
+
+/* BLOG POST SIGNATURE */
 
 .signature {
   font-family: 'Reenie Beanie', cursive;
@@ -452,7 +452,7 @@ pre {
   background-position: 50% 50%;
   border-bottom: 1px solid #F0F0F0;
   background-size: cover;
-  padding-top: 165px;
+  padding-top: 155px;
   padding-bottom: 200px;
   text-align: center;
   margin-top: 75px;
@@ -475,8 +475,8 @@ pre {
 #love_img {
   width: 200px;
   -webkit-filter: invert(100%) !important;
-  margin-right: 10px;
-  padding-top: 35px;
+  margin-right: 20px;
+  padding-top: 45px;
 }
 
 /*****************************************************************/
@@ -505,12 +505,12 @@ pre {
 }
 
 #email img {
-  height: 200px;
+  height: 175px;
 }
 
 #phone img {
-  margin-bottom: 7.5px;
-  height: 190px;
+  /*margin-bottom: 7.5px;*/
+  height: 175px;
 }
 
 #contact_info {
@@ -526,118 +526,28 @@ pre {
     margin-right: 50px;
     margin-left: 50px;
   }
-
   #main_nav_bar ul li a {
     margin-left: 7.5px;
     margin-right: 7.5px;
-    font-size: 16.5px;
-  }
-
-  #main_nav_bar ul li {
-    list-style: none;
-    float: right;
-    padding-top: 4px;
-    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-    transition: .75s;
-  }
-
-  #social {
-    margin-left: 50px;
-  }
-
-  #about_info {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  #about_img {
-    margin-right: 0px;
-  }
-  #about_text {
-    margin-left: 0px;
   }
   .main_visual_link {
     width: 50%;
     margin-top: 0px;
   }
-  .new_blog_stuff {
-    width: 100%;
-  }
-  #new_blog_img {
-    display: none;
-  }
-  #new_blog_text {
-    font-family: 'PT Sans Narrow';
-    text-align: center;
-    color: #555;
-    font-size: 17.5px;
-    display: inline-block;
-  }
-  #new_tagline {
-    font-family: 'Josefin Sans', sans-serif;
-    margin-top: 0px;
-    text-align: center;
-  }
-
-  #about_tagline_1 {
-    font-size: 50px;
-    color: #555;
-    text-transform: uppercase;
-  }
-
-  #about_tagline_2 {
-    font-size: 27.5px;
-    color: #666;
-    margin-top: 5px;
-    text-transform: uppercase;
-  }
-  .about_p {
-    font-size: 17.5px;
-  }
-  #new_blog_info {
-    margin: 50px 50px 25px 50px;
-    vertical-align: center;
-  }
-
-  #headline_2 {
-    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.65) 100%), url(../imgs/rosa.png) no-repeat;
-    background-position: 50% 50%;
-    border-bottom: 1px solid #F0F0F0;
-    background-size: cover;
-    padding-top: 175px;
-    padding-bottom: 200px;
-    text-align: center;
-    margin-top: 75px;
-    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-    transition: .75s;
-  }
-
   #loves {
-    display: block;
-    margin: 0 auto;
-    font-size: 35px;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #FFF;
+    font-size: 30px;
   }
-
   #love_img {
     width: 150px;
-    -webkit-filter: invert(100%) !important;
-    margin-right: 0px;
-    padding-top: 20px;
-    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-    transition: .75s;
-  }
-
-  .love {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-    transition: .75s;
+    margin-right: 10px;
+    padding-top: 30px;
   }
 }
 
 @media (max-width: 800px) {
+  #about_button {
+    display: none;
+  }
   .project {
     width: 30%;
     height: 30%;
@@ -653,42 +563,14 @@ pre {
     border: 5px solid #fff;
     padding: 50px 5px 35px 5px;
   }
-  .archive_stuff {
-    width: 100%;
-  }
-  .archive_text {
-    text-align: center;
-    display: block;
-    vertical-align: none;
-    width: 100%;
-    margin-bottom: -5px;
-  }
-  .archive_text p {
-    display: none;
-  }
-  .archive_img {
-    margin-right: 0px;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .archive_post_footer {
-    display: none;
-  }
   .contact_method {
     display: block;
-  }
-  #phone .contact_method_description {
-    margin-top: -135px;
-  }
-  #email .contact_method_description {
-    margin-top: -95px;
   }
 }
 
 @media (max-width: 500px) {
-
-  #social {
-    margin-left: 50px;
+  #projects_button, #about_button, #contact_button {
+    display: none;
   }
   #tagline_1 {
     font-size: 40px;
@@ -698,12 +580,6 @@ pre {
   }
   .blog_post_img {
     max-width: 100%;
-  }
-  #about_img {
-    width: 100%;
-  }
-  #about_text {
-    width: 100%;
   }
   #blog_list_img {
     width: 90%;
@@ -722,55 +598,20 @@ pre {
     padding-bottom: 35px;
     min-height: 150px;
   }
-  #new_blog_img {
-    margin-right: 0px;
-    width: 100%;
-    margin-bottom: 35px;
-  }
   #email img {
-    width: 175px;
+    width: 150px;
     height: auto;
   }
   #phone img {
-    width: 185px;
+    width: 150px;
     height: auto;
   }
-  #headline_2 {
-    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.65) 100%), url(../imgs/rosa.png) no-repeat;
-    background-position: 50% 50%;
-    border-bottom: 1px solid #F0F0F0;
-    background-size: cover;
-    padding-top: 175px;
-    padding-bottom: 200px;
-    text-align: center;
-    margin-top: 75px;
-    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-    transition: .75s;
-  }
-
   #loves {
-    display: block;
-    margin: 0 auto;
     font-size: 20px;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #FFF;
   }
-
   #love_img {
     width: 100px;
-    -webkit-filter: invert(100%) !important;
-    margin-right: 0px;
-    padding-top: 10px;
-    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-    transition: .75s;
-  }
-
-  .love {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-    transition: .75s;
+    padding-top: 20px;
   }
 }
 
