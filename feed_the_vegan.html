@@ -2,13 +2,13 @@
 
   body {
     /*background-color: rgb(252,241,231);*/
-    background-image: url("imgs/pusheen_background.png");
+    background-image: url("imgs/feed_the_vegan_imgs/pusheen_background.png");
     margin: 0px;
     font-family: 'Short Stack', cursive;
   }
   #content {
     background-color: rgb(252,241,231);
-    width: 1000px;
+    width: 1050px;
     height: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -16,14 +16,16 @@
     border-right: 3.5px solid rgb(210,179,152);
     margin-bottom: 0px;
   }
-  #title {
+  #header {
+    margin-bottom: 100px;
     text-align: center;
+  }
+  #title {
     font-size: 65px;
     background-color: rgb(246,208,197);
     padding: 25px;
     color: #68412E;
     letter-spacing: -3px;
-    margin-bottom: 150px;
   }
   #light {
     color: rgb(132,103,90);
@@ -40,7 +42,7 @@
     display: inline-block;
     width: 250px;
     height: 250px;
-    background-image: url("imgs/plate.png");
+    background-image: url("imgs/feed_the_vegan_imgs/plate.png");
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: top;
@@ -49,6 +51,7 @@
   .food_img  {
     max-width: 200px;
     max-height: 200px;
+    opacity: .85;
     /*border: 2.5px solid #FFF;*/
   }
   #board {
@@ -60,7 +63,7 @@
     position: relative;
     height: 225px;
     width: 275px;
-    background-image: url("imgs/pusheen/pusheen.gif");
+    background-image: url("imgs/feed_the_vegan_imgs/pusheen/pusheen.gif");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -75,7 +78,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 2.5px;
     text-decoration: none;
     border: none;
@@ -90,7 +94,7 @@
   }
   button:hover, input:hover {
     text-decoration: none;
-    background: #976334;
+    background-color: rgb(132,103,90);
     -webkit-transition: .5s;
     transition: .5s;
   }
@@ -101,14 +105,19 @@
     margin-bottom: 15px;
   }
   h1 {
+    background-color: rgb(246,208,197);
     color: #68412E;
     font-family: 'Short Stack', cursive;
     letter-spacing: -3px;
     margin-bottom: 0px;
+    font-size: 35px;
+    padding: 25px;
+    margin: -16px -16px 0px -16px;
   }
   p {
-    color: #976334;
+    color: rgb(132,103,90);
     font-family: 'Short Stack', cursive;
+    font-size: 20px;
   }
   dialog {
     margin-top: 50px;
@@ -116,29 +125,14 @@
     margin-right: auto;
     margin-left: auto;
     z-index: 3;
-    border-radius: 5px;
-    padding: 25px 45px 45px 45px;
+    border-radius: 2.5px;
     border: none;
-    width: 50%;
+    width: 600px;
     -webkit-box-shadow: -4px -4px 1000px 1000px rgba(0,0,0,0.5);
     -moz-box-shadow: -4px -4px 1000px 1000px rgba(0,0,0,0.5);
     box-shadow: -4px -4px 1000px 1000px rgba(0,0,0,0.5);
     background-color: rgb(252,241,231);
-  }
-
-/* MEDIA QUERIES */
-
-  @media (max-width: 800px) {
-    img {
-      width: 100%;
-      height: auto;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    dialog {
-      padding: 15px 25px 25px 25px;
-      height: auto;
-    }
+    border: 3.5px solid rgb(210,179,152);
   }
 
 </style>
@@ -148,50 +142,39 @@
     <title>Feed The Vegan</title>
     <link href='http://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>
   </head>
-
   <body>
-
     <dialog id="dialog">
-      <h1>Purrrfect, This is Vegan! NOM NOM NOM.</h1>
+      <h1>Purrrfect, This is Vegan!<br>NOM NOM NOM.</h1>
       <p>Thanks for playing!</p>
-      <img class="dialog_img" src="imgs/pusheen/haz_pizza.gif" alt="" />
+      <img class="dialog_img" src="imgs/feed_the_vegan_imgs/pusheen/haz_pizza.gif" alt="" />
       <input type="button" value="Play again" onClick="window.location.reload()">
     </dialog>
-
     <dialog id="dialog_2" class="dialog">
-      <h1>Meow! I am Pusheen the hungry cat.</h1>
+      <h1>Meow!<br>I am Pusheen the hungry cat.</h1>
       <p>Use your arrow keys to help me find the vegan snack!</p>
-      <img  class="dialog_img" src="imgs/pusheen/wantz_pizza.gif" alt="" />
+      <img  class="dialog_img" src="imgs/feed_the_vegan_imgs/pusheen/wantz_pizza.gif" alt="" />
       <button class="close">I'm ready!</button>
     </dialog>
-
     <dialog id="dialog_3" class="dialog">
       <h1>This isn't vegan.</h1>
       <p>I want the other snack!</p>
-      <img  class="dialog_img" src="imgs/pusheen/lazy.gif" alt="" />
+      <img  class="dialog_img" src="imgs/feed_the_vegan_imgs/pusheen/lazy.gif" alt="" />
       <button class="close">Try again</button>
     </dialog>
-
     <div id="content">
-
-      <div id="title">Feed <span id="light">the Vegan</span></div>
-
-      <!-- <h1>Meow! I am Pusheen the hungry cat.</h1>
-      <p>Use your arrow keys to help me find the vegan snack!</p> -->
-
+      <div id="header">
+        <div id="title">Feed <span id="light">the Vegan</span></div>
+        <p>Use your arrow < > keys to help Pusheen find the vegan snack!</p>
+      </div>
       <div id="all">
         <div id="food_1" class="food">
-          <img class="food_img" src="imgs/non-vegan/haribo.png" alt="" />
         </div>
         <div id="board">
           <div id="monster"></div>
         </div>
         <div id="food_2" class="food">
-          <img class="food_img" src="imgs/vegan/doritos.png" alt="" />
-        </div>
-
+      </div>
     </div>
-
   </body>
 </html>
 
@@ -203,8 +186,57 @@
   var dialog = document.getElementById('dialog');
   var intro = document.getElementById('dialog_2');
   var dialog_3 = document.getElementById('dialog_3');
+  var vegan = [
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/apple_pie.png'},
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/bacon_bits.png'},
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/unfrosted_pop_tart.png'},
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/doritos.png'},
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/fritos.png'},
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/manwich_sauce.png'},
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/pretzels.png'},
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/ritz.png'},
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/rolls.png'},
+    {foodType: 'vegan', loc: 'imgs/feed_the_vegan_imgs/vegan/sour_patch_kids.png'}
+  ]
+  var nonVegan = [
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/creamer.png'},
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/guinness.png'},
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/haribo.png'},
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/jello.png'},
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/marshmallows.png'},
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/nerds.png'},
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/peanuts.png'},
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/pop_tart.png'},
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/tropicana.png'},
+    {foodType: 'nonVegan', loc: 'imgs/feed_the_vegan_imgs/non-vegan/wheats.png'}
+  ]
+
+  var veganOrNo = [
+    vegan[Math.floor(Math.random() * 10)],
+    nonVegan[Math.floor(Math.random() * 10)]
+  ]
 
   window.onload = intro.show();
+
+  var index_0 = [0, 1][Math.floor(Math.random() * 2)]
+  if (index_0 === 1) {
+    index_1 = 0
+  }
+  else if (index_0 === 0) {
+    index_1 = 1
+  }
+
+  var image1 = document.createElement('img')
+  image1.src = veganOrNo[index_0].loc
+  image1.className = 'food_img'
+  var food_1 = document.getElementById('food_1');
+  food_1.appendChild(image1)
+
+  var image2 = document.createElement('img')
+  image2.src = veganOrNo[index_1].loc
+  image2.className = 'food_img'
+  var food_2 = document.getElementById('food_2');
+  food_2.appendChild(image2)
 
   function move(e){
     if(e.keyCode === 37) {
@@ -214,20 +246,30 @@
       }
     }
     if(e.keyCode === 39) {
-      if(posLeft < 225) {
+      if(posLeft < 200) {
         posLeft += 25
         monster.style.left = posLeft + "px";
       }
     }
-    hasPlayerPickedFood();
+    hasPlayerPickedFood(veganOrNo[index_0]);
   };
 
-  function hasPlayerPickedFood() {
-    if ("225px" === monster.style.left) {
-      dialog.show();
+  function hasPlayerPickedFood(item) {
+    if (item.foodType === 'vegan') {
+      if ("200px" === monster.style.left) {
+        dialog_3.show();
+      }
+      if ("0px" === monster.style.left) {
+        dialog.show();
+      }
     }
-    if ("0px" === monster.style.left) {
-      dialog_3.show();
+    else {
+      if ("0px" === monster.style.left) {
+        dialog_3.show();
+      }
+      if ("200px" === monster.style.left) {
+        dialog.show ();
+      }
     }
   }
 
