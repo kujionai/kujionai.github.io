@@ -96,7 +96,7 @@ a {
 }
 
 #main_nav_bar ul li a:hover {
-  color: rgb(188, 155, 116);
+  color: rgb(246,83,70);
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
@@ -230,7 +230,7 @@ footer {
 }
 
 #blog_single:hover {
-  color: rgb(188, 155, 116);
+  color: rgb(246,83,70);
 }
 
 /* TAGLINE */
@@ -282,7 +282,7 @@ footer {
 }
 
 a {
-  color: rgb(188, 155, 116);
+  color: rgb(246,83,70);
   -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
   transition: .75s;
 }
@@ -601,6 +601,9 @@ pre {
     width: 100px;
     padding-top: 20px;
   }
+#contact {
+  margin: 150px 0px 0px 0px;
+}
 }
 
 
