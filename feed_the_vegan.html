@@ -140,7 +140,7 @@
 <html>
   <head>
     <title>Feed The Vegan</title>
-    <link href='http://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'> -->
   </head>
   <body>
     <dialog id="dialog">
@@ -274,6 +274,11 @@
   }
 
   document.onkeydown = move;
+
+  move({keyCode: 39});
+  move({keyCode: 39});
+  move({keyCode: 39});
+  move({keyCode: 39});
 
   for (var i = 0; i < closeBtns.length; i++) {
     closeBtns[i].addEventListener('click', function(e) {
