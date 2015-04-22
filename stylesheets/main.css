@@ -1,14 +1,81 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  -webkit-transition:  right 0.4s ease-in-out;
+  -moz-transition:  right 0.4s ease-in-out;
+  -ms-transition:  right 0.4s ease-in-out;
+  -o-transition:  right 0.4s ease-in-out;
+  transition:  right 0.4s ease-in-out;
+}
+
+.container.open-sidebar {
+  right: 240px;
+}
+
+#sidebar {
+  background: #fff;
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  right: -240px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar ul li {
+  margin: 0;
+}
+
+#sidebar ul li a {
+  padding: 26px 15px 15px 58px;
+  font-size: 16px;
+  color: #222;
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  -webkit-transition:  background 0.3s ease-in-out;
+  -moz-transition:  background 0.3s ease-in-out;
+  -ms-transition:  background 0.3s ease-in-out;
+  -o-transition:  background 0.3s ease-in-out;
+  transition:  background 0.3s ease-in-out;
+}
+
+#sidebar ul li:hover a {
+  color: #fff;
+}
+
+.main-content #sidebar-toggle .bar:last-child{
+   margin-bottom: 0;
+ }
+
 
 /*****************************************************************/
 /*************************** UNIVERSAL ***************************/
 /*****************************************************************/
 
-body {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
+}
+
+.body {
+  background-color: #fff;
+  margin-top: 100%;
+  padding-top: 100px;
 }
 
 /****************************************************************/
@@ -18,103 +85,57 @@ a {
 /* SOCIAL MEDIA */
 
 #social {
-  margin-left: 50px;
+  margin-left: 75px;
   float: left;
-  margin-top: 5px;
 }
 
-.social_icon a img {
-  height: 17.5px;
+ a .social_icon {
+  font-size: 20px;
+  color: #fff;
+  padding-right: 8px;
+  /*margin-top: 15px;*/
 }
 
-.social_icon a img:hover {
-  opacity: .75;
-}
-
-#github {
-  position: relative;
-  display: inline;
-  padding-right: 10px;
-}
-
-#facebook {
-  position: relative;
-  display: inline;
-}
-
-#twitter {
-  position: relative;
-  display: inline;
-  margin-left: 10px;
-}
-
-#instagram {
-  position: relative;
-  display: inline;
-  margin-left: 10px;
+a .social_icon:hover {
+  color: rgb(246,83,70);
 }
 
 /* PAGE LINKS */
 
-.header ul li {
-  display: inline;
-  /*margin-top: -5px;*/
-}
-
-#home_img {
-  display: inline;
-  height: 30px;
-  /*vertical-align: top;*/
-  margin-top: -8.5px;
-  margin-bottom: -5px;
+.bars {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 75px;
+  float: right;
 }
 
 #main_nav_bar ul li {
   list-style: none;
   float: right;
-  padding-top: 4px;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
 }
 
 #main_nav_bar {
-  margin-right: 35px;
-  margin-bottom: -12.5px;
+  display: none;
 }
 
 #main_nav_bar a {
   text-decoration: none;
-  color: #555;
+  color: #fff;
   font-size: 20px;
-  margin-left: 12.5px;
-  margin-right: 12.5px;
-  float: right;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
 }
 
 #main_nav_bar ul li a:hover {
   color: rgb(246,83,70);
-  -webkit-transition: .75s; /* For Safari 3.1 to 6.0 */
-  transition: .75s;
-}
-
-#main_button {
-  padding-right: 0px;
 }
 
 header {
-  position: fixed;
+  position: absolute;
   display: block;
   width: 100%;
-  padding-top: 12.5px;
-  padding-bottom: 12.5px;
-  background: #FFF;
-  opacity: .95;
   z-index: 1;
-  border-bottom: 1.5px solid #E5E5E5;
+  margin-top: 35px;
 }
 
 /****************************************************************/
@@ -122,14 +143,14 @@ header {
 /****************************************************************/
 
 #headline {
- /*background: url(http://i.imgur.com/L41gisR.jpg);*/
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%), url(../imgs/brooklyn.png) no-repeat;
-  /*background: url(../imgs/brooklyn.png);*/
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%), url(../imgs/succulent.jpg) no-repeat;
   background-position: 50% 50%;
-  border-bottom: 1px solid #F0F0F0;
   background-size: cover;
-  padding-top: 325px;
-  padding-bottom: 175px;
+  padding-top: 20%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
 }
 
 #rosa_pergams a {
@@ -141,14 +162,33 @@ header {
 }
 
 #rosa_pergams {
-  width: 500px;
+  width: 600px;
   display: block;
   margin: 0 auto;
   text-align: center;
-  font-size: 75px;
-  border: 10px solid #fff;
-  padding: 75px 10px 60px 10px;
+  font-size: 68px;
+  border: 6px solid #fff;
+  text-transform: uppercase;
+  padding: 50px 40px 30px 40px;
+  letter-spacing: 4px;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+.web-dev {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-bottom: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 40px auto 0px auto;
+}
+
+.border-bottom {
+  border-bottom: 4px solid #fff;
+  width: 150px;
+  margin: 0px auto 0px auto;
 }
 
 /****************************************************************/
@@ -227,6 +267,11 @@ footer {
 #just_less_space {
   height: 25px;
 }
+
+#barely_any_space {
+  height: 1px;
+}
+
 
 
 #blog_single {
@@ -349,7 +394,7 @@ a:hover {
 #blog_list_text {
   font-family: 'PT Sans Narrow';
   text-align: justify;
-  color: #555;
+  color: #222;
   font-size: 17.5px;
   display: inline-block;
   line-height: 20px;
@@ -605,3 +650,4 @@ pre {
 
 * html .clearfix{ zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
