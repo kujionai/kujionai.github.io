@@ -1,8 +1,8 @@
-/*****************************************************************/
-/*************************** UNIVERSAL ***************************/
-/*****************************************************************/
+/* --------------------------------
+UNIVERSAL
+-------------------------------- */
 
-a .social_icon, body  {
+a .social_icon, a .social_icon-contact, #rosa_pergams {
   -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
@@ -35,7 +35,6 @@ MAIN NAV
 
 #social {
   padding: 42px 15px 15px 58px;
-  float: left;
 }
 
  a .social_icon {
@@ -115,7 +114,7 @@ header {
   color: #222;
   text-decoration: none;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
@@ -212,6 +211,46 @@ ABOUT
 }
 
 /* --------------------------------
+CONTACT
+-------------------------------- */
+
+.contact {
+  margin: 100px 0px 0px 0px;
+  padding: 124px 0px 88px 0px;
+  text-align: center;
+  background-color: #333;
+}
+
+.contact-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2.4px;
+  font-weight: 700;
+  margin-bottom: 34px;
+  color: #444;
+  font-family: 'Josefin Sans';
+}
+
+.email {
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  font-size: 50px;
+  color: #fff;
+}
+
+ a .social_icon-contact {
+  font-size: 48px;
+  color: #444;
+  padding: 0px 32px;
+  margin-top: 38px;
+}
+
+a .social_icon-contact:hover, .email:hover {
+  opacity: 0;
+}
+
+/* --------------------------------
 FOOTER
 -------------------------------- */
 
@@ -230,10 +269,9 @@ footer {
   background-color: #fff;
 }
 
-/*#icon_credits a {
-  color: #D0D0D0;
+#icon_credits a {
   margin-left: 15px;
-}*/
+}
 
 /* --------------------------------
 BLOG
@@ -455,6 +493,13 @@ MEDIA QUERIES
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 1.4px;
+  }
+  .email {
+    font-size: 38px;
+  }
+   a .social_icon-contact {
+    font-size: 38px;
+    padding: 0px 22px;
   }
 }
 
