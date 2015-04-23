@@ -2,12 +2,17 @@
 /*************************** UNIVERSAL ***************************/
 /*****************************************************************/
 
-a .social_icon, body  {
+#sidebar ul li a, a .social_icon {
   -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
   -webkit-transition:.25s;
   transition:.25s;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
 a {
@@ -18,52 +23,33 @@ a {
   margin-top: 50%;
 }
 
+
 .body-white {
   background-color: #fff;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-/* --------------------------------
-MAIN NAV
--------------------------------- */
-
-/* SOCIAL MEDIA */
-
-#social {
-  padding: 42px 15px 15px 58px;
-  float: left;
-}
-
- a .social_icon {
-  font-size: 22px;
-  color: #222;
-  padding-right: 12px;
-}
-
-a .social_icon:hover {
-  opacity: 0;
-}
-
-/* PAGE LINKS */
-
-.bars {
-  color: #fff;
-  font-size: 26px;
-  margin-right: 75px;
-  float: right;
-}
-
-header {
-  position: absolute;
+.plant {
+  width: 80px;
   display: block;
-  width: 100%;
-  z-index: 1;
-  margin-top: 35px;
+  margin: auto;
+  padding-bottom: 26px;
 }
+
+.description p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin: 24px auto;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  width: 700px;
+  text-align: center;
+  color: #444;
+}
+
+/*****************************************************************/
+/*************************** SIDEBAR ***************************/
+/*****************************************************************/
 
 .scroll-down-arrow {
   color: #fff;
@@ -124,11 +110,6 @@ header {
   -ms-transition:  background 0.3s ease-in-out;
   -o-transition:  background 0.3s ease-in-out;
   transition:  background 0.3s ease-in-out;
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
 }
 
 #sidebar ul li:hover a {
@@ -139,9 +120,43 @@ header {
    margin-bottom: 0;
  }
 
-/* --------------------------------
-COVER IMAGE
--------------------------------- */
+/* SOCIAL MEDIA */
+
+#social {
+  padding: 42px 15px 15px 58px;
+  float: left;
+}
+
+ a .social_icon {
+  font-size: 22px;
+  color: #222;
+  padding-right: 12px;
+}
+
+a .social_icon:hover {
+  opacity: 0;
+}
+
+/* PAGE LINKS */
+
+.bars {
+  color: #fff;
+  font-size: 26px;
+  margin-right: 75px;
+  float: right;
+}
+
+header {
+  position: absolute;
+  display: block;
+  width: 100%;
+  z-index: 1;
+  margin-top: 35px;
+}
+
+/****************************************************************/
+/************************** COVER IMAGE **************************/
+/****************************************************************/
 
 #headline {
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%), url(../imgs/succulent.jpg) no-repeat;
@@ -156,6 +171,10 @@ COVER IMAGE
 
 #rosa_pergams a {
   color: #FFF;
+}
+
+#rosa_pergams a:hover {
+  opacity: 1;
 }
 
 #rosa_pergams {
@@ -188,56 +207,9 @@ COVER IMAGE
   margin: 0px auto 0px auto;
 }
 
-/* --------------------------------
-ABOUT
--------------------------------- */
-
-.plant {
-  width: 50px;
-  display: block;
-  margin: auto;
-  padding: 54px 0px 22px 0px;
-}
-
-.description p {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  margin: 24px auto;
-  line-height: 24px;
-  letter-spacing: 1.6px;
-  font-weight: 400;
-  width: 700px;
-  text-align: center;
-  color: #444;
-}
-
-/* --------------------------------
-FOOTER
--------------------------------- */
-
-footer {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  color: #fff;
-  padding: 25px 0px;
-  margin: 0px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 1.6px;
-  margin-top: 75px;
-  font-size: 15px;
-  text-align: center;
-  background-color: #fff;
-}
-
-/*#icon_credits a {
-  color: #D0D0D0;
-  margin-left: 15px;
-}*/
-
-/* --------------------------------
-BLOG
--------------------------------- */
+/**************************************************************/
+/**************************** BLOG ****************************/
+/**************************************************************/
 
 #just_space {
   height: 50px;
@@ -250,6 +222,8 @@ BLOG
 #barely_any_space {
   height: 1px;
 }
+
+
 
 #blog_single {
   color: #555;
@@ -385,9 +359,9 @@ a:hover {
   font-size: 25px;
 }
 
-/* --------------------------------
-CODE BLOCK
--------------------------------- */
+/****************************************************************/
+/************************** CODE BLOCK **************************/
+/****************************************************************/
 
 pre {
   font-size: .9em;
@@ -416,18 +390,13 @@ pre {
   white-space: pre;
 }
 
-/* --------------------------------
-MEDIA QUERIES
--------------------------------- */
+/*****************************************************************/
+/************************* MEDIA QUERIES *************************/
+/*****************************************************************/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  .body {
-    margin-top: 625px;
-  }
-  #headline {
-    padding-top: 175px ;
-  }
+
 }
 
 /* Medium Devices, Desktops */
@@ -437,25 +406,12 @@ MEDIA QUERIES
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  #rosa_pergams {
-    width: 400px;
-  }
-  .description p {
-    width: 480px;
-  }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  #rosa_pergams {
-    width: 300px;
-  }
-  .description p {
-    width: 320px;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 1.4px;
-  }
+
 }
 
 /* Custom, iPhone Retina */
