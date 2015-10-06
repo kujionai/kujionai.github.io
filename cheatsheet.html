@@ -1,0 +1,301 @@
+<style>
+
+#all_the_flips {
+  text-align: center;
+}
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  display: inline-block;
+  margin: 25px;
+}
+
+  .flip-container:hover .flipper,
+  .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 550px;
+  height: 250px;
+}
+
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.front {
+  z-index: 2;
+}
+
+#front-1/*, #front-8*/ {
+  background: rgb(246,83,70);
+  /*background: rgb(167,153,112);*/
+}
+
+#front-2/*, #front-7*/ {
+  background: rgb(247,114,61);
+  /*background: rgb(137,197,162);*/
+}
+
+#front-3/*, #front-6*/ {
+  background: rgb(39,64,91);
+  /*background: rgb(235,230,213);*/
+}
+
+#front-4/*, #front-5*/ {
+  background: rgb(81,158,160);
+}
+
+#front-5 {
+  background: rgb(137,197,162);
+}
+
+#front-6 {
+  background: rgb(251,197,50);
+}
+
+#front-7 {
+  background: rgb(235,230,213);
+}
+
+#front-8 {
+  background: rgb(167,153,112);
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  border: 1px solid #ddd;
+}
+
+.front .name {
+  font-size: 35px;
+  color: #FFF;
+  font-family: Courier;
+  display: block;
+  padding: 110px 25px;
+  text-align: center;
+}
+
+.back-title {
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: Courier;
+  font-size: 25px;
+  margin-top: 35px;
+}
+
+.back p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 75px;
+  font-family: arial;
+  line-height: 25px;
+}
+
+/****************************************************************/
+/************************** CODE BLOCK **************************/
+/****************************************************************/
+
+.cheat_sheet_pre {
+  font-size: 15px;
+  font-weight: 100;
+  font-family: Courier, Monospace !important;
+  background-color: #f8f8f8;
+  color: #666;
+  text-align: left;
+  margin: 135px 35px 0px 35px;
+  height: 70px;
+  line-height: 22.5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
+}
+
+.inline_code {
+  font-size: 15px;
+  color: #666666;
+  font-family: Courier, Monospace !important;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 2px 4px;
+  white-space: pre;
+}
+
+</style>
+
+<html>
+    <head>
+      <title>Rosa Pergams</title>
+      <link rel="shortcut icon" href="favicon.ico">
+      <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+      <div id="top"  class="clearfix">
+
+    <div id="just_space"></div>
+
+  <div id="all_the_flips">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div id="front-1" class="front">
+          <span class="name">.to_a</span>
+        </div>
+        <div class="back">
+          <div class="back-title">.to_a</div>
+          <p>Returns array of all elements (and actually tries to convert the parameter into an array).</p>
+          <pre class="cheat_sheet_pre"><code class="cheat_sheet_code">bagels = "bagels"
+bagels.to_a
+#=> ["bagels"]</pre></code>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div id="front-2" class="front">
+          <span class="name">.include?</span>
+        </div>
+        <div class="back">
+          <div class="back-title">.include?</div>
+          <p>Returns <code class="inline_code">true</code> if the given object is present in <code class="inline_code">self</code> (that is, if any <code class="inline_code">object == anObject</code>), and <code class="inline_code">false</code> otherwise.</p>
+          <pre class="cheat_sheet_pre"><code class="cheat_sheet_code">bagels = [ "plain", "pumpernickel", "everything", "sesame" ]
+bagels.include?("plain") #=> true
+bagels.include?("jazz hands") #=> false</pre></code>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div id="front-3" class="front">
+          <span class="name">.map</span>
+        </div>
+        <div class="back">
+          <div class="back-title">.map</div>
+          <p>Returns an array with the results from block. While <code class="inline_code">map</code> with a block returns an Array, <code class="inline_code">map!</code> mutates the original array.</p>
+          <pre class="cheat_sheet_pre"><code class="cheat_sheet_code">bagels = [ "plain", "pumpernickel", "everything", "sesame" ]
+bagels.map! {|x| x + "!" }
+#=> [ "plain!", "pumpernickel!", "everything!", "sesame!" ]</pre></code>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div id="front-4" class="front">
+          <span class="name">.sort_by</span>
+        </div>
+        <div class="back">
+          <div class="back-title">.sort_by</div>
+          <p>Returns array sorted by the return value of the block. If no block is given, an enumerator is returned instead.</p>
+          <pre class="cheat_sheet_pre"><code class="cheat_sheet_code">bagels = [ "plain", "pumpernickel", "everything", "sesame" ]
+bagels.sort_by { |word| word.length}
+#=> ["plain", "sesame", "everything", "pumpernickel"]</pre></code>
+        </div>
+      </div>
+    </div>
+
+    <div id="flip-container-1" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div id="front-5" class="front">
+          <span class="name">.each</span>
+        </div>
+        <div class="back">
+          <div class="back-title">.each</div>
+          <p>Goes through each item in the object you called it on and passes it to the block that you specified.</p>
+          <pre class="cheat_sheet_pre"><code class="cheat_sheet_code">%w(plain pumpernickel everything sesame).each {|x| x + "! " }
+# prints: plain! pumpernickel! everything! sesame!
+#=> [ "plain", "pumpernickel", "everything", "sesame" ]</pre></code>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div id="front-6" class="front">
+          <span class="name">.reverse_each</span>
+        </div>
+        <div class="back">
+          <div class="back-title">.reverse_each</div>
+          <p>Yields all elements in reverse order (same as <code class="inline_code">each</code>, but in reverse). It doesn't make a copy of the array as <code class="inline_code">reverse</code> does.</p>
+          <pre class="cheat_sheet_pre"><code class="cheat_sheet_code">%w(plain pumpernickel everything sesame).reverse_each {|x| print x, " " }
+# prints: sesame everything pumpernickel plain
+#=> [ "plain", "pumpernickel", "everything", "sesame" ]</pre></code>
+        </div>
+      </div>
+    </div>
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div id="front-7" class="front">
+          <span class="name">.each_with_index</span>
+        </div>
+        <div class="back">
+          <div class="back-title">.each_with_index</div>
+          <p>Calls block with two arguments, the item and its index, for each item. Given arguments are passed through to <code class="inline_code">each()</code>.</p>
+          <pre class="cheat_sheet_pre"><code class="cheat_sheet_code">hash = Hash.new
+%w(plain pumpernickel everything sesame).each_with_index { |item, index| hash[item] = index }
+#=> { "plain"=>0, "pumpernickel"=>1, "everything"=>2 "sesame"=>3 }</pre></code>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div id="front-8" class="front">
+          <span class="name">.select</span>
+        </div>
+        <div class="back">
+          <div class="back-title">.select</div>
+          <p>Runs the block on every item of your object and returns a new object that contains only those items for which the original block returned true.</p>
+          <pre class="cheat_sheet_pre"><code class="cheat_sheet_code">bagels = [ "plain", "pumpernickel", "everything", "sesame" ]
+bagels.select { |x| x == "pumpernickel" }
+#=> [ "pumpernickel" ]</pre></code>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</html>

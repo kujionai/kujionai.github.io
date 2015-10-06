@@ -1,0 +1,102 @@
+<html>
+
+<head>
+  <title>Rosa Pergams</title>
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../javascripts/blog-nav.js"></script>
+</head>
+
+<body class="blog-body">
+
+  <header>
+    <div class="blog-nav">
+      <ul>
+        <li><a id="contact_button" class="main_nav_button smoothScroll" href="../index.html#callme">Contact</a></li>
+        <li><a id="about_button" class="main_nav_button smoothScroll" href="../index.html#iamrosa">About</a></li>
+        <li><a id="projects_button" class="main_nav_button smoothScroll" href="../index.html#projects">Projects</a></li>
+        <li><a class="main_nav_button" href="../blog-0.html">Blog</a></li>
+      </ul>
+    </div class="blog-nav">
+  </header>
+
+     <div class="blog_post">
+
+      <div class="tagline">
+        <div class="tagline_1"><a id="blog_single" href="blog/t5-ruby-classes.html">Ruby Classes</a></div>
+        <div class="tagline_2">Greeting the wildlife with ordered expectations.</div>
+      </div>
+
+      <div class="content">
+
+        <p>Not long after moving a stone's throw South of Brooklyn's Prospect Park about six months ago, I fell in love with the neighborhood's WILDLIFE. We're talking squirrels. Sparrows. And to my purest delight, we've got cats on cats on cats EVERYWHERE.</p>
+
+        <p>To Ruby-document some of my favorite feline neighbors, I've created the following <b>class</b> called <code class="inline_code">Neighborhood_Cat</code>.
+
+        <pre><code>class Neighborhood_Cat
+  def initialize(location, favorite_activity)
+    @location = location
+    @favorite_activity = favorite_activity
+  end
+  def hang_out
+    puts "My favorite hangout spot is the #{@location}! Next time we meet, I'll definitely #{@favorite_activity}."
+  end
+  def meow
+    puts "Meow! Meow!"
+  end
+end</pre></code>
+
+          <p>Classes are perfect for grouping behaviors (methods) into convenient bundles that allow you to effortlessly create many objects that behave in basically the same way. By creating the class <code class="inline_code">Neighborhood_Cat</code>, I can now create objects that are <b>instances</b> of this class - different neightborhood cats that all <code class="inline_code">meow</code> and <code class="inline_code">hang_out</code> (these are the methods bundled in the class), but have different <code class="inline_code">location</code>s and <code class="inline_code">favorite_activity</code>s (these are the arguments passed into the <code class="inline_code">initialize</code> method).</p>
+
+        <img class="blog_post_img" src="../imgs/neighborhood_cat.png" alt="Title" />
+
+          <p>Each Neighborhood cat has a favorite <code class="inline_code">location</code> and an expected <code class="inline_code">favorite_activity</code>, so I'll make those the arguments for <code class="inline_code">Neighborhood_Cat</code>'s <code class="inline_code">initialize</code> method (<code class="inline_code">initialize</code> gets called each time we create a new instance of a class).</p>
+
+<p></p>
+
+        <pre><code>brown_cat = Neighborhood_Cat.new("corner deli checkout counter", "stay asleep while you try to get my attention")
+brown_cat.hang_out
+brown_cat.meow
+
+black_cat = Neighborhood_Cat.new("overgrown lot next to the Catholic School", "run away and then look back at you like I want you to chase me")
+black_cat.hang_out
+black_cat.meow
+
+grey_cat = Neighborhood_Cat.new("new duplex close to the subway stop", "butt my head against your hand")
+grey_cat.hang_out
+grey_cat.meow</pre></code>
+
+        <p>Sweet! We created new instances of our <code class="inline_code">Neighborhood_cats</code> class and called the methods on each instance. Here's what we'll get when we run this in our terminal:</p>
+
+        <pre><code>=> My favorite hangout spot is the corner deli checkout counter! Next time we meet, I'll definitely stay asleep while you try to get my attention.
+=> Meow! Meow!
+=> My favorite hangout spot is the overgrown lot next to the Catholic School! Next time we meet, I'll definitely run away and then look back at you like I want you to chase me.
+=> Meow! Meow!
+=> My favorite hangout spot is the new duplex close to the subway stop! Next time we meet, I'll definitely butt my head against your hand.
+=> Meow! Meow!</pre></code>
+
+        <p>Awesome! Keeping all those cats straight is pretty simple with a class. Don't forget to greet your furry neighbors!</p>
+
+        <div class="blog_post_footer">November 9th, 2014</div>
+
+      </div>
+    </div>
+
+    <div id="footer_nav">
+      <a id="left-arrow" href="c5-feedback.html">
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a id="right-arrow" href="c4-tech-issues.html">
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </div>
+
+
+    </body>
+  </html>

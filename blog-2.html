@@ -1,0 +1,255 @@
+<html>
+
+<head>
+  <title>Rosa Pergams</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/blog.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body class="blog-body">
+
+  <header>
+    <div class="blog-nav">
+      <ul>
+        <li><a id="contact_button" class="main_nav_button smoothScroll" href="index.html#contact">Contact</a></li>
+        <li><a id="about_button" class="main_nav_button smoothScroll" href="index.html#iamrosa">About</a></li>
+        <li><a id="projects_button" class="main_nav_button smoothScroll" href="index.html#projects">Projects</a></li>
+        <li><a class="main_nav_button" href="blog-0.html">Blog</a></li>
+      </ul>
+    </div class="blog-nav">
+  </header>
+
+    <div class="blog_post">
+
+      <div class="tagline">
+        <div class="tagline_1"><a id="blog_single" href="blog/t5-ruby-classes.html">Ruby Classes</a></div>
+        <div class="tagline_2">Greeting the wildlife with ordered expectations.</div>
+      </div>
+
+      <div class="content">
+
+        <p>Not long after moving a stone's throw South of Brooklyn's Prospect Park about six months ago, I fell in love with the neighborhood's WILDLIFE. We're talking squirrels. Sparrows. And to my purest delight, we've got cats on cats on cats EVERYWHERE.</p>
+
+        <p>To Ruby-document some of my favorite feline neighbors, I've created the following <b>class</b> called <code class="inline_code">Neighborhood_Cat</code>.
+
+        <pre><code>class Neighborhood_Cat
+  def initialize(location, favorite_activity)
+    @location = location
+    @favorite_activity = favorite_activity
+  end
+  def hang_out
+    puts "My favorite hangout spot is the #{@location}! Next time we meet, I'll definitely #{@favorite_activity}."
+  end
+  def meow
+    puts "Meow! Meow!"
+  end
+end</pre></code>
+
+        <p>Classes are perfect for grouping behaviors (methods) into convenient bundles that allow you to effortlessly create many objects that behave in basically the same way. By creating the class <code class="inline_code">Neighborhood_Cat</code>, I can now create objects that are <b>instances</b> of this class - different neightborhood cats that all <code class="inline_code">meow</code> and <code class="inline_code">hang_out</code> (these are the methods bundled in the class), but have different <code class="inline_code">location</code>s and <code class="inline_code">favorite_activity</code>s (these are the arguments passed into the <code class="inline_code">initialize</code> method).</p>
+
+        <img class="blog_post_img" src="imgs/neighborhood_cat.png" alt="Title" />
+
+        <p>Each Neighborhood cat has a favorite <code class="inline_code">location</code> and an expected <code class="inline_code">favorite_activity</code>, so I'll make those the arguments for <code class="inline_code">Neighborhood_Cat</code>'s <code class="inline_code">initialize</code> method (<code class="inline_code">initialize</code> gets called each time we create a new instance of a class).</p>
+
+<p></p>
+
+        <pre><code>brown_cat = Neighborhood_Cat.new("corner deli checkout counter", "stay asleep while you try to get my attention")
+brown_cat.hang_out
+brown_cat.meow
+
+black_cat = Neighborhood_Cat.new("overgrown lot next to the Catholic School", "run away and then look back at you like I want you to chase me")
+black_cat.hang_out
+black_cat.meow
+
+grey_cat = Neighborhood_Cat.new("new duplex close to the subway stop", "butt my head against your hand")
+grey_cat.hang_out
+grey_cat.meow</pre></code>
+
+        <p>Sweet! We created new instances of our <code class="inline_code">Neighborhood_cats</code> class and called the methods on each instance. Here's what we'll get when we run this in our terminal:</p>
+
+        <pre><code>=> My favorite hangout spot is the corner deli checkout counter! Next time we meet, I'll definitely stay asleep while you try to get my attention.
+=> Meow! Meow!
+=> My favorite hangout spot is the overgrown lot next to the Catholic School! Next time we meet, I'll definitely run away and then look back at you like I want you to chase me.
+=> Meow! Meow!
+=> My favorite hangout spot is the new duplex close to the subway stop! Next time we meet, I'll definitely butt my head against your hand.
+=> Meow! Meow!</pre></code>
+
+        <p>Awesome! Keeping all those cats straight is pretty simple with a class. Don't forget to greet your furry neighbors!</p>
+
+        <div class="blog_post_footer">November 9th, 2014</div>
+
+      </div>
+    </div>
+
+    <div class="blog_post">
+
+      <div class="tagline">
+        <div class="tagline_1"><a id="blog_single" href="blog/c4-tech-issues.html">Lighting the Fire</a></div>
+        <div class="tagline_2">Seven Women of Color Opening The Doors to Web Development.</div>
+      </div>
+
+      <div class="content">
+        <p class="blog_post_quote">"I would tell her, never apologize for the space you occupy in the world. Make your strides long, wide and sure."
+        <br>- Chimamanda Ngozi Adichie
+        </p>
+        <p>So, I must say that I've been a black woman for quite a while now. I'm doing my best to shove my foot into the door of computer programming.</p>
+
+        <p>Let me tell you, that even with access to Dev Bootcamp's infinitely supportive community, the gateway to the Code-World feels hefty sometimes. I believe I've developed a mid-sized <a class="blog_post_link" href="https://medium.com/@aliciatweet/overcoming-impostor-syndrome-bdae04e46ec5" target="_blank">imposter-syndrome-shaped,</a> eggplant-esque bruise on both pinky toes.</p>
+
+        <p>I'm certain, however, that this door is beginning to open for women and People of Color due to the amazing work of folks like the seven bad-ass hackers (listed in no particular order) you're about to read about. These ladies are commited to spreading the tech love around, and they are changing the face of computer programming.</p>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/blog/lighting-the-fire/saron_yitbarek.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><a class="blog_post_link" href="https://twitter.com/saronyitbarek" target="_blank">Saron Yitbarek</a></h3>
+            <p>Saron Yitbarek runs the weekly <a class="blog_post_link" href="http://www.codenewbie.org/" target="_blank">CodeNewbie</a> TwitterChat with fellow Web Dev <a class="blog_post_link" href="https://twitter.com/CarlosPlusPlus" target="_blank">Carlos Lazo.</a> This supportive community of programmers and people learning to code gathers every Wednesday at 9PM EST to connect through resources, stories, and support.
+            <p><b>QUOTE</b> "Take every opportunity you can, especially if it scares you."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/blog/lighting-the-fire/kathryn_finney.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><a class="blog_post_link" href="https://twitter.com/kathrynfinney" target="_blank">Kathryn Finney</a></h3>
+            <p>Kathryn Finney is the founder of <a class="blog_post_link" href="http://www.digitalundivided.com/" target="_blank">DigitalUndivided</a>, an organization that produces programs and events aimed at increasing the number of women of color in the tech industry.</a></p>
+            <p><b>QUOTE</b> "Diversity in tech is important for everyone ... Be on the cutting edge, go where people aren&#8217;t looking. You&#8217;re going to have a very difficult time if you&#8217;re looking in the same pool as everyone else."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/blog/lighting-the-fire/amanda_spann.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><a class="blog_post_link" href="https://twitter.com/amandaspann" target="_blank">Amanda Spann</a></h3>
+            <p>Inspired by <a class="blog_post_link" href="http://www.blackgirlscode.com/" target="_blank">Black Girls Code</a> in San Francisco, Amanda Spann founded Black Girls Hack with three others. Black Girls Hack is the first non-profit hackathon series specifically targeting Women of Color.</p>
+            <p><b>QUOTE</b> "We&#8217;re all African American, and we all have tech startups. One thing we all struggle with is feeling like we&#8217;re the only ones ... there are so few blacks in technology."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/blog/lighting-the-fire/felicia_ogarrio.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><a class="blog_post_link" href="https://twitter.com/feliciaogarro" target="_blank">Felicia O&#8217;Garro</a></h3>
+            <p>Felicia O&#8217;Garro decided to teach herself how to code while working full-time. She and her <a class="blog_post_link" href="https://twitter.com/jsogarro" target="_blank">husband</a> founded <a class="blog_post_link" href="http://codecrew.co/" target="_blank">Code Crew</a>, a flourishing learning space that has already taught thousands how to code in a year and a half.</p>
+            <p><b>QUOTE</b> "When we found out that coding is something that you can teach yourself, we were overly excited."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/blog/lighting-the-fire/courtney_ervin.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><a class="blog_post_link" href="https://twitter.com/courteneyervin" target="_blank">Courtney Ervin</a></h3>
+            <p>Courtney Ervin is a teacher at <a class="blog_post_link" href="http://devbootcamp.com/learn-more/" target="_blank">Dev Bootcamp&#8217;s Web Development Immersive.</a> Because of her self-taught programming background, she loves having the opportunity to create supportive and challenging environments for new programmers.</p>
+            <p><b>QUOTE</b> "Life goal: I want to be the @NICKIMINAJ of software engineering."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/blog/lighting-the-fire/kimberly_bryant.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><a class="blog_post_link" href="https://twitter.com/6gems" target="_blank">Kimberly Bryant</a></h3>
+            <p>Kimberly Bryant launched <a class="blog_post_link" href="http://www.blackgirlscode.com/" target="_blank">Black Girls Code</a> to empower and mentor young women of color by highlighting the achievement of women in tech. Since 2011, this non-profit has taught over two thousand girls ages 7-17 about computer programming and digital technology.</p>
+            <p><b>QUOTE</b> "When bringing a new idea to life, be sure you start the journey with integrity. It&#8217;s equally if not more important than the idea itself."</p>
+          </div>
+        </div>
+
+        <div id="blog_list_info" class="clearfix">
+          <img id="blog_list_img" class="blog_list_stuff" src="imgs/blog/lighting-the-fire/christina_l_h.png" />
+
+          <div id="blog_list_text" class="blog_list_stuff">
+            <h3><a class="blog_post_link" href="https://twitter.com/clewishalpern" target="_blank">Christina Lewis Halpern</a></h3>
+            <p>An idealist based in New York City, Lewis Halpern prepares black and Latino teenage boys for awesome tech careers through her non-profit <a class="blog_post_link" href="http://www.allstarcode.org/" target="_blank">All Star Code</a>.</p>
+            <p><b>QUOTE</b> "I thought, If my father were a young man today, where would he want to go? He wouldn't want to go to law school. He'd want to be in Silicon Valley. So I thought, well, are there any black people in the space? No. Has it already been diversified? No."</p>
+          </div>
+        </div>
+
+        <p>So, that's my list! Be sure to follow these game-changers on twitter, and be proud to be you.</p>
+
+        <div class="blog_post_footer">November 2nd, 2014</div>
+
+      </div>
+    </div>
+
+    <div class="blog_post">
+
+      <div class="tagline">
+        <div class="tagline_1"><a id="blog_single" href="blog/t4-enumerable-methods.html">Ruby's Map Method</a></div>
+        <div class="tagline_2">An Enumerable for the well-adapted glutton.</div>
+      </div>
+
+      <div class="content">
+
+        <p>Let's say (with inspiration from a most clever <a class="blog_post_link" href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a> challenge) we've got some bagels, and want another bagel. And, of course, we wanna code about it.</p>
+
+        <pre><code>more_bagels = ["I've" "got" 2 "bagels" "!" "Now" "I" "want" 3 "."]</pre></code>
+
+        <p>Great! Awesome start. The array <code class="inline_code">more_bagels</code> Tells the whole wanting-another-bagel story. UNLESS, of course, I get that extra bagel, in which case it's only natural to want one more.</p>
+
+        <p>But, how might I freely adjust my <code class="inline_code">more_bagels</code> array to properly emulate my bottomless gluttony? It's time to bust out Ruby's <code class="inline_code">#map</code> method!</p>
+
+        <p>But why  <code class="inline_code">#map</code>? Well, I want to change the numbers in my array based on the number of bagels I have, so I'll create a method that accepts both an array and a number as arguments. Unlike <code class="inline_code">#each</code>, which just does something to each element without storing the results anywhere, <code class="inline_code">#map</code> creates a new array with the results of whatever action you're performing. It's the same as the <code class="inline_code">#collect</code> method, so  you can think of <code class="inline_code">#map</code> as 'collecting' the results of an action into a brand new array.</p>
+
+        <p>In my case, I'm executing some delicious addition unto all of the numbers in my array.</p>
+
+        <pre><code>def bagels_on_bagels(array, num)
+  array.map { |obj|
+    if obj.is_a?Fixnum
+      obj + num
+    else
+      obj
+  end }
+end</pre></code>
+
+        <p>Cool! So, I'm letting that <code class="inline_code">#map</code> method have at it on my <code class="inline_code">array</code> argument, finding those <code class="inline_code">Fixnum</code>s and adding some <code class="inline_code">num</code>s to them. Time to call my new method:</p>
+
+        <pre><code>bagels_on_bagels(more_bagels, 7)</pre></code>
+
+        <p>Alright! let's see what all this method madness returns.</p>
+
+        <pre><code>=> ["I've" "got" 9 "bagels" "!" "Now" "I" "want" 10 "."]</pre></code>
+
+        <img class="blog_post_img" src="imgs/bagels.png" alt="Title" />
+
+        <p>Perfect! One more bagel, no matter how many I've already hoarded inside of my face. So, <code class="inline_code">#map</code> created a new array for me with the results of performing my method on each element! The <code class="inline_code">#map</code> sure is great for returning an ever-adjusting desire for more.</p>
+
+        <p>Wanna fill up on <code class="inline_code">#map</code>, <code class="inline_code">#select</code> and other life-changing Enumerable Methods? Indulge youself with <a class="blog_post_link" href="https://twitter.com/ErikTrautman" target="_blank">Erik Trauman's</a> lovely <a class="blog_post_link" href="http://www.eriktrautman.com/posts/ruby-explained-map-select-and-other-enumerable-methods" target="_blank">blog-post.</a></p>
+
+        <div class="blog_post_footer">November 2nd, 2014</div>
+
+      </div>
+    </div>
+
+    <div id="footer_nav">
+      <a id="left-arrow" href="blog-0.html">
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a id="right-arrow" href="blog-3.html">
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/blog-nav.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){
+                $('header').addClass("sticky");
+            }
+            else{
+                $('header').removeClass("sticky");
+            }
+        });
+    </script>
+
+  </body>
+  </html>

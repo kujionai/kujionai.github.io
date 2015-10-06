@@ -1,0 +1,134 @@
+<html>
+
+<head>
+  <title>Rosa Pergams</title>
+  <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
+
+  <style>
+  .no-cssanimations .rw-wrapper .rw-sentence span:first-child {
+    opacity: 1;
+  }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <nav>
+        <div id="sidebar">
+          <ul id='sidebar-menu'>
+            <li><a id="contact_button" class="main_nav_button smoothScroll" href="#contact">Contact</a></li>
+            <li><a id="about_button" class="main_nav_button smoothScroll" href="#about">About</a></li>
+            <li><a id="projects_button" class="main_nav_button smoothScroll" href="#projects">Projects</a></li>
+            <li><a class="main_nav_button" href="blog-0.html">Blog</a></li>
+          </ul>
+          <div id="social" class="header">
+            <a href="https://github.com/rosapergams" target="_blank">
+              <i class="social_icon fa fa-github"></i>
+            </a>
+            <a href="https://twitter.com/rosapergams" target="_blank">
+              <i class="social_icon fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rosapergams" target="_blank">
+              <i class="social_icon fa fa-linkedin"></i>
+            </a>
+            <a href="http://instagram.com/rosapergams" target="_blank">
+              <i class="social_icon fa fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="swipe-area"></div>
+          <a href="#" data-toggle=".container" id="sidebar-toggle">
+            <div class="bars">
+              <i class="fa fa-bars"></i>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div id="headline">
+      <div class="headline-content">
+
+        <div id="rosa_pergams">
+          <a class="smoothScroll" href="#about">Rosa Pergams</a>
+        </div>
+
+        <div class="web-dev">Web Developer</div>
+        <!-- <div class="border-bottom"></div> -->
+      </div>
+    </div>
+
+  </div>
+
+<!--   <div class="scroll-down-arrow">
+    <i class="fa fa-angle-down"></i>
+  </div> -->
+
+  <div id="barely_any_space"></div>
+
+  <div class="body">
+
+    <div class="body-white">
+      <div id="about">
+        <img class="plant" src="imgs/succulent.png" />
+        <div class="description ">
+          <p>Hi! My name's Rosa. I love creative problem-solving, accessible design, and learning anything from passionate people.</p>
+          <p>I'm thrilled to dive into the world of Web Development where I can tackle challenges, celebrate successes, and learn amazing stuff along the way.</p>
+          <p>I get excited about working cooperatively, and look forward to joining a team where I can contribute in every way I can as well as learn from others.</p>
+        </div>
+      </div>
+
+      <div  id="contact" class="contact">
+        <div class="contact-title">contact</div>
+        <a class="email" href="mailto:rosa@pergams.com?Subject=Hello" target="_top">rosa@pergams.com</a>
+        <div class="social-contact">
+          <a href="https://github.com/rosapergams" target="_blank">
+            <i class="social_icon-contact fa fa-github"></i>
+          </a>
+          <a href="https://twitter.com/rosapergams" target="_blank">
+            <i class="social_icon-contact fa fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rosapergams" target="_blank">
+            <i class="social_icon-contact fa fa-linkedin"></i>
+          </a>
+          <a href="http://instagram.com/rosapergams" target="_blank">
+            <i class="social_icon-contact fa fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+$(window).load(function(){
+  $("[data-toggle]").click(function() {
+    var toggle_el = $(this).data("toggle");
+    $(toggle_el).toggleClass("open-sidebar");
+  });
+
+  $('#sidebar-menu a').on('click', function() {
+    $('#sidebar-toggle').click();
+  });
+});
+
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 1){
+  //     $('#sidebar-toggle').click();
+  //   }
+  // });
+</script>

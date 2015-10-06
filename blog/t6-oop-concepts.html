@@ -1,0 +1,91 @@
+`<html>
+
+<head>
+  <title>Rosa Pergams</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../javascripts/blog-nav.js"></script>
+</head>
+
+<body class="blog-body">
+
+  <header>
+    <div class="blog-nav">
+      <ul>
+        <li><a id="contact_button" class="main_nav_button smoothScroll" href="../index.html#callme">Contact</a></li>
+        <li><a id="about_button" class="main_nav_button smoothScroll" href="../index.html#iamrosa">About</a></li>
+        <li><a id="projects_button" class="main_nav_button smoothScroll" href="../index.html#projects">Projects</a></li>
+        <li><a class="main_nav_button" href="../blog-0.html">Blog</a></li>
+      </ul>
+    </div class="blog-nav">
+  </header>
+
+     <div class="blog_post">
+
+      <div class="tagline">
+        <div class="tagline_1">Blocs, Procs, &amp; Lambdas</div>
+        <div class="tagline_2">What are these? How do they work?</div>
+      </div>
+
+      <div class="content">
+
+        <p class="blog_post_quote">"I have not failed. I've just found 10,000 ways that won't work."
+        <br>
+        - Thomas A. Edison</p>
+
+        <p>As a college student with a bizaar schedule, I came to appreciate the art of napping. So much so, that I even attempted to fill a miniature dictionary documenting distinct doze-types. This project (and its inspiration, the naps themselves) stopped almost immediately when I moved to New York City, and the reason is coffee.</p>
+
+        <!--<img class="blog_post_img" src="../imgs/coffee_heart.png" alt="Title" />-->
+        <img class="blog_post_img" src="http://media3.giphy.com/media/U6P1Lp8tbZBfy/giphy.gif" alt="Title" />
+
+        <p>It's not like I started drinking coffee <i>because</i> I wanted stay awake for twelve-hour bouts. It's just that, bugging out at a tiny screen in my bedroom was getting a little lonely. When I discovered the fellowship championed by my local coffee shops, I sauntered right in and ordered myself... a coffee, just because I wasn't really sure what else I could get on the cheap. The rest, if I may, is history.</p>
+
+        <pre><code>proverbs = ["Coffee. The most important meal of the day.", "All you need is love. And more coffee.", "A yawn is a silent scream for coffee."]</code></pre>
+
+        <p>You can see that, right? It's a Ruby array with three strings in it. When the time comes to share this astuteness, there's thousands of ways to do it. Let's get it done with a <b>bloc</b>.</p>
+
+        <p>Blocs are bits of code that do <i>some awesome thing</i>. They can be defined with either the keywords <code class="inline_code">do</code> and <code class="inline_code">end</code> or with curly braces <code class="inline_code">{}</code>.</p>
+
+        <pre><code>proverbs.each do |proverb|
+  puts proverb
+end
+
+proverbs.each { |proverb| puts proverb }</code></pre>
+
+        <p>You can think of blocs as a way to create nameless methods. Since they don't have a name, we can only call them once - meaning that after the blocs above <code class="inline_code">puts</code> our <code class="inline_code">proverbs</code>, they'll vanish forever.</p>
+
+        <p>That's great - except wisdom should be shared, not liquefied. Let's wrap our bloc in an object called a <b>proc</b>, which is a lot like a method. Awesome! Our bloc now has a name, and that name is <code class="inline_code">coffee</code>.</p>
+
+        <pre><code>pass_it_on = Proc.new { |proverb| puts proverb }
+coffee = proverbs.each(&amp;pass_it_on)</code></pre>
+
+        <p>Procs have a doppelganger that go by the name of <b>lambda</b>. Which, Like procs, are objects. In fact, they're identical to procs in nearly every way.</p>
+
+        <pre><code>pass_it_on = lambda { |proverb| puts proverb }
+coffee = proverbs.each(&amp;pass_it_on)</code></pre>
+
+      <p>However, there are a <i>couple</i> of differences between procs and lambdas. Lambdas keep track of the arguments passed to them (procs do not) and return an error if there's an inconsistemncy. Also, when they return, lambdas pass control back to the calling method (procs return immediately without going back to the calling method).</p>
+
+      <p>That's a little about procs, blocs, lambdas, naps, and coffee! There's always more than one fantastic way to reach any goal - and maybe a lot of other ways, too.</p>
+
+        <div class="blog_post_footer">November 14th, 2014</div>
+
+      </div>
+    </div>
+
+    <div id="footer_nav">
+      <a id="left-arrow" href="c6-stereotype-threat.html">
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a id="right-arrow" href="c5-feedback.html">
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </div>
+
+  </body>
+  </html>
