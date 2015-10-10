@@ -30,36 +30,49 @@ body {
   z-index: 10;
 }
 
+.projects {
+  font-size: 0px;
+  position: relative;
+}
+
+.project {
+  /*border: 5px solid salmon;*/
+  background-color: salmon;
+  width: 50%;
+  height: 400px;
+  display: inline-block;
+}
+
 .project-1 {
-  height: 100vh !important;
+  /*height: 100vh !important;*/
   background: url(../imgs/tylerlewis.jpg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .project-3 {
-  height: 100vh !important;
+  /*height: 100vh !important;*/
   background: url(../imgs/solidarigif.jpg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .project-2 {
-  height: 100vh !important;
+  /*height: 100vh !important;*/
   background: url(../imgs/jurior.jpeg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .project-4 {
-  height: 100vh !important;
+  /*height: 100vh !important;*/
   background: url(../imgs/lingolive.jpg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .project-description-container {
@@ -206,6 +219,7 @@ a {
   -webkit-transition: all .2s ease-in-out;
   margin: 42px 46px 0px 0px;
 }
+
 .nav-icon:after, 
 .nav-icon:before, 
 .nav-icon span, .nav-icon-active:after, 
@@ -250,6 +264,8 @@ nav a {
   margin: 0px 0px 30px 15px;
   outline: none;
   color: #d8d8d8;
+  color: #a8a8a8;
+  color: rgb(79,79,79);
   font-size: 1.1em;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -296,11 +312,13 @@ nav a {
 a .social_icon {
   font-size: 1.6em;
   color: #d8d8d8;
+  color: #a8a8a8;
+  color: rgb(79,79,79);
   padding: .26em .32em;
 }
 
 a .social_icon:hover {
-  color: #b8b8b8;
+  /*color: #888;*/
 }
 
 /* --------------------------------
@@ -353,6 +371,7 @@ ABOUT
 #about {
   color: #a6a6a6;
   text-align: center;
+  color: rgb(79,79,79);
   /**/
   width: 130%;
   margin-left: -15%;
@@ -535,7 +554,7 @@ a .social_icon-contact:hover {
 #iamrosa img {
   /*height: 150px;*/
   height: 100px;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 /* --------------------------------
