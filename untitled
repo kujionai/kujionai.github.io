@@ -1,0 +1,20 @@
+
+
+
+install rvm
+install ruby -v 2.0.0-p196
+install nokogiri directly
+install ps directly
+
+rvm implode
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+rvm install ruby 2.0.0
+gem install nokogiri --version 1.6.1 --no-document 
+gem install pg --version 0.17.0 --no-document
+gem install bundler
+gem install railties
+bundle install
+
+when you run into this:
+pg_ext.bundle: [BUG] Segmentation fault
+

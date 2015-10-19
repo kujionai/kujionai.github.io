@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
-	<!-- <img class="triangles" src="triangles.gif" /> -->
+	<img class="triangles" src="triangles.gif" />
 
 	<div class="loaded">
 		<div id="sb-site" class="top-padding">
@@ -44,10 +44,11 @@
 					</div>
 				</div>
 
-				<div id="iamrosa" class="parallax__group">
+				<div id="parallax-body" class="parallax__group">
 					<div class="parallax__layer parallax__layer--base">
 						<a href="#iamrosa"><i class="fa fa-angle-down"></i></a>
-						<div class="title">
+
+						<div class="title" id="iamrosa">
 							<div id="about">
 								<!-- <img class="profile-img" src="profile-img.JPG" /> -->
 								<!-- <img class="plant" src="succulent.png" /> -->
@@ -68,22 +69,112 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
 
-				<div id="projects">
-					<div class="projects">
-						<div class="project project-1">
+
+						<div id="projects">
+							<div class="projects">
+								<div class="project project-1">
+								</div>
+								<div class="project project-2">
+								</div>
+								<div class="project project-3">
+								</div>
+								<div class="project project-4">
+								</div>
+							</div>
 						</div>
-						<div class="project project-2">
+
+						<div id="callme">
+							<div  id="contact" class="contact">
+								<div class="contact-title">contact</div>
+								<a class="email" href="mailto:rosa@pergams.com?Subject=Hello" target="_top">rosa@pergams.com</a>
+								<div class="social-contact">
+									<a href="https://github.com/rosapergams" target="_blank">
+										<i class="social_icon-contact fa fa-github"></i>
+									</a>
+									<a href="https://twitter.com/rosapergams" target="_blank">
+										<i class="social_icon-contact fa fa-twitter"></i>
+									</a>
+									<a href="https://www.linkedin.com/in/rosapergams" target="_blank">
+										<i class="social_icon-contact fa fa-linkedin"></i>
+									</a>
+									<a href="http://instagram.com/rosapergams" target="_blank">
+										<i class="social_icon-contact fa fa-instagram"></i>
+									</a>
+								</div>
+							</div>
 						</div>
-						<div class="project project-3">
-						</div>
-						<div class="project project-4">
-						</div>
+
 					</div>
 				</div>
-					<!-- <div class="slider single-item">
+			</div>
+		</div>
+
+		<div class="sb-slidebar sb-right">
+			<div id="sidebar">
+				<ul id='sidebar-menu'>
+					<nav class="cl-effect-5">
+						<a id="contact_button button" class="main_nav_button smoothScroll" href="#callme"><span data-hover="Contact">Contact</span></a>
+						<a id="about_button" class="main_nav_button smoothScroll" href="#iamrosa"><span data-hover="About">About</span></a>
+						<a id="projects_button" class="main_nav_button smoothScroll" href="#projects"><span data-hover="Projects">Projects</span></a>
+						<a class="main_nav_button" href="blog-0.html"><span data-hover="Blog">Blog</span></a>
+					</nav>
+				</ul>
+				<div id="social" class="header">
+					<a href="https://github.com/rosapergams" target="_blank">
+						<i class="social_icon fa fa-github"></i>
+					</a>
+					<a href="https://twitter.com/rosapergams" target="_blank">
+						<i class="social_icon fa fa-twitter"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/rosapergams" target="_blank">
+						<i class="social_icon fa fa-linkedin"></i>
+					</a>
+					<a href="http://instagram.com/rosapergams" target="_blank">
+						<i class="social_icon fa fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="slidebar/slidebars/slidebars.js"></script>
+	<script src="slick/slick.js"></script>
+	<link href="slick/slick.css" rel="stylesheet"/>
+	<script>
+	$(document).ready(function() {
+		$(window).load(function(){
+			$('.loaded').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0},'slow');
+			$('.triangles').css({opacity: 1.0, display: "none"}).animate({opacity: 0.0, display: "none"},'slow');
+		});
+	});
+
+	(function($) {
+		$(document).ready(function() {
+			$.slidebars();
+			$('.single-item').slick({
+				speed: 750,
+				autoplay: true,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			});
+		});
+		$(window).resize(function(){
+			$(".slider").width($(window).width());
+		});
+		$(window).load(function(){
+			$(".slider").width($(window).width());
+		});
+	}) (jQuery);
+	</script>
+
+</body>
+</html>
+
+
+						<!-- <div class="slider single-item">
 
 						<div class="project-4">
 							<div class="project-description-container">
@@ -126,89 +217,3 @@
 						</div>
 					</div>
 				</div> -->
-
-				<div id="callme">
-					<div  id="contact" class="contact">
-						<div class="contact-title">contact</div>
-						<a class="email" href="mailto:rosa@pergams.com?Subject=Hello" target="_top">rosa@pergams.com</a>
-						<div class="social-contact">
-							<a href="https://github.com/rosapergams" target="_blank">
-								<i class="social_icon-contact fa fa-github"></i>
-							</a>
-							<a href="https://twitter.com/rosapergams" target="_blank">
-								<i class="social_icon-contact fa fa-twitter"></i>
-							</a>
-							<a href="https://www.linkedin.com/in/rosapergams" target="_blank">
-								<i class="social_icon-contact fa fa-linkedin"></i>
-							</a>
-							<a href="http://instagram.com/rosapergams" target="_blank">
-								<i class="social_icon-contact fa fa-instagram"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="sb-slidebar sb-right">
-			<div id="sidebar">
-				<ul id='sidebar-menu'>
-					<nav class="cl-effect-5">
-						<a id="contact_button button" class="main_nav_button smoothScroll" href="#callme"><span data-hover="Contact">Contact</span></a>
-						<a id="about_button" class="main_nav_button smoothScroll" href="#iamrosa"><span data-hover="About">About</span></a>
-						<a id="projects_button" class="main_nav_button smoothScroll" href="#projects"><span data-hover="Projects">Projects</span></a>
-						<a class="main_nav_button" href="blog-0.html"><span data-hover="Blog">Blog</span></a>
-					</nav>
-				</ul>
-				<div id="social" class="header">
-					<a href="https://github.com/rosapergams" target="_blank">
-						<i class="social_icon fa fa-github"></i>
-					</a>
-					<a href="https://twitter.com/rosapergams" target="_blank">
-						<i class="social_icon fa fa-twitter"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/rosapergams" target="_blank">
-						<i class="social_icon fa fa-linkedin"></i>
-					</a>
-					<a href="http://instagram.com/rosapergams" target="_blank">
-						<i class="social_icon fa fa-instagram"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="slidebar/slidebars/slidebars.js"></script>
-	<script src="slick/slick.js"></script>
-	<link href="slick/slick.css" rel="stylesheet"/>
-	<script>
-	$(document).ready(function() {
-		$(window).load(function(){
-			$('.loaded').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0},'slow');
-			// $('.triangles').css({opacity: 1.0, display: "none"}).animate({opacity: 0.0, display: "none"},'slow');
-		});
-	});
-
-	(function($) {
-		$(document).ready(function() {
-			$.slidebars();
-			$('.single-item').slick({
-				speed: 750,
-				autoplay: true,
-				slidesToShow: 1,
-				slidesToScroll: 1
-			});
-		});
-		$(window).resize(function(){
-			$(".slider").width($(window).width());
-		});
-		$(window).load(function(){
-			$(".slider").width($(window).width());
-		});
-	}) (jQuery);
-	</script>
-
-</body>
-</html>
