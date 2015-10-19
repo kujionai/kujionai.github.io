@@ -153,10 +153,10 @@ Animation
 */
 
 .sb-slide, #sb-site, .sb-site-container, .sb-slidebar {
-	-webkit-transition: -webkit-transform .25s ease;
-	-moz-transition: -moz-transform .25s ease;
-	-o-transition: -o-transform .25s ease;
-	transition: transform .25s ease;
+	-webkit-transition: -webkit-transform .5s ease;
+	-moz-transition: -moz-transform .5s ease;
+	-o-transition: -o-transform .5s ease;
+	transition: transform .5s ease;
 	-webkit-transition-property: -webkit-transform, left, right;
 	-webkit-backface-visibility: hidden;
 }
@@ -185,7 +185,7 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 /* Fixed position examples */
 
 #fixed-top {
-	position: fixed;
+	position: fixed;`
 	top: 0;
 	width: 100%;
 	z-index: 4;
