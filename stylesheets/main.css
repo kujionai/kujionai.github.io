@@ -156,9 +156,7 @@ a .social_icon {
   padding: .26em .32em;
 }
 
-a .social_icon:hover {
-  opacity: 0.08;
-}
+a .social_icon:hover {}
 
 /* --------------------------------
 PARALLAX BASE STYLES
@@ -313,7 +311,6 @@ ABOUT
   color: #a6a6a6;
   text-align: center;
   color: rgb(79,79,79);
-  /*padding-bottom: 50px;*/
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -440,6 +437,7 @@ PROJECTS
 
 .projects {
   width: 100%;
+  padding: 100px 0px;
 }
 
 .project {
@@ -459,7 +457,7 @@ CONTACT
 -------------------------------- */
 
 #callme {
-  background-color: #f2f2f2;
+  background-color: #fff;
   height: 500px;
   position: relative;
 }
@@ -477,7 +475,7 @@ CONTACT
   margin-top: 2em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #e8e8e8;
+  color: #f6f6f6;
   font-family: 'Josefin Sans';
   font-size: 1em;
   letter-spacing: .06em;
@@ -487,19 +485,19 @@ CONTACT
 .email {
   font-family: 'Josefin Sans';
   font-weight: 700;
-  color: #d8d8d8;
+  color: #e8e8e8;
   font-size: 2em;
   letter-spacing: .06em;
 }
 
 a .social_icon-contact {
-  color: #e8e8e8;
+  color: #f6f6f6;
   font-size: 2.8em;
   margin: .8em .2em 0px .2em;
 }
 
 a .social_icon-contact:hover {
-  color: #d8d8d8;
+  color: #e8e8e8;
 }
 
 /* --------------------------------
