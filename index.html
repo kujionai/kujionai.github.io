@@ -19,10 +19,10 @@
 		<div class="nav-bar">
 			<div class="name">Rosa Pergams</div>
 			<ul class="nav-list">
-				<li><a href="">Projects</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">Blog</a></li>
+				<li><a class="smoothScroll" href="#projects">Projects</a></li>
+				<li><a class="smoothScroll" href="#parallax-body">About</a></li>
+				<li><a class="smoothScroll" href="#callme">Contact</a></li>
+				<li><a class="smoothScroll" href="http://rosapergams.tumblr.com/">Blog</a></li>
 			</ul>
 		</div>
 
@@ -30,7 +30,7 @@
 			<div class="parallax">
 
 				<div id="thebeginning" class="parallax__group">
-					<!-- <div id="fixed-top" class="sb-slide">
+<!-- 					<div id="fixed-top" class="sb-slide">
 						<span class="sb-toggle-right">
 							<div class="nav-icon">
 								<span></span>
@@ -53,7 +53,8 @@
 							<div id="about">
 								<div class="about-content"
 								<div class="description">
-									<div class="bio bio-body"><p>"No one is going to give you the education you need to overthrow them."</p><p class="quoter">- Assata Shakur -</p></div>
+									<div class="bio bio-body"><p>"Never apologize for the space you occupy in the world. Make your strides long, wide and sure."</p>
+									<p class="quoter">- Chimamanda Ngozi Adichie -</p></div>
 								</div>
 							</div>
 						</div>
@@ -61,7 +62,7 @@
 						<div id="projects">
 							<div class="projects">
 								<div class="projects-column-1">
-									<a href="" class="project project-1">
+									<a href="http://tylerlewismodels.github.io/" target="_blank" class="project project-1">
 										<div class="project-overlay">
 											<div class="project-text">
 												<div class="project-title">Tyler Lewis</div>
@@ -69,29 +70,45 @@
 											</div>
 										</div>
 									</a>
-									<a href="" class="project project-2">
+									<a href="" target="_blank" class="project project-2">
 										<div class="project-overlay">
 											<div class="project-text">
-												<div class="project-title">Tyler Lewis</div>
-												<div class="project-description">- Design &amp; Front-End Development -</div>
+												<div class="project-title">CityShrub</div>
+												<div class="project-description">- Ideation, UI/UX, Design, Hybrid Mobile App Development, &amp; Front-End Development -</div>
+											</div>
+										</div>
+									</a>
+									<a href="http://www.jurior.com/" target="_blank" class="project project-6">
+										<div class="project-overlay">
+											<div class="project-text">
+												<div class="project-title">Jurior</div>
+												<div class="project-description">- Design, Copy, Video Editing, &amp; Front-End Development -</div>
 											</div>
 										</div>
 									</a>
 								</div>
 								<div class="projects-column-2">
-									<a href="" class="project project-3">
+									<a href="https://github.com/nyc-squirrels-2015/SolidariGif" target="_blank" class="project project-3">
 										<div class="project-overlay">
 											<div class="project-text">
-												<div class="project-title">Tyler Lewis</div>
-												<div class="project-description">- Design &amp; Front-End Development -</div>
+												<div class="project-title">SolidariGif</div>
+												<div class="project-description">- Ideation, UI/UX, Design, Web App Development, &amp; Front-End Development - </div>
 											</div>
 										</div>
 									</a>
-									<a href="" class="project project-4">
+									<a href="http://blog.lingo-live.com/2015/07/16/your-language-learning-progress-reimagined/pure" target="_blank" class="project project-4">
 										<div class="project-overlay">
 											<div class="project-text">
-												<div class="project-title">Tyler Lewis</div>
-												<div class="project-description">- Design &amp; Front-End Development -</div>
+												<div class="project-title">Lingo Live</div>
+												<div class="project-description">- Front-End Development -</div>
+											</div>
+										</div>
+									</a>
+									<a href="http://www.purewow.com/" target="_blank" class="project project-5">
+										<div class="project-overlay">
+											<div class="project-text">
+												<div class="project-title">PureWow</div>
+												<div class="project-description">- Front-End Development -</div>
 											</div>
 										</div>
 									</a>
@@ -162,75 +179,18 @@
   <link href="slick/slick.css" rel="stylesheet"/>
   <script>
   $(document).ready(function() {
-   $(window).load(function(){
-    $('.loaded').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0},'slow');
-    $('.triangles').css({opacity: 1.0, display: "none"}).animate({opacity: 0.0, display: "none"},'slow');
+    $(window).load(function(){
+      $('.loaded').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0},'slow');
+      $('.triangles').css({opacity: 1.0, display: "none"}).animate({opacity: 0.0, display: "none"},'slow');
+    });
   });
- });
 
-  (function($) {
-   $(document).ready(function() {
-    $.slidebars();
-    $('.single-item').slick({
-     speed: 750,
-     autoplay: true,
-     slidesToShow: 1,
-     slidesToScroll: 1
-   });
-  });
-   $(window).resize(function(){
-    $(".slider").width($(window).width());
-  });
-   $(window).load(function(){
-    $(".slider").width($(window).width());
-  });
- }) (jQuery);
+  // (function($) {
+  //   $(document).ready(function() {
+  //     $.slidebars();
+  //   });
+  // }) (jQuery);
   </script>
 
 </body>
 </html>
-
-
-						<!-- <div class="slider single-item">
-
-						<div class="project-4">
-							<div class="project-description-container">
-								<div class="project-descriptions">
-									<div class="project-description project-title">Lingo Live</div>
-									<div class="project-description project-body">Style guide for mobile-ready dashboard - Javascript integration with Chartist API, HTML, CSS, and JQuery.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="project-1">
-							<div class="project-description-container">
-								<div class="project-descriptions">
-									<a href="http://tylerlewismodels.github.io" target="_blank">
-										<div class="project-link project-description project-title">Tyler Lewis</div>
-									</a>
-									<div class="project-description project-body">Fully responsive personal portfolio site - Cross-browser compatible. Built with HTML, CSS, Javascript, &amp; JQuery.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="project-2">
-							<div class="project-description-container">
-								<div class="project-descriptions">
-									<div class="project-description project-title">Jurior</div>
-									<div class="project-description project-body">Startup microsite landing page - Full-concept design, video editing, &amp; copywriting. Built with HTML &amp; CSS.</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="project-3">
-							<div class="project-description-container">
-								<div class="project-descriptions">
-									<a href="https://github.com/rosapergams/SolidariGif" target="_blank">
-										<div class="project-link project-description project-title">SolidariGif</div>
-									</a>
-									<div class="project-description project-body">Web application built with Sinatra - Full-concept design &amp; implementation with ActiveRecord, AJAX, HTML &amp; CSS meant to create dialogue about solidarity through GIF sharing.</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
