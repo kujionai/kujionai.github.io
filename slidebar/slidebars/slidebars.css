@@ -174,7 +174,7 @@ Helper Classes
 }
 
 .sb-slidebar {
-	padding: 14px;
+	/*padding: 14px;*/
 	color: #222;
 }
 
@@ -185,9 +185,8 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 /* Fixed position examples */
 
 #fixed-top {
-	position: fixed;`
-	top: 0;
-	width: 100%;
+	float: right;
+	margin: 28px 20px 0px 0px;
 	z-index: 4;
 }
 
