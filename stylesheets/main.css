@@ -614,19 +614,16 @@ MEDIA QUERIES
   #about {
     margin-right: 50px;
     margin-left: 50px;
-  }
-
+  }  
   #projects {
     background-color: #fff;
     font-size: 0px;
     padding: 0px 50px;
     margin-top: 160px;
-  }
-
+  }  
   .projects {
     width: 100%;
-  }
-
+  }  
   .project {
     width: 100%;
     display: inline-block;
@@ -634,36 +631,28 @@ MEDIA QUERIES
     background-color: #f9f9f9;
     background-position: 50% 50%;
     background-size: cover;
-  }
-
+  }  
   .project-3 {
     margin-top: 0px;
-  }
-
+  }  
   .project-1 {
     background-image: url(../imgs/lewis-2.jpg);
-  }
-
+  }  
   .project-2 {
     background-image: url(../imgs/succulent.jpg);
-  }
-
+  }  
   .project-3 {
     background-image: url(../imgs/solidarigif.jpg);
   }
-
   .project-4 {
     background-image: url(../imgs/lingolive-2.jpg);
   }
-
   .project-6 {
     background-image: url(../imgs/jurior.jpeg);
   }
-
   .project-5 {
     background-image: url(../imgs/purewow-3.jpg);
   }
-
   .project-overlay {
     background-color: rgba(0,0,0,0.5);
     height: 500px;
@@ -671,21 +660,17 @@ MEDIA QUERIES
     position: relative;
     opacity: 0;
   }
-
   .project-overlay:hover {
     opacity: 1;
   }
-
   .projects-column-1, .projects-column-2 {
     display: inline-block;
     width: 49%;
     vertical-align: top;
   } 
-
   .projects-column-1 {
     margin-right: 2%;
   } 
-
   .project-text {
     position: absolute;
     top: 50%;
@@ -698,7 +683,6 @@ MEDIA QUERIES
     text-align: center;
     width: 100%;
   }
-
   .project-title {
     font-size: 38px;
     padding-bottom: 20px;
@@ -708,7 +692,6 @@ MEDIA QUERIES
     letter-spacing: 6px;
     padding: 0px 50px 20px 50px;
   }
-
   .project-description {
     font-size: 14px;
     line-height: 1.6em;
@@ -716,7 +699,7 @@ MEDIA QUERIES
   }
   #callme {
     background-color: #fff;
-    padding: 100px 50px;
+    padding: 100px 50px 50px 50px;
     margin-top: 0px;
   }
   .contact-wrapper {
@@ -760,7 +743,6 @@ MEDIA QUERIES
     margin-left: 0px;
     margin-bottom: 0px;
   }
-
   a .social_icon-contact {
     color: #222;
     font-size: 18px;
@@ -780,7 +762,6 @@ MEDIA QUERIES
     margin-bottom: 0px;
   }
 }
-
 @media (min-width: 992px) {
   .sb-slidebar {
     width: 30%;
