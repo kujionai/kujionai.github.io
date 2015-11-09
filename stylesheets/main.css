@@ -42,6 +42,7 @@ NAV BAR
   background-color: #fff;
   position: fixed;
   z-index: 5;
+  font-size: 0px;
 }
 
 .name {
@@ -57,6 +58,11 @@ NAV BAR
   margin-left: 20px;
   margin-top: 22px;
   max-width: 100px;
+
+}
+
+.name-wrapper {
+  display: inline-block;
 }
 
 .nav-list {
@@ -166,7 +172,7 @@ PARALLAX BASE STYLES
 -------------------------------- */
 
 .parallax {
-  height: 500px; /*fallback for older browsers*/
+  height: 600px; /*fallback for older browsers*/
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -176,7 +182,7 @@ PARALLAX BASE STYLES
 
 .parallax__group {
   position: relative;
-  height: 500px; /*fallback for older browsers*/ 
+  height: 600px; /*fallback for older browsers*/ 
   height: 100vh;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -220,8 +226,8 @@ body, html {
 }
 
 #thebeginning .parallax__layer--back {
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 45%,rgba(0,0,0,0.25) 100%), url(../imgs/succulent.jpg) no-repeat;
-  background-position: 50% 50%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 45%,rgba(0,0,0,0.25) 100%), url(../portrait.jpg) no-repeat;
+  background-position: 50% 0%;
   background-size: cover;
   background-color: #fff;
 }
@@ -449,9 +455,11 @@ CONTACT
 
 #callme {
   background-color: #fff;
-  height: 40px;
+/*  height: 40px;
   margin-top: 180px;
-  position: relative;
+  position: relative;*/
+  /*margin-top: 50px;*/
+  padding: 80px 0px 50px 0px;
 }
 
 .contact {
@@ -460,10 +468,11 @@ CONTACT
 }
 
 .social-right {
-  display: block;
+/*  display: block;
   margin-right: auto;
   margin-left: auto;
-  float: none;
+  float: none;*/
+  /*display: none;*/
 }
 
 .email {
@@ -480,6 +489,7 @@ CONTACT
   margin-right: auto;
   margin-left: auto;
   width: 138.125px;
+  display: none;
 }
 
 .email span {
@@ -499,12 +509,32 @@ CONTACT
   margin-bottom: 15px;
 }
 
+.contact-wrapper {
+  float: right;
+  padding-right: 10px;
+  margin-top: 34px;
+}
+.social-left {
+/*    display: inline-block;
+    vertical-align: middle;
+    width: 50%;*/
+  }
+  .social-right {
+    display: inline-block;
+    /*vertical-align: middle;*/
+    /*width: 50%;*/
+    float: right;
+  }
 a .social_icon-contact {
   color: #222;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   margin-right: 5px;
   margin-left: 5px;
+}
+
+.email-icon {
+  display: inline-block;
 }
 
 a .social_icon-contact:hover {
@@ -512,22 +542,22 @@ a .social_icon-contact:hover {
 }
 
 .copyfight {
-  color: #b8b8b8;
+  /*color: #b8b8b8;*/
+  color: #222;
   font-family: 'Roboto';
   letter-spacing: 0.12em;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
   display: block;
   text-align: center;
   margin-bottom: -140px;
 }
 
 .copyfight img {
-  opacity: 0.34;
   height: 18px;
   display: inline-block;
   vertical-align: middle;
-  padding: 0px 2.8px 2px 1px;
+  padding: 0px 2.8px 2.8px 1px;
 }
 
 /* --------------------------------
@@ -564,19 +594,19 @@ MEDIA QUERIES
     text-transform: uppercase;
     height: 100%;
     color: #222;
-    line-height: 85px;
+    line-height: 85.5px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 10px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     margin-top: 0px;
     max-width: none;
   }
   .headline-content {
-    padding: 0px 45px;
+    padding: 0px 42px;
     text-transform: uppercase;
     color: #fff;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -609,7 +639,12 @@ MEDIA QUERIES
     display: none;
   }
   .name {
-    margin-left: 50px;
+    padding-left: 50px;
+
+  }
+
+  .name-wrapper {
+    display: inline-block;
   }
   #about {
     margin-right: 50px;
@@ -698,22 +733,25 @@ MEDIA QUERIES
     padding: 0px 50px;
   }
   #callme {
-    background-color: #fff;
-    padding: 100px 50px 50px 50px;
-    margin-top: 0px;
+    /*background-color: #fff;*/
+
+    /*margin-top: 0px;*/
   }
   .contact-wrapper {
     float: right;
+    padding-right: 50px;
+    margin-top: 18px;
   }
   .social-left {
-    display: inline-block;
+/*    display: inline-block;
     vertical-align: middle;
-    width: 50%;
+    width: 50%;*/
   }
   .social-right {
     display: inline-block;
-    vertical-align: middle;
-    width: 50%;
+    /*vertical-align: middle;*/
+    /*width: 50%;*/
+    float: right;
   }
   .email {
     font-weight: 400;
@@ -735,6 +773,9 @@ MEDIA QUERIES
     background-color: #222;
     color: #fff;
   }
+  .email-icon {
+    display: none;
+  }
   .social-contact {
     text-align: center;
     display: inline-block;
@@ -745,12 +786,12 @@ MEDIA QUERIES
   }
   a .social_icon-contact {
     color: #222;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin-right: 10px;
     margin-left: 0px;
   }
-  .copyfight {
+/*  .copyfight {
     color: #b8b8b8;
     font-family: 'Roboto';
     letter-spacing: 0.12em;
@@ -760,7 +801,7 @@ MEDIA QUERIES
     vertical-align: middle;
     padding-top: 0px;
     margin-bottom: 0px;
-  }
+  }*/
 }
 @media (min-width: 992px) {
   .sb-slidebar {
