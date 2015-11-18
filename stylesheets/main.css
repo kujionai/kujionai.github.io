@@ -276,40 +276,12 @@ video {
   text-transform: uppercase;
   color: #fff;
   line-height: 1.4em;
-  float: right;
-  text-align: right;
+  /*float: right;*/
+  /*text-align: right;*/
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 8px;
-}
-
-a #rosa_pergams  {
-  color: #FFF;
-  margin-top: 40px;
-}
-
-#rosa_pergams {
-  text-align: center;
-  font-size: 2.8em;
-  border: 6px solid #fff;
-  text-transform: uppercase;
-  padding: .6em .4em .3em .4em;
-  letter-spacing: .04em;
-  line-height: 1.2em;
-  font-weight: 700;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.web-dev {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: 2px;
-  text-align: center;
-  margin: 1.6em auto 0px auto;
-  font-weight: 700;
 }
 
 /* --------------------------------
@@ -594,36 +566,69 @@ MEDIA QUERIES
     padding: 1em .8em .6em .8em;
     border: 7px solid  #fff;
   }
-  .name {
-    text-transform: uppercase;
-    height: 100%;
-    color: #222;
-    line-height: 85.5px;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 10px;
-    display: inline-block;
-    vertical-align: middle;
-    /*margin-left: 20px;*/
-    margin-top: 0px;
-    max-width: none;
-  }
   .headline-content {
-    padding: 0px 42px;
+    padding: 80px 42px 0px 42px;
     text-transform: uppercase;
     color: #fff;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 8px;
-    line-height: 1.4em;
-    float: right;
-    text-align: right;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    text-align: center;
+    font-size: 39px;
     font-weight: 700;
     letter-spacing: 10px;
+  }
+  .email {
+    font-weight: 400;
+    border: 2px solid #222;
+    padding: 12px 16px 12px 18px;
+    text-align: center;
+    color: #222;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .email span {
+    font-family: 'Roboto';
+  }
+  .email:hover {
+    background-color: #222;
+    color: #fff;
+  }
+  .email-icon {
+    display: none;
+  }
+  .social-contact {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  a .social_icon-contact {
+    color: #222;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+  .contact-wrapper {
+    float: right;
+    padding-right: 20px;
+    margin-top: 18px;
+  }
+  .social-left {
+/*    display: inline-block;
+    vertical-align: middle;
+    width: 50%;*/
+  }
+  .social-right {
+    display: inline-block;
+    /*vertical-align: middle;*/
+    /*width: 50%;*/
+    float: right;
   }
 }
 
@@ -639,14 +644,30 @@ MEDIA QUERIES
     margin-right: 50px;
     margin-top: 32.5px;
   }
+  .name {
+    text-transform: uppercase;
+    height: 100%;
+    color: #222;
+    line-height: 85.5px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-top: 0px;
+    max-width: none;
+  }
+  .contact-wrapper {
+    padding-right: 50px;
+  }
   .sb-slide {
     display: none;
   }
   .name {
     margin-left: 50px;
-
   }
-
   .name-wrapper {
     display: inline-block;
   }
@@ -741,60 +762,8 @@ MEDIA QUERIES
 
     /*margin-top: 0px;*/
   }
-  .contact-wrapper {
-    float: right;
-    padding-right: 50px;
-    margin-top: 18px;
-  }
-  .social-left {
-/*    display: inline-block;
-    vertical-align: middle;
-    width: 50%;*/
-  }
-  .social-right {
-    display: inline-block;
-    /*vertical-align: middle;*/
-    /*width: 50%;*/
-    float: right;
-  }
-  .email {
-    font-weight: 400;
-    border: 2px solid #222;
-    padding: 12px 16px 12px 18px;
-    text-align: center;
-    color: #222;
-    text-transform: uppercase;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    letter-spacing: 4px;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .email span {
-    font-family: 'Roboto';
-  }
-  .email:hover {
-    background-color: #222;
-    color: #fff;
-  }
-  .email-icon {
-    display: none;
-  }
-  .social-contact {
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-  }
-  a .social_icon-contact {
-    color: #222;
-    font-size: 16px;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 0px;
-  }
+
+
 /*  .copyfight {
     color: #b8b8b8;
     font-family: 'Roboto';
