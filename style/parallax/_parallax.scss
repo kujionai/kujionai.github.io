@@ -1,0 +1,61 @@
+/* -------------------------------- PARALLAX -------------------------------- */
+
+/* ----------------------------------------------------------------
+-------------------------------- GENERAL --------------------------------
+---------------------------------------------------------------- */
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  @include perspective(300px);
+  .parallax__group {
+    position: relative;
+    height: 100vh;
+    @include transform-style(preserve-3d);
+    .parallax__layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- BACK LAYER --------------------------------
+---------------------------------------------------------------- */
+
+.parallax__layer--base {
+  z-index: 4;
+  @include transform(translateZ(0));
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- FRONT LAYER --------------------------------
+---------------------------------------------------------------- */
+
+.parallax__layer--back {
+  z-index: 3;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 100%), url(../imgs/portrait.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: $asphalt;
+  @include transform(translateZ(-300px) scale(2));
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- CONTENT --------------------------------
+---------------------------------------------------------------- */
+
+.container {
+  position: absolute;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  @include transform(translateY(-50%));
+}

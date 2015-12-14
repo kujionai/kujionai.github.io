@@ -1,0 +1,299 @@
+/* -------------------------------- SIDEBAR -------------------------------- */
+
+/* ----------------------------------------------------------------
+-------------------------------- TOGGLE ICON --------------------------------
+---------------------------------------------------------------- */
+
+nav.nav-animation a {
+  margin: 0px 0px 25px 0px;
+}
+
+nav a {
+  margin: 0px 0px 0px 40px;  
+  position: relative;
+  display: block;
+  outline: none;
+  color: $asphalt;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  word-spacing: 0.02em;  
+  line-height: 1.6em;
+  font-weight: $normal;
+  font-family: $open-sans;
+}
+
+.nav-animation a {
+  line-height: 1.4em;
+  overflow: hidden;
+  padding: 0px 0px 8px 0px;
+  height: 1em;
+}
+
+.nav-animation a span {
+  @include transition(transform 0.3s);
+  position: relative;
+  display: inline-block;
+}
+
+.nav-animation a span::before {
+  @include transform(translate3d(0,0,0));
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+}
+
+.nav-animation a:hover span, .nav-animation a:focus span {
+  @include transform(translateY(-100%));
+}
+
+.nav-icon, .nav-icon-active {
+  @include transition(all .3s ease-in-out);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 40px 60px 0px 0px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.nav-icon:after, .nav-icon:before, .nav-icon span, .nav-icon-active:after, .nav-icon-active:before, .nav-icon-active span  {
+  @include transition(all .3s ease-in-out);
+  display: block;
+  margin: 5px 0;
+  height: 3px;
+  content: '';
+  background-color: $white;
+}
+
+.nav-icon-active:before {
+  @include transform(translateY(8px) rotate(135deg));
+}
+
+.nav-icon-active:after {
+  @include transform(translateY(-8px) rotate(-135deg));
+}
+
+.nav-icon-active span {
+  @include transform(scale(0));
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- GENERAL --------------------------------
+---------------------------------------------------------------- */
+
+a .social_icon, a .social_icon-contact, a, #sidebar ul li a, .blog-nav .project-title {
+  @include transition(.3s);
+}
+
+a {
+  text-decoration: none;
+}
+
+#sidebar {
+  margin-left: 20px;
+}
+
+#sidebar ul {
+  margin: 45px 0px 0px 0px;
+  padding: 0;
+  list-style: none;
+}
+
+html, body, #sb-site, .sb-site-container, .sb-slidebar {
+  @include box-sizing(border-box);
+  margin: 0;
+  padding: 0;
+}
+
+#sb-site {
+  position: relative;
+}
+
+html.sb-scroll-lock.sb-active:not(.sb-static) {
+  overflow: hidden;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- SOCIAL ICONS --------------------------------
+---------------------------------------------------------------- */
+
+#social {
+  margin: 30px 0px 0px 0px;
+}
+
+a .social_icon {
+  @include transition(all .3s ease-in-out);
+  font-size: 1.6em;
+  color: $asphalt;
+  padding-right: 15px;
+}
+
+a .social_icon:hover {
+  @include transform(scale(1.1));
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- CONTAINER --------------------------------
+---------------------------------------------------------------- */
+
+#sb-site, .sb-site-container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: $white;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- SLIDEBARS --------------------------------
+---------------------------------------------------------------- */
+
+.sb-slidebar {
+  @include transform(translate(0px));
+  height: 100%;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  display: none;
+  background-color: $white;
+}
+
+.sb-left {
+  left: 0;
+}
+
+.sb-right {
+  right: 0;
+}
+
+html.sb-static .sb-slidebar, .sb-slidebar.sb-static {
+  position: absolute;
+}
+
+.sb-slidebar.sb-active {
+  display: block;
+}
+
+.sb-style-overlay {
+  z-index: 9999;
+}
+
+.sb-momentum-scrolling {
+  -webkit-overflow-scrolling: touch;
+}
+
+.sb-slidebar {
+  width: 30%;
+}
+
+.sb-width-thin {
+  width: 15%;
+}
+
+.sb-width-wide {
+  width: 45%;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- MEDIA QUERIES --------------------------------
+---------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .sb-slidebar {
+    width: 70%;
+  }
+  .sb-width-thin {
+    width: 55%;
+  }
+  .sb-width-wide {
+    width: 85%;
+  }
+}
+
+@media (min-width: 481px) {
+  .sb-slidebar {
+    width: 55%;
+  }
+  .sb-width-thin {
+    width: 40%;
+  }
+  .sb-width-wide {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .sb-slidebar {
+    width: 40%;
+  }
+  .sb-width-thin {
+    width: 25%;
+  }
+  .sb-width-wide {
+    width: 55%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sb-slidebar {
+    width: 30%;
+  }
+  .sb-width-thin {
+    width: 15%;
+  }
+  .sb-width-wide {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sb-slidebar {
+    width: 20%;
+  }
+  .sb-width-thin {
+    width: 5%;
+  }
+  .sb-width-wide {
+    width: 35%;
+  }
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- ANIMATION --------------------------------
+---------------------------------------------------------------- */
+
+.sb-slide, #sb-site, .sb-site-container, .sb-slidebar {
+  -webkit-transition-property: -webkit-transform, left, right;
+  -moz-transition-property: -moz-transform, left, right;
+  -ms-transition-property: -ms-transform, left, right;
+  transition-property: transform, left, right;
+  @include transition(transform 400ms ease);
+  @include backface-visibility(hidden);
+
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- HELPER CLASSES --------------------------------
+---------------------------------------------------------------- */
+
+.sb-hide {
+  display: none;
+}
+
+html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-open-right, .sb-close {
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- FIXED POSITION --------------------------------
+---------------------------------------------------------------- */
+
+#fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+#fixed-top span.sb-toggle-right {
+  float: right;
+}

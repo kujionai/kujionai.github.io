@@ -1,0 +1,111 @@
+/* -------------------------------- MAIN STYLESHEET -------------------------------- */
+
+$dove: rgb(248,248,248);
+$white: rgb(255,255,255);
+$asphalt: rgb(69,69,69);
+$normal: 400;
+
+$open-sans: 'Open Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-sizing($box-size) {
+	-webkit-box-sizing: $box-size;
+	-moz-box-sizing: $box-size;
+	-ms-box-sizing: $box-size;
+	box-sizing: $box-size;
+}
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	transition: $transition;
+}
+
+@mixin font-smoothing($font-smoothing) {
+	-webkit-font-smoothing: $font-smoothing;
+	-moz-font-smoothing: $font-smoothing;
+	-ms-font-smoothing: $font-smoothing;
+	font-smoothing: $font-smoothing;
+}
+
+@mixin perspective($perspective) {
+	-webkit-perspective: $perspective;
+	-moz-perspective: $perspective;
+	-ms-perspective: $perspective;
+	perspective: $perspective;
+}
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-ms-transform: $transform;
+	transform: $transform;
+}
+
+@mixin transform-origin($transform-origin) {
+	-webkit-transform-origin: $transform-origin;
+	-moz-transform-origin: $transform-origin;
+	-ms-transform-origin: $transform-origin;
+	transform-origin: $transform-origin;
+}
+
+@mixin transform-style($transform-style) {
+	-webkit-transform-style: $transform-style;
+	-moz-transform-style: $transform-style;
+	-ms-transform-style: $transform-style;
+	transform-style: $transform-style;
+}
+
+@mixin backface-visibility($backface-visibility) {
+	-webkit-backface-visibility: $backface-visibility;
+	-moz-backface-visibility: $backface-visibility;
+	-ms-backface-visibility: $backface-visibility;
+	backface-visibility: $backface-visibility;
+}
+
+body, html {
+  overflow: hidden;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  position: relative;
+}
+
+.loaded {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+::-moz-scrollbar { 
+  display: none; 
+}
+
+::-ms-scrollbar { 
+  display: none; 
+}
+
+@import 'header/header';
+@import 'sidebar/sidebar';
+@import 'parallax/parallax';
+@import 'about/about';
+@import 'projects/projects';
+@import 'footer/footer';

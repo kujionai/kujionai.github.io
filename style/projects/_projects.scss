@@ -1,0 +1,98 @@
+/* -------------------------------- PROJECTS -------------------------------- */
+
+/* ----------------------------------------------------------------
+-------------------------------- GENERAL --------------------------------
+---------------------------------------------------------------- */
+
+.projects {
+  font-size: 0px;
+  padding: 60px 10px 0px 10px;
+  color: $asphalt;
+  background-color: $dove;
+  .project {
+    max-width: 940px;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+}
+
+.project-img, .project-text {
+  display: block;
+  font-size: 20px;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- IMAGES --------------------------------
+---------------------------------------------------------------- */
+
+.project-img {
+  width: 100%;
+}
+
+.project-img-2 {
+  display: none;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- TEXT --------------------------------
+---------------------------------------------------------------- */
+
+.project-text {
+  width: 100%;
+  letter-spacing: 0.04em;
+  word-spacing: 0.02em;
+  font-weight: $normal;
+  .project-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $montserrat;
+  }
+  .project-body {
+    font-size: 15px;
+    line-height: 1.6em;
+    font-family: $open-sans;
+  }
+}
+
+.project-text-right {
+  margin-left: 0px;
+}
+
+.project-text-left {
+  margin-right: 0px;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- MEDIA QUERIES --------------------------------
+---------------------------------------------------------------- */
+
+@media only screen and (min-width : 768px) {
+  .projects {
+    padding-bottom: 60px;
+    .project {
+      padding-bottom: 0px;
+    }
+  }
+  .project-img, .project-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .project-img {
+    width: 46.25%;
+  }
+  .project-text {
+    width: 46.25%;
+  }
+  .project-text-right {
+    margin-left: 7.5%;
+  }
+  .project-text-left {
+    margin-right: 7.5%;
+  }
+  .project-img-1 {
+    display: none;
+  }
+  .project-img-2 {
+    display: inline-block;
+  }
+}

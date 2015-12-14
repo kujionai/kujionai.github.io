@@ -1,0 +1,26 @@
+/* -------------------------------- FOOTER -------------------------------- */
+
+/* ----------------------------------------------------------------
+-------------------------------- FOOTER --------------------------------
+---------------------------------------------------------------- */
+
+footer {
+  padding: 50px 10px 40px 10px;
+  text-align: center;
+  div {
+    color: $asphalt;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: none !important;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+  }
+  img {
+    width: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.74;
+    padding: 0px 3px 4px 3px;
+  }
+}
