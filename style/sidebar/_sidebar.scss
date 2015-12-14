@@ -5,7 +5,7 @@
 ---------------------------------------------------------------- */
 
 nav.nav-animation a {
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 nav a {
@@ -17,13 +17,11 @@ nav a {
   font-size: 18px;
   letter-spacing: 0.04em;
   word-spacing: 0.02em;  
-  line-height: 1.6em;
   font-weight: $normal;
   font-family: $open-sans;
 }
 
 .nav-animation a {
-  line-height: 1.4em;
   overflow: hidden;
   padding: 0px 0px 8px 0px;
   height: 1em;
@@ -50,7 +48,7 @@ nav a {
   @include transition(all .3s ease-in-out);
   display: inline-block;
   vertical-align: middle;
-  margin: 40px 60px 0px 0px;
+  margin: 55px 60px 0px 0px;
   width: 24px;
   cursor: pointer;
 }
