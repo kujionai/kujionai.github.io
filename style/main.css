@@ -2,7 +2,11 @@
 body, html {
   overflow: hidden;
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
 
 html {
   height: 100%; }
@@ -33,7 +37,8 @@ header {
   padding: 0px 10px;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 40px; }
   header a {
     color: white; }
     header a h1, header a h2 {
@@ -158,13 +163,11 @@ section.arrow-wrapper {
 -------------------------------- MEDIA QUERIES --------------------------------
 ---------------------------------------------------------------- */
 @media only screen and (min-width: 480px) {
-  header {
-    margin-bottom: 40px; }
-    header a h1 {
-      font-size: 55px;
-      padding: .525em .85em .5em .85em; }
-    header a h2 {
-      font-size: 22px; } }
+  header a h1 {
+    font-size: 55px;
+    padding: .525em .85em .5em .85em; }
+  header a h2 {
+    font-size: 22px; } }
 /* -------------------------------- SIDEBAR -------------------------------- */
 /* ----------------------------------------------------------------
 -------------------------------- TOGGLE ICON --------------------------------
@@ -535,7 +538,7 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 -------------------------------- TEXT --------------------------------
 ---------------------------------------------------------------- */
 .description {
-  margin-top: 10px; }
+  margin-top: 30px; }
   .description p {
     letter-spacing: 0.04em;
     word-spacing: 0.02em;
@@ -581,7 +584,9 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
   .project-text .project-title {
     font-size: 24px;
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.08em;
+    font-weight: 400; }
   .project-text .project-body {
     font-size: 15px;
     line-height: 1.6em;

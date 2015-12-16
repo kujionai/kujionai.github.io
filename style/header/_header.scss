@@ -10,6 +10,7 @@ header {
   text-transform: uppercase;
   text-align: center;
   font-family: $montserrat;
+  padding-bottom: 40px;
   a {
     color: $white;
     h1, h2 {
@@ -125,7 +126,6 @@ section.arrow-wrapper {
 
 @media only screen and (min-width : 480px) {
   header {
-    margin-bottom: 40px;
     a {
       h1 {
         font-size: 55px;

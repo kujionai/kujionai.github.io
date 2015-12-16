@@ -75,6 +75,7 @@ body, html {
   overflow: hidden;
   width: 100%;
   overflow-x: hidden;
+  @include font-smoothing(antialiased);
 }
 
 html {
