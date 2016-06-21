@@ -15,7 +15,7 @@ a, .blog-nav ul li a, .tagline_1 {
 }
 
 .tagline_1 a{
-  color: #222;
+  color: #454545;
 }
 
 .blog-nav  {
@@ -24,7 +24,7 @@ a, .blog-nav ul li a, .tagline_1 {
   left: 0;
   z-index: 9999;
   width: 100%;
-  background: rgba(0,0,0,.86);
+  background: rgba(255,255,255,.99);
 }
 
 .blog-nav ul {
@@ -39,18 +39,18 @@ a, .blog-nav ul li a, .tagline_1 {
   list-style: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Josefin Sans';
-  margin: 1em 18px .6em 18px;
+  font-family: 'Montserrat';
+  margin: .8em 18px .8em 18px;
   font-size: 1em;
   letter-spacing: .16em;
 }
 
 .blog-nav ul li a {
-  color: #555;
+  color: #454545;
 }
 
 .blog-nav ul li a:hover {
-  color: #fff;
+  color: #454545;
 }
 
 /* --------------------------------
@@ -66,7 +66,7 @@ BLOG
 }
 
 .blog_single {
-  color: #222;
+  color: #454545;
 }
 
 .blog_single:hover {
@@ -80,35 +80,50 @@ BLOG
 }
 
 .tagline {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-align: center;
   letter-spacing: .02em;
   word-spacing: .02em;
-  margin: 10em auto 2em auto;
+  margin: 4em auto 2em auto;
+  color: #454545;
+  letter-spacing: 0.04em;
+  word-spacing: 0.02em;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 .tagline_1 {
-  font-size: 4.8em;
+  font-size: 2em;
   margin-bottom: .2em;
 }
 
 .tagline_2 {
   text-align: center;
-  font-size: 2em;
+  font-size: .8em;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* CONTENT */
 
 .content {
-  font-family: 'Lato', sans-serif;
   text-align: justify;
-  color: #555;
+  color: #454545;
   display: block;
   margin: auto;
-  border-bottom: .12em solid #D0D0D0;
+  border-bottom: 2px solid #454545;
   font-size: 1em;
   line-height: 1.6em;
+  letter-spacing: 0.04em;
+  word-spacing: 0.02em;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.6em;
+  font-family: 'Open Sans';
+  -webkit-font-smoothing: antialiased;
 }
 
 .content a {
@@ -125,34 +140,35 @@ BLOG
 }
 
 .blog_post_quote {
-  color: #999;
+  color: #454545;
   padding-left: 1em;
-  border-left: .16em solid #999;
+  border-left: .16em solid #454545;
+  opacity: .8;
 }
 
 /* BLOG POST FOOTER */
 
 .blog_post_footer {
   text-transform: uppercase;
-  font-weight: 700;  color: #D0D0D0;
+  font-weight: 700;  color: #454545;
   text-align: center;
-  font-family: 'Josefin Sans';
-  font-size: .8em;
+  font-family: 'Montserrat';
+  font-size: .7em;
   letter-spacing: .12em;
-  margin: 1em 0px 1em 0px;
+  margin: 4em 0px 1em 0px;
 }
 
 /* BLOG PAGE NAVIGATION */
 
 #left-arrow-new, #left-arrow, #right-arrow-new, #right-arrow, #right-arrow-old {
-  color: #222;
-  font-size: 5em;
+  color: #454545;
+  font-size: 4em;
   margin: .4em;
 }
 
 #footer_nav {
   text-align: center;
-  margin: 40px 0px 30px 0px;
+  margin: 30px 0px 30px 0px;
   /*margin-bottom: -100px;*/
 }
 
@@ -181,9 +197,9 @@ BLOG
 
 #blog_list_text {
   text-align: justify;
-  font-size: 14.2px;
+  font-size: 15px;
   display: inline-block;
-  color: #595959;
+  color: #454545;
   padding-left: 2.5%;
   width: 71.5%;
 }
@@ -198,7 +214,7 @@ BLOG
 /* SINGLE BLOG POST VIEW */
 
 .blog_single:hover {
-  /*color: #999;*/
+  /*color: #454545;*/
 }
 
 /* --------------------------------
@@ -209,22 +225,21 @@ pre {
   font-weight: 100;
   font-family: Courier, Monospace !important;
   background-color: #f8f8f8;
-  color: #666;
+  color: #454545;
   margin: 0;
   margin-top: 25px;
   margin-bottom: 25px;
-  line-height: 22.5px;
   padding: 10px;
   border: 1px solid #ddd;
   white-space: pre;
   word-wrap: normal;
   overflow: auto;
-  font-size: 1.2em;
-  line-height: 1em;
+  font-size: 1em;
+  line-height: 1.6em;
 }
 
 .inline_code {
-  color: #666666;
+  color: #454545;
   font-family: Courier, Monospace !important;
   background-color: #f8f8f8;
   border: 1px solid #ddd;
@@ -266,13 +281,17 @@ MEDIA QUERIES
   .blog_post_img {
     width: 100%;
   }
-.tagline_1 {
-    font-size: 2.8em;
+  .tagline_1 {
+    font-size: 1.5em;
     margin-bottom: .2em;
   }
 
   .tagline_2 {
-    font-size: 1.2em;
+    font-size: .8em;
+  }
+  .blog-nav ul li {
+    margin: .8em 10px .8em 10px;
+    font-size: .8em;
   }
 }
 
