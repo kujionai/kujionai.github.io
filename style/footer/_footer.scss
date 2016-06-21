@@ -15,6 +15,9 @@ footer {
     font-size: 15px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    a, a:hover,  a:focus, a:active {
+      color: $asphalt;
+    }
   }
   img {
     width: 22px;

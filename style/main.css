@@ -222,7 +222,7 @@ nav a {
   transition: all 0.3s ease-in-out;
   display: inline-block;
   vertical-align: middle;
-  margin: 55px 60px 0px 0px;
+  margin: 45px 60px 0px 0px;
   width: 24px;
   cursor: pointer; }
 
@@ -587,10 +587,13 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.08em;
     font-weight: 400; }
+    .project-text .project-title a, .project-text .project-title a:hover, .project-text .project-title a:focus, .project-text .project-title a:active {
+      color: #454545; }
   .project-text .project-body {
     font-size: 15px;
     line-height: 1.6em;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    cursor: default; }
 
 .project-text-right {
   margin-left: 0px; }
@@ -643,6 +646,8 @@ footer {
     font-size: 15px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif; }
+    footer div a, footer div a:hover, footer div a:focus, footer div a:active {
+      color: #454545; }
   footer img {
     width: 22px;
     display: inline-block;

@@ -48,11 +48,15 @@
     font-family: $montserrat;
     letter-spacing: 0.08em;
     font-weight: 400;
+    a, a:hover, a:focus, a:active {
+      color: $asphalt;
+    }
   }
   .project-body {
     font-size: 15px;
     line-height: 1.6em;
     font-family: $open-sans;
+    cursor: default;
   }
 }
 
