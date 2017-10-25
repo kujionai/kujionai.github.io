@@ -61,8 +61,8 @@ $palettes: (
     light: rgb(217,217,217),
     x-light: rgb(225,225,225),
     xx-light: rgb(245,245,245),
-  )
-);
+    )
+  );
 
 @function palette($palette, $tone: 'base') {
   @return map-get(map-get($palettes, $palette), $tone);
@@ -326,6 +326,10 @@ img {
   width: 100%;
   height: 50%;
   background-image: url('../images/rosa.jpg');
+}
+
+.social-icon {
+  fill: $coral;
 }
 
 /* ----------------------------------------------------------------
