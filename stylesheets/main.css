@@ -177,7 +177,6 @@ h1, h2, h3, h4, h5, p, a, div, li, button, .btn, input, textarea {
   -ms-font-smoothing: antialiased;
   font-smoothing: antialiased;
   line-height: 1.8em;
-  font-size: 15px;
   letter-spacing: .02em;
   font-weight: 400;
   font-style: normal;
@@ -186,9 +185,7 @@ h1, h2, h3, h4, h5, p, a, div, li, button, .btn, input, textarea {
 
 p, input, textarea {
   font-size: 16px;
-  font-family: 'Droid Serif', serif;
-  line-height: 1.8em;
-  letter-spacing: 0.02em; }
+  font-family: 'Droid Serif', serif; }
 
 p.p--dark {
   color: #3b4446;
@@ -236,75 +233,6 @@ a {
     cursor: pointer;
     opacity: .8;
     outline: 0; }
-
-.slide-hover {
-  display: inline-block;
-  color: #3b4446 !important;
-  font-weight: normal; }
-  .slide-hover:after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0;
-    background: transparent;
-    transition: width .3s ease, background-color .3s ease; }
-  .slide-hover:hover:after, .slide-hover .slide-hover--active {
-    width: 100%;
-    background: #3b4446; }
-
-.cl-effect-2 a {
-  font-size: 14px !important;
-  font-family: GothamBold !important;
-  font-weight: normal !important;
-  color: white;
-  line-height: 46px;
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;
-  text-align: center; }
-
-.cl-effect-2 a span {
-  position: relative;
-  display: inline-block;
-  padding: 0px 28px;
-  background: #29a3aa;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.3s;
-  -webkit-transform-origin: 50% 0;
-  -moz-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
-
-.csstransforms3d .cl-effect-2 a span::before {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #1a686c;
-  content: attr(data-hover);
-  -webkit-transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  transition: background 0.3s;
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% 0;
-  -moz-transform-origin: 50% 0;
-  transform-origin: 50% 0; }
-
-.cl-effect-2 a:hover span,
-.cl-effect-2 a:focus span {
-  -webkit-transform: rotateX(90deg) translateY(-22px);
-  -moz-transform: rotateX(90deg) translateY(-22px);
-  transform: rotateX(90deg) translateY(-22px); }
-
-.csstransforms3d .cl-effect-2 a:hover span::before,
-.csstransforms3d .cl-effect-2 a:focus span::before {
-  background: #2eb7bf; }
 
 /* ----------------------------------------------------------------
 -------------------------------- COLUMNS
