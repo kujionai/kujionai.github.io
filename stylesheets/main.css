@@ -1,0 +1,829 @@
+/* ----------------------------------------------------------------
+-------------------------------- FONTFACE
+---------------------------------------------------------------- */
+@font-face {
+  font-family: GothamThin;
+  src: url("../fonts/GothamThin.otf") format("opentype"); }
+@font-face {
+  font-family: GothamLight;
+  src: url("../fonts/GothamLight.otf") format("opentype"); }
+@font-face {
+  font-family: GothamBook;
+  src: url("../fonts/GothamBook.otf") format("opentype"); }
+@font-face {
+  font-family: GothamMedium;
+  src: url("../fonts/GothamMedium.otf") format("opentype"); }
+@font-face {
+  font-family: GothamBold;
+  src: url("../fonts/GothamBold.otf") format("opentype"); }
+@font-face {
+  font-family: GothamBlack;
+  src: url("../fonts/GothamBlack.otf") format("opentype"); }
+/* ----------------------------------------------------------------
+-------------------------------- COLORS
+---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+-------------------------------- FONTS
+---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+-------------------------------- FONT WEIGHTS
+---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+-------------------------------- MIXINS
+---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+-------------------------------- GENERAL
+---------------------------------------------------------------- */
+body {
+  cursor: default; }
+  body * {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s; }
+
+main {
+  padding-top: 90px; }
+
+.section {
+  width: 100%; }
+
+.wrapper {
+  margin: auto; }
+
+/* ----------------------------------------------------------------
+-------------------------------- BORDER
+---------------------------------------------------------------- */
+.border {
+  border-bottom: 1px solid #d9d9d9; }
+
+/* ----------------------------------------------------------------
+-------------------------------- 
+---------------------------------------------------------------- */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background-color: white; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+a {
+  background-color: transparent; }
+
+b, strong {
+  font-weight: bold; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+html {
+  -webkit-tap-highlight-color: transparent; }
+
+figure {
+  margin: 0; }
+
+img {
+  width: 100%; }
+
+.colgroup--padding h1, .colgroup--padding h2, .colgroup--padding h3, .colgroup--padding h4, .colgroup--padding h5, .colgroup--padding h6, .colgroup--padding p, .colgroup--padding img, .colgroup--padding .btn, .colgroup--padding input, .colgroup--padding textarea {
+  margin: 12px 0px; }
+
+.text--center {
+  text-align: center; }
+
+/* ----------------------------------------------------------------
+-------------------------------- MEDIA QUERIES
+---------------------------------------------------------------- */
+/* ----------------------------- CUSTOM & IPHONE RETINA */
+/* ----------------------------- EXTRA SMALL DEVICES & PHONES */
+/* ----------------------------- SMALL DEVICES & TABLETS */
+/* ----------------------------- MEDIUM DEVICES & DESKTOPS */
+/* ----------------------------- LARGE DEVICES & LARGE SCREENS */
+/* ----------------------------------------------------------------
+-------------------------------- IMPORTS
+---------------------------------------------------------------- */
+/* ----------------------------- MODIFIERS */
+/* ----------------------------------------------------------------
+-------------------------------- TEXT
+---------------------------------------------------------------- */
+h1, h2, h3, h4, h5, p, a, div, li, button, .btn, input, textarea {
+  margin: 0px;
+  font-family: GothamBook;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  line-height: 1.8em;
+  font-size: 15px;
+  letter-spacing: .02em;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  color: black; }
+
+p, input, textarea {
+  font-size: 16px;
+  font-family: 'Droid Serif', serif;
+  line-height: 1.8em;
+  letter-spacing: 0.02em; }
+
+p.p--dark {
+  color: #3b4446;
+  font-family: GothamMedium; }
+
+h1 {
+  font-size: 52px;
+  font-family: GothamBold;
+  line-height: 1.4em;
+  letter-spacing: 0px; }
+
+h2 {
+  font-size: 26px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 21px;
+  font-family: 'Droid Serif', serif;
+  font-weight: bold; }
+
+h5 {
+  font-size: 17px;
+  font-family: 'Droid Serif', serif;
+  color: #677479;
+  line-height: 1.6em;
+  letter-spacing: 0.02em; }
+  h5 a {
+    font-size: 17px; }
+
+.heavy-text {
+  font-family: GothamBold;
+  letter-spacing: 0.04em; }
+
+/* ----------------------------------------------------------------
+-------------------------------- LINK
+---------------------------------------------------------------- */
+a {
+  color: #ef866e;
+  text-decoration: none;
+  font-family: 'Droid Serif', serif;
+  font-weight: bold; }
+  a:hover, a:focus, a:active {
+    cursor: pointer;
+    opacity: .8;
+    outline: 0; }
+
+.slide-hover {
+  display: inline-block;
+  color: #3b4446 !important;
+  font-weight: normal; }
+  .slide-hover:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease; }
+  .slide-hover:hover:after, .slide-hover .slide-hover--active {
+    width: 100%;
+    background: #3b4446; }
+
+.cl-effect-2 a {
+  font-size: 14px !important;
+  font-family: GothamBold !important;
+  font-weight: normal !important;
+  color: white;
+  line-height: 46px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  text-align: center; }
+
+.cl-effect-2 a span {
+  position: relative;
+  display: inline-block;
+  padding: 0px 28px;
+  background: #29a3aa;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.csstransforms3d .cl-effect-2 a span::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a686c;
+  content: attr(data-hover);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0; }
+
+.cl-effect-2 a:hover span,
+.cl-effect-2 a:focus span {
+  -webkit-transform: rotateX(90deg) translateY(-22px);
+  -moz-transform: rotateX(90deg) translateY(-22px);
+  transform: rotateX(90deg) translateY(-22px); }
+
+.csstransforms3d .cl-effect-2 a:hover span::before,
+.csstransforms3d .cl-effect-2 a:focus span::before {
+  background: #2eb7bf; }
+
+/* ----------------------------------------------------------------
+-------------------------------- COLUMNS
+---------------------------------------------------------------- */
+.colgroup {
+  font-size: 0px; }
+
+.col {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+.col1, .col2, .col3, .col4, .col2-3, .col3-4 {
+  width: 100%; }
+
+.col--middle {
+  vertical-align: middle; }
+
+.col--text {
+  padding: 40px; }
+
+/* ----------------------------------------------------------------
+-------------------------------- MEDIA QUERIES
+---------------------------------------------------------------- */
+/* ----------------------------- CUSTOM & IPHONE RETINA */
+/* ----------------------------- EXTRA SMALL DEVICES & PHONES */
+@media only screen and (min-width: 480px) {
+  .col4 {
+    width: 50%; } }
+/* ----------------------------- SMALL DEVICES & TABLETS */
+@media only screen and (min-width: 768px) {
+  .col4, .col3 {
+    width: 33.3333%; }
+
+  .col2-3 {
+    width: 66.6666%; }
+
+  .col2 {
+    width: 50%; } }
+/* ----------------------------- MEDIUM DEVICES & DESKTOPS */
+@media only screen and (min-width: 992px) {
+  .col4 {
+    width: 25%; }
+
+  .col3-4 {
+    width: 75%; } }
+/* ----------------------------- LARGE DEVICES & LARGE SCREENS */
+/* ----------------------------- PARTIALS */
+/* ----------------------------------------------------------------
+-------------------------------- SCROLLBAR
+---------------------------------------------------------------- */
+::-webkit-scrollbar {
+  display: none; }
+
+::-moz-scrollbar {
+  display: none; }
+
+::-ms-scrollbar {
+  display: none; }
+
+/* ----------------------------------------------------------------
+-------------------------------- HIGHLIGHT
+---------------------------------------------------------------- */
+::selection {
+  background: #ef866e;
+  color: white; }
+
+::-moz-selection {
+  background: #ef866e;
+  color: white; }
+
+/* ----------------------------------------------------------------
+-------------------------------- HIDDEN BACKGROUND
+---------------------------------------------------------------- */
+html {
+  background-color: #ef866e; }
+
+/* ----------------------------------------------------------------
+-------------------------------- FORM
+---------------------------------------------------------------- */
+/* ----------------------------- FORM FIELDS */
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+input, textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  border: 1px solid #d9d9d9;
+  background-color: whitesmoke; }
+
+textarea {
+  height: 124px;
+  resize: none; }
+
+/* ----------------------------- FORM PLACEHOLDER TEXT */
+::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 1.8em;
+  letter-spacing: 0.02em; }
+
+:-moz-placeholder {
+  font-size: 15px;
+  line-height: 1.8em;
+  letter-spacing: 0.02em; }
+
+:-ms-input-placeholder {
+  font-size: 15px;
+  line-height: 1.8em;
+  letter-spacing: 0.02em; }
+
+/* ----------------------------- FORM AUTOFILL TEXT */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px whitesmoke inset; }
+
+input:-moz-autofill {
+  -moz-box-shadow: 0 0 0px 1000px whitesmoke inset; }
+
+input:-o-autofill {
+  -o-box-shadow: 0 0 0px 1000px whitesmoke inset; }
+
+input:-khtml-autofill {
+  -khtml-box-shadow: 0 0 0px 1000px whitesmoke inset; }
+
+input:focus:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px whitesmoke inset; }
+
+input:focus:-moz-autofill {
+  -moz-box-shadow: 0 0 0px 1000px whitesmoke inset; }
+
+input:focus:-o-autofill {
+  -o-box-shadow: 0 0 0px 1000px whitesmoke inset; }
+
+input:focus:-khtml-autofill {
+  -khtml-box-shadow: 0 0 0px 1000px whitesmoke inset; }
+
+/* ----------------------------------------------------------------
+-------------------------------- BUTTON
+---------------------------------------------------------------- */
+.btn, button.btn {
+  font-size: 16px !important;
+  font-family: GothamBold !important;
+  display: inline-block;
+  padding: 12px 26px 10px 26px;
+  border: 2px solid #ef866e;
+  outline: none;
+  background: none;
+  background-color: #ef866e;
+  text-decoration: none;
+  color: white; }
+
+.btn--light, .btn--light:active, .btn--light:focus {
+  border: 2px solid white;
+  color: #3b4446;
+  background-color: white; }
+  .btn--light:hover, .btn--light:active:hover, .btn--light:focus:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0); }
+
+.btn--dark, .btn--dark:active, .btn--dark:focus {
+  border: 2px solid rgba(255, 255, 255, 0);
+  color: white;
+  background-color: #3b4446; }
+  .btn--dark:hover, .btn--dark:active:hover, .btn--dark:focus:hover {
+    border: 2px solid #3b4446;
+    color: #3b4446;
+    background-color: rgba(255, 255, 255, 0.1); }
+
+/* ----------------------------------------------------------------
+-------------------------------- SOCIAL MEDIA
+---------------------------------------------------------------- */
+.social-media {
+  background-color: #919fa3; }
+  .social-media .icon {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+    margin: 12px 4.5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    color: #3b4446;
+    box-shadow: 0 0 0 1px white; }
+    .social-media .icon:after {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      -ms-box-sizing: content-box;
+      box-sizing: content-box;
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      top: -1px;
+      left: -1px;
+      padding: 1px;
+      z-index: -1;
+      background: white;
+      -webkit-transition: -webkit-transform .2s, opacity .2s;
+      -moz-transition: -moz-transform .2s, opacity .2s;
+      transition: transform .2s, opacity .2s; }
+    .social-media .icon:before {
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      -ms-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      speak: none;
+      font-size: 18px;
+      line-height: 32px;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      display: block; }
+    .social-media .icon:hover:after {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      opacity: 0;
+      -webkit-transition: -webkit-transform .4s, opacity .2s;
+      -moz-transition: -moz-transform .4s, opacity .2s;
+      transition: transform .4s, opacity .2s; }
+    .social-media .icon:hover {
+      color: white; }
+
+/* ----------------------------- SECTIONS */
+/* ----------------------------------------------------------------
+-------------------------------- NAV BAR
+---------------------------------------------------------------- */
+.nav {
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 100; }
+
+.nav--left {
+  float: left; }
+
+.nav--right {
+  float: right; }
+
+.nav__logo {
+  max-height: 50px;
+  width: auto; }
+
+.nav__items {
+  margin-right: -10px; }
+
+.nav__item {
+  font-size: 14px;
+  margin: 0px 10px;
+  font-family: GothamMedium;
+  letter-spacing: 0.12em;
+  display: none; }
+
+a.nav__item, a.nav__item:hover, a.nav__item:focus, a.nav__item:active {
+  opacity: 1; }
+
+.nav__col {
+  width: 50%;
+  display: inline-block; }
+
+/* ----------------------------------------------------------------
+-------------------------------- RESPONSIVE NAV
+---------------------------------------------------------------- */
+.overlay {
+  position: fixed;
+  background: #3b4446;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s, visibility .2s, height .2s;
+  overflow: hidden;
+  z-index: 200; }
+  .overlay a:after {
+    content: '';
+    position: absolute;
+    background: #3b4446;
+    transition: .2s ease; }
+  .overlay a:hover:after, .overlay a:focus:after, .overlay a:active:after {
+    width: 100%; }
+  .overlay.open {
+    opacity: .9;
+    height: 100%; }
+    .overlay.open li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .2s; }
+      .overlay.open li:nth-of-type(2) {
+        animation-delay: .4s; }
+      .overlay.open li:nth-of-type(3) {
+        animation-delay: .45s; }
+      .overlay.open li:nth-of-type(4) {
+        animation-delay: .50s; }
+  .overlay nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+    .overlay ul li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0; }
+      .overlay ul li a {
+        display: block;
+        position: relative;
+        color: white;
+        text-decoration: none;
+        overflow: hidden; }
+        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+          width: 100%; }
+        .overlay ul li a:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: white;
+          transition: .2s; }
+
+.overlay-menu ul li a {
+  font-size: 28px; }
+
+div.button__wrapper {
+  position: relative;
+  height: 27px;
+  width: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 2px;
+  z-index: 2000;
+  margin-right: 10px; }
+  div.button__wrapper .button_container {
+    position: absolute;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    transition: opacity .15s ease; }
+    div.button__wrapper .button_container:hover {
+      opacity: .7; }
+    div.button__wrapper .button_container.active .top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: #3b4446; }
+    div.button__wrapper .button_container.active .middle {
+      opacity: 0;
+      background: #3b4446; }
+    div.button__wrapper .button_container.active .bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: #3b4446; }
+    div.button__wrapper .button_container span {
+      background: #3b4446;
+      border: none;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .2s ease;
+      cursor: pointer; }
+      div.button__wrapper .button_container span:nth-of-type(2) {
+        top: 11px; }
+      div.button__wrapper .button_container span:nth-of-type(3) {
+        top: 22px; }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+a.nav-item.scroll.slide-hover {
+  color: #3b4446; }
+
+/* ----------------------------- SMALL DEVICES & TABLETS */
+@media only screen and (min-width: 768px) {
+  .col4 {
+    width: 15%; }
+
+  .col3-4 {
+    width: 85%; }
+
+  .col2-3 {
+    width: 66.6666%; }
+
+  div.button__wrapper {
+    display: none; }
+
+  .nav__item {
+    display: inline-block; } }
+/* ----------------------------------------------------------------
+-------------------------------- HEADER
+---------------------------------------------------------------- */
+.header {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(rgba(59, 68, 70, 0.9), rgba(59, 68, 70, 0.9)), url("../images/hospital-6.jpeg");
+  padding: 130px 0px 130px 0px;
+  color: white; }
+  .header .tagline1 {
+    max-width: 786px; }
+  .header h4 {
+    color: white; }
+  .header h5 {
+    color: white;
+    font-size: 20px; }
+  .header h1 {
+    color: white;
+    font-size: 46px;
+    font-weight: 300;
+    font-family: GothamMedium;
+    letter-spacing: 0.06em;
+    line-height: 1.2em; }
+  .header .header__item {
+    display: inline-block; }
+
+/* ----------------------------------------------------------------
+-------------------------------- FOOTER
+---------------------------------------------------------------- */
+.footer1 {
+  background-color: #3b4446; }
+
+.footer1 p span.nav__item {
+  color: #919fa3; }
+
+.footer1__citation, .footer1__citation a {
+  color: #677479;
+  font-family: GothamMedium;
+  font-weight: normal; }
+
+/* ----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------- CLIENT LINKS
+-------------------------------------------------------------------
+---------------------------------------------------------------- */
+.profile-img {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  background-image: url("../images/rosa.jpg"); }
+
+/* ----------------------------------------------------------------
+-------------------------------- MEDIA QUERIES
+---------------------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+  .profile-img {
+    height: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

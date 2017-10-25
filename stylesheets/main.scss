@@ -1,0 +1,339 @@
+/* ----------------------------------------------------------------
+-------------------------------- FONTFACE
+---------------------------------------------------------------- */
+
+@font-face {
+  font-family: GothamThin;
+  src: url("../fonts/GothamThin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: GothamLight;
+  src: url("../fonts/GothamLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: GothamBook;
+  src: url("../fonts/GothamBook.otf") format("opentype");
+}
+
+@font-face {
+  font-family: GothamMedium;
+  src: url("../fonts/GothamMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url("../fonts/GothamBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: GothamBlack;
+  src: url("../fonts/GothamBlack.otf") format("opentype");
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- COLORS
+---------------------------------------------------------------- */
+
+$white: rgb(255,255,255);
+$coral: rgb(239,134,110);
+
+$palettes: (
+  carmine: (
+    base: #a74635,
+    ),
+  sandy-brown: (
+    base: #f4a24b,
+    ),
+  jelly-bean: (
+    mid-dark: #1a686c,
+    base: #248f95,
+    mid-light: #29a3aa,
+    light: #2eb7bf,
+    ),
+  slate: (
+    base: rgb(59,68,70),
+    mid-light: rgb(103,116,121),
+    light: rgb(145,159,163),
+    ),   
+  grey: (
+    light: rgb(217,217,217),
+    x-light: rgb(225,225,225),
+    xx-light: rgb(245,245,245),
+  )
+);
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- FONTS
+---------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+-------------------------------- FONT WEIGHTS
+---------------------------------------------------------------- */
+
+$thin: 100;
+$light: 300;
+$book: 400;
+$medium: 600;
+$bold: 700;
+$black: 800;
+
+/* ----------------------------------------------------------------
+-------------------------------- MIXINS
+---------------------------------------------------------------- */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-sizing($box-size) {
+  -webkit-box-sizing: $box-size;
+  -moz-box-sizing: $box-size;
+  -ms-box-sizing: $box-size;
+  box-sizing: $box-size;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
+@mixin font-smoothing($font-smoothing) {
+  -webkit-font-smoothing: $font-smoothing;
+  -moz-font-smoothing: $font-smoothing;
+  -ms-font-smoothing: $font-smoothing;
+  font-smoothing: $font-smoothing;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+
+/* ----------------------------------------------------------------
+-------------------------------- GENERAL
+---------------------------------------------------------------- */
+
+body {
+	cursor: default;	
+  * {
+    @include transition(all .2s);
+    // border: 1px solid palette(jelly-bean, base);
+  }
+}
+
+main {
+  padding-top: 90px;
+}
+
+.section {
+	width: 100%;
+}
+
+.wrapper {
+  margin: auto;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- BORDER
+---------------------------------------------------------------- */
+
+.border {
+  border-bottom: 1px solid palette(grey, light);
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- 
+---------------------------------------------------------------- */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: $white;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+hr {
+  @include box-sizing(content-box);
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+* {
+  @include box-sizing(border-box);
+  &:before, &:after {
+    @include box-sizing(border-box);
+  }
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.colgroup--padding {
+  h1, h2, h3, h4, h5, h6, p, img, .btn, input, textarea {
+    margin: 12px 0px;
+  }
+}
+
+.text--center {
+  text-align: center;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- MEDIA QUERIES
+---------------------------------------------------------------- */
+
+/* ----------------------------- CUSTOM & IPHONE RETINA */ 
+@media only screen and (min-width : 320px) {
+}
+
+/* ----------------------------- EXTRA SMALL DEVICES & PHONES */ 
+@media only screen and (min-width : 480px) {
+}
+
+/* ----------------------------- SMALL DEVICES & TABLETS */
+@media only screen and (min-width : 768px) {
+}
+
+/* ----------------------------- MEDIUM DEVICES & DESKTOPS */
+@media only screen and (min-width : 992px) {
+}
+
+/* ----------------------------- LARGE DEVICES & LARGE SCREENS */
+@media only screen and (min-width : 1200px) {
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- IMPORTS
+---------------------------------------------------------------- */
+
+/* ----------------------------- MODIFIERS */
+@import 'text/text';
+@import 'column/column';
+
+/* ----------------------------- PARTIALS */
+@import 'browser/browser';
+@import 'form/form';
+@import 'button/button';
+@import 'social-media/social-media';
+
+/* ----------------------------- SECTIONS */
+@import 'navbar/navbar';
+@import 'header/header';
+@import 'footer/footer';
+
+/* ----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------- CLIENT LINKS
+-------------------------------------------------------------------
+---------------------------------------------------------------- */
+
+.profile-img {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  background-image: url('../images/rosa.jpg');
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- MEDIA QUERIES
+---------------------------------------------------------------- */
+
+@media only screen and (min-width : 768px){
+  .profile-img {
+    height: 100%;
+  }
+}

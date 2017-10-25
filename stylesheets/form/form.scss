@@ -1,0 +1,135 @@
+/* ----------------------------------------------------------------
+-------------------------------- FORM
+---------------------------------------------------------------- */
+
+/* ----------------------------- FORM FIELDS */
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  @include box-sizing(border-box);
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  @include box-sizing(content-box);
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input, textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  border: 1px solid palette(grey, light);
+  background-color: palette(grey, xx-light);
+}
+
+textarea {
+  height: 124px;
+  resize: none;
+}
+
+/* ----------------------------- FORM PLACEHOLDER TEXT */
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+  color: palette(grey, base);
+  line-height: 1.8em;
+  letter-spacing: 0.02em;
+}
+
+:-moz-placeholder {
+  font-size: 15px;
+  color: palette(grey, base);
+  line-height: 1.8em;
+  letter-spacing: 0.02em;
+}
+
+:-ms-input-placeholder {
+  font-size: 15px;
+  color: palette(grey, base);
+  line-height: 1.8em;
+  letter-spacing: 0.02em;
+}
+
+/* ----------------------------- FORM AUTOFILL TEXT */
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: palette(grey, x-dark);
+  -webkit-box-shadow: 0 0 0px 1000px palette(grey, xx-light) inset; 
+}
+
+input:-moz-autofill {
+  -moz-text-fill-color: palette(grey, x-dark);
+  -moz-box-shadow: 0 0 0px 1000px palette(grey, xx-light) inset; 
+}
+
+input:-o-autofill {
+  -o-text-fill-color: palette(grey, x-dark);
+  -o-box-shadow: 0 0 0px 1000px palette(grey, xx-light) inset; 
+}
+
+input:-khtml-autofill {
+  -khtml-text-fill-color: palette(grey, x-dark);
+  -khtml-box-shadow: 0 0 0px 1000px palette(grey, xx-light) inset; 
+}
+
+input:focus:-webkit-autofill {
+  -webkit-text-fill-color: palette(grey, x-dark);
+  -webkit-box-shadow: 0 0 0px 1000px palette(grey, xx-light) inset; 
+}
+
+input:focus:-moz-autofill {
+  -moz-text-fill-color: palette(grey, x-dark);
+  -moz-box-shadow: 0 0 0px 1000px palette(grey, xx-light) inset; 
+}
+
+input:focus:-o-autofill {
+  -o-text-fill-color: palette(grey, x-dark);
+  -o-box-shadow: 0 0 0px 1000px palette(grey, xx-light) inset; 
+}
+
+input:focus:-khtml-autofill {
+  -khtml-text-fill-color: palette(grey, x-dark);
+  -khtml-box-shadow: 0 0 0px 1000px palette(grey, xx-light) inset; 
+}

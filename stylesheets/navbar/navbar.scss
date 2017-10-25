@@ -1,0 +1,242 @@
+/* ----------------------------------------------------------------
+-------------------------------- NAV BAR
+---------------------------------------------------------------- */
+
+.nav {
+  // position: absolute;
+  position: fixed;
+  background-color: $white;
+  border-bottom: 1px solid palette(grey, x-light);
+  z-index: 100;
+}
+
+.nav--left {
+  float: left;
+}
+
+.nav--right {
+  float: right;
+}
+
+.nav__logo {
+  max-height: 50px;
+  width: auto;
+}
+
+.nav__items {
+  margin-right: -10px;
+}
+
+.nav__item {
+  font-size: 14px;
+  margin: 0px 10px;
+  // text-transform: uppercase;
+  font-family: GothamMedium;
+  letter-spacing: 0.12em;
+  display: none;
+}
+
+  a.nav__item, a.nav__item:hover, a.nav__item:focus, a.nav__item:active {
+    opacity: 1;
+  }
+
+.nav__col {
+  width: 50%;
+  display: inline-block;
+}
+
+/* ----------------------------------------------------------------
+-------------------------------- RESPONSIVE NAV
+---------------------------------------------------------------- */
+
+.overlay {
+  position: fixed;
+  background: palette(slate, base);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s, visibility .2s, height .2s;
+  overflow: hidden;
+  z-index: 200;
+  a {
+    &:after {
+      content: '';
+      position: absolute;
+      background: palette(slate, base);
+      transition: .2s ease;
+    }
+    &:hover:after,
+    &:focus:after,
+    &:active:after {
+      width: 100%;
+    }
+  }
+  
+  &.open {
+    opacity: .9;
+    height: 100%;
+    
+    li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .2s;
+      
+      &:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+    }
+  }
+  nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%; 
+    
+    li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+      
+      a {
+        display: block;
+        position: relative;
+        color: $white;
+        text-decoration: none;
+        overflow: hidden;
+        
+        &:hover:after, &:focus:after, &:active:after {
+          width: 100%;
+        }
+
+        &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0%;
+        transform: translateX(-50%);
+        height: 3px;
+        background: $white;
+        transition: .2s;
+      }
+    }
+  }
+}
+}
+
+.overlay-menu ul li a {
+  font-size: 28px
+}
+
+div.button__wrapper {
+  position: relative;
+  height: 27px;
+  width: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 2px;
+  z-index: 2000;
+  margin-right: 10px;
+
+  .button_container {
+    position: absolute;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    transition: opacity .15s ease;
+    
+    &:hover {
+      opacity: .7;
+    }
+    
+    &.active {
+      .top {
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        // background: $white;
+        background: palette(slate, base)
+      }
+      .middle {
+        opacity: 0;
+        // background: $white;
+        background: palette(slate, base)
+      }
+      .bottom {
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        // background: $white;
+        background: palette(slate, base)
+      }
+    }
+    
+    span {
+      background: palette(slate, base);
+      border: none;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition:  all .2s ease;
+      cursor: pointer;
+      &:nth-of-type(2) {
+        top: 11px;
+      }
+      &:nth-of-type(3) {
+        top: 22px;
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+a.nav-item.scroll.slide-hover {
+  color: palette(slate, base);
+}
+
+/* ----------------------------- SMALL DEVICES & TABLETS */
+@media only screen and (min-width : 768px) {
+  .col4 {
+    width: 15%;
+  }
+  .col3-4 {
+    width: 85%;
+  }
+  .col2-3 {
+    width: 66.6666%;
+  }
+  div.button__wrapper {
+    display: none;
+  }
+  .nav__item {
+    display: inline-block;
+  }
+}

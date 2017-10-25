@@ -1,0 +1,17 @@
+/* ----------------------------------------------------------------
+-------------------------------- FOOTER
+---------------------------------------------------------------- */
+
+.footer1 {
+  background-color: palette(slate, base);
+}
+
+.footer1 p span.nav__item {
+  color: palette(slate, light);
+}
+
+.footer1__citation, .footer1__citation a {
+  color: palette(slate, mid-light);
+  font-family: GothamMedium;
+  font-weight: normal;
+}

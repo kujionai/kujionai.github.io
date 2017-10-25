@@ -1,0 +1,51 @@
+/* ----------------------------------------------------------------
+-------------------------------- HEADER
+---------------------------------------------------------------- */
+
+.header {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  background-image: linear-gradient( rgba(59,68,70,0.9), rgba(59,68,70,0.9) ), url('../images/hospital-6.jpeg');
+  padding: 130px 0px 130px 0px;
+  color: $white;
+  .tagline1 {
+    max-width: 786px;
+  }
+  h4 {
+    color: $white;
+  }
+  h5 {
+    color: $white;
+    font-size: 20px;
+  }
+  h1 {
+    color: $white;
+    font-size: 46px;
+    font-weight: $light;
+    // text-transform: uppercase;
+    // opacity: 0;
+    font-family: GothamMedium;
+    letter-spacing: 0.06em;
+    line-height: 1.2em;
+    // text-align: left;
+  }
+  .header__item {
+    display: inline-block;
+    // float: left;
+  }
+}
+
+// video#bgvid { 
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: -100;
+//   @include transform(translateX(-50%) translateY(-50%));
+//   background-size: cover; 
+// }

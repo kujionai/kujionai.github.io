@@ -1,0 +1,43 @@
+/* ----------------------------------------------------------------
+-------------------------------- BUTTON
+---------------------------------------------------------------- */
+
+.btn, button.btn {
+  font-size: 16px !important;
+  font-family: GothamBold !important;
+  display: inline-block;
+  padding: 12px 26px 10px 26px;
+  border: 2px solid $coral;
+  outline: none;
+  background: none;
+  background-color: $coral;
+  text-decoration: none;
+  color: $white;
+  &:hover, &:active, &:focus {
+    // background-color: $white;
+    // color: $coral;    
+    // opacity: 1;
+  }
+}
+
+.btn--light, .btn--light:active, .btn--light:focus {
+  border: 2px solid $white;
+  color: palette(slate, base);
+  background-color: $white;
+  &:hover {
+    border: 2px solid $white;
+    color: $white;
+    background-color: rgba(255,255,255,0);
+  }
+}
+
+.btn--dark, .btn--dark:active, .btn--dark:focus {
+  border: 2px solid rgba(255,255,255,0);
+  color: $white;
+  background-color: palette(slate, base);
+  &:hover {
+    border: 2px solid palette(slate, base);
+    color: palette(slate, base);
+    background-color: rgba(255,255,255,0.1);
+  }
+}
