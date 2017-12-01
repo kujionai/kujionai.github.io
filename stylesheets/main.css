@@ -177,7 +177,6 @@ h1, h2, h3, h4, h5, p, a, div, li, button, .btn, input, textarea {
   -ms-font-smoothing: antialiased;
   font-smoothing: antialiased;
   line-height: 1.8em;
-  letter-spacing: .02em;
   font-weight: 400;
   font-style: normal;
   text-transform: none;
@@ -185,17 +184,18 @@ h1, h2, h3, h4, h5, p, a, div, li, button, .btn, input, textarea {
 
 p, input, textarea {
   font-size: 16px;
-  font-family: 'Droid Serif', serif; }
+  font-family: 'Droid Serif', serif;
+  font-family: GothamBook; }
 
 p.p--dark {
   color: #3b4446;
   font-family: GothamMedium; }
 
 h1 {
-  font-size: 52px;
+  font-size: 32px;
   font-family: GothamBold;
-  line-height: 1.4em;
-  letter-spacing: 0px; }
+  line-height: 1em;
+  font-family: 'Droid Serif', serif; }
 
 h2 {
   font-size: 26px; }
@@ -225,14 +225,12 @@ h5 {
 -------------------------------- LINK
 ---------------------------------------------------------------- */
 a {
-  color: #ef866e;
-  text-decoration: none;
-  font-family: 'Droid Serif', serif;
-  font-weight: bold; }
+  text-decoration: none; }
   a:hover, a:focus, a:active {
     cursor: pointer;
     opacity: .8;
-    outline: 0; }
+    outline: 0;
+    color: #ef866e; }
 
 /* ----------------------------------------------------------------
 -------------------------------- COLUMNS
@@ -427,6 +425,8 @@ input:focus:-khtml-autofill {
   background-color: #ef866e;
   text-decoration: none;
   color: white; }
+  .btn:hover, .btn:active, .btn:focus, button.btn:hover, button.btn:active, button.btn:focus {
+    color: white; }
 
 .btn--light, .btn--light:active, .btn--light:focus {
   border: 2px solid white;

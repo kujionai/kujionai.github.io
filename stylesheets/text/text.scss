@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, p, a, div, li, button, .btn, input, textarea {
   font-family: GothamBook;
   @include font-smoothing(antialiased);
   line-height: 1.8em;
-  letter-spacing: .02em;
+  // letter-spacing: .02em;
   font-weight: $book;
   font-style: normal;
   text-transform: none;
@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, p, a, div, li, button, .btn, input, textarea {
 p, input, textarea {
   font-size: 16px;
   font-family: 'Droid Serif', serif;
+  font-family: GothamBook;
 }
 
 p.p--dark {
@@ -25,10 +26,13 @@ p.p--dark {
 }
 
 h1 {
-  font-size: 52px;
+  font-size: 32px;
+  // padding-bottom: 32px;
   font-family: GothamBold;
-  line-height: 1.4em;
-  letter-spacing: 0px;
+  line-height: 1em;
+  // letter-spacing: 0px;
+  font-family: 'Droid Serif', serif;
+  // font-weight: bold;
 }
 
 h2 {
@@ -66,13 +70,14 @@ h5 {
 ---------------------------------------------------------------- */
 
 a {
-  color: $coral;
   text-decoration: none;
-  font-family: 'Droid Serif', serif;
-  font-weight: bold;
+  // font-family: 'Droid Serif', serif;
+  // font-weight: bold;
+  // font-family: GothamMedium;
   &:hover, &:focus, &:active {
     cursor: pointer;
     opacity: .8;
     outline: 0;
+    color: $coral;
   }
 }
