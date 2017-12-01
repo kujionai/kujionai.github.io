@@ -232,6 +232,11 @@ a {
     outline: 0;
     color: #ef866e; }
 
+p a {
+  text-decoration: none; }
+  p a:hover, p a:focus, p a:active {
+    opacity: 1; }
+
 /* ----------------------------------------------------------------
 -------------------------------- COLUMNS
 ---------------------------------------------------------------- */
@@ -426,7 +431,8 @@ input:focus:-khtml-autofill {
   text-decoration: none;
   color: white; }
   .btn:hover, .btn:active, .btn:focus, button.btn:hover, button.btn:active, button.btn:focus {
-    color: white; }
+    color: white;
+    opacity: .8; }
 
 .btn--light, .btn--light:active, .btn--light:focus {
   border: 2px solid white;

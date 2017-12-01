@@ -81,3 +81,16 @@ a {
     color: $coral;
   }
 }
+
+p a {
+  text-decoration: none;
+  // font-family: 'Droid Serif', serif;
+  // font-weight: bold;
+  // font-family: GothamMedium;
+  &:hover, &:focus, &:active {
+    // cursor: pointer;
+    opacity: 1;
+    // outline: 0;
+    // color: $coral;
+  }
+}
