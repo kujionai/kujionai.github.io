@@ -1,0 +1,94 @@
+/* Border Radius -----------------------------------------------
+---------------------------------------------------------------- */
+
+/* Uniform ----------------------------- */
+
+.borderRadius-0 {
+	// border-radius: 0;
+}
+
+.borderRadius-s {
+	// border-radius: _px;
+}
+
+.borderRadius-m {
+	// border-radius: _px;
+}
+
+.borderRadius-l {
+	// border-radius: _px;
+}
+
+.borderRadius-xxl {
+	// border-radius: _px;
+}
+
+.borderRadius-circle {
+	border-radius: 50%;
+}
+
+/* Double ------------------------------ */
+
+.borderRadiusTop-m {
+  // border-radius: _px _px 0 0;
+}
+
+.borderRadiusBottom-m {
+   // border-radius: 0 0 _px _px;
+}
+
+/* Individual -------------------------- */
+
+/* Small */
+
+.borderRadiusTopLeft-s {
+	// border-top-left-radius: _px;
+}
+
+.borderRadiusTopRight-s {
+	// border-top-right-radius: _px;
+}
+
+.borderRadiusBottomRight-s {
+	// border-bottom-right-radius: _px;
+}
+
+.borderRadiusBottomLeft-s {
+	// border-bottom-left-radius: _px;
+}
+
+/* Medium */
+
+.borderRadiusTopLeft-m {
+	// border-top-left-radius: _px;
+}
+
+.borderRadiusTopRight-m {
+	// border-top-right-radius: _px;
+}
+
+.borderRadiusBottomRight-m {
+	// border-bottom-right-radius: _px;
+}
+
+.borderRadiusBottomLeft-m {
+	// border-bottom-left-radius: _px;
+}
+
+/* Large */
+
+.borderRadiusTopLeft-l {
+	// border-top-left-radius: _px;
+}
+
+.borderRadiusTopRight-l {
+	// border-top-right-radius: _px;
+}
+
+.borderRadiusBottomRight-l {
+	// border-bottom-right-radius: _px;
+}
+
+.borderRadiusBottomLeft-l {
+	// border-bottom-left-radius: _px;
+}

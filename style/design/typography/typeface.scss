@@ -1,0 +1,8 @@
+/* Typeface ----------------------------------------------------
+---------------------------------------------------------------- */
+
+.fontFamily-cardo, body, button, html, input, select, textarea, * {
+  font-family: 'Cardo', serif;
+  @include font-smoothing(antialiased);
+  color: palette(default, base);
+}

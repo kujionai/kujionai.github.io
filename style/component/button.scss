@@ -1,0 +1,47 @@
+/* General -----------------------------------------------------
+---------------------------------------------------------------- */
+
+button, .button, .button svg * {
+  @include appearance(none);
+  @include box-sizing(border-box);
+  @include transition-duration(.2s);
+  @include transition-property(all);
+  @include transition-timing-function(linear);
+  @include user-select(none);
+  outline-style: none;
+  border-style: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* Button Color -------------------------------------------------
+---------------------------------------------------------------- */
+
+/* default ------------------------------- */
+
+.button--default {
+  background-color: palette(default, base);
+  color: $white;
+}
+
+/* Secondary ------------------------------- */
+
+.button--secondary {
+  @include box-shadow(inset 0 0 0 1px palette(default, base));
+  color: palette(default, base);
+}
+
+
+/* Button Size -------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Large ------------------------------- */
+
+.button--l {
+  line-height: 40px;
+  padding: 0 24px;
+}

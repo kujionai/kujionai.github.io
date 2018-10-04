@@ -1,0 +1,106 @@
+/* Transition Duration -----------------------------------------
+---------------------------------------------------------------- */
+
+/* X-Large ------------------------------- */
+
+.transitionDuration-xl, .fadeIn {
+  transition-duration: 1s;
+}
+
+/* Large --------------------------------- */
+
+.transitionDuration-l {
+  transition-duration: .4s;
+}
+
+/* Medium -------------------------------- */
+
+.transitionDuration-m, .has-animation {
+  transition-duration: .3s;
+}
+
+/* Medium -------------------------------- */
+
+.transitionDuration-s, .overlay {
+  transition-duration: .2s;
+}
+
+/* Small --------------------------------- */
+
+.transitionDuration-xs {
+  transition-duration: .1s
+}
+
+
+/* Animation ---------------------------------------------------
+---------------------------------------------------------------- */
+
+.has-animation {
+  @include transition-timing-function(cubic-bezier(.6,-.4,.2,1.6));
+}
+
+
+/* Fade In -----------------------------------------------------
+---------------------------------------------------------------- */
+
+.fadeIn-trigger {
+  position: relative;
+  display: block;
+}
+
+/* Inactive */
+
+.fadeIn {
+  opacity: 0;
+  display: inline-block;
+  @include transition-timing-function(cubic-bezier(.06,.6,.18,1));
+}
+
+/* Active */
+
+.fadeIn.is-active,
+.fadeIn-trigger:hover .fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* On load ------------------------------- */
+
+.fadeIn--onLoad {
+  transition-delay: .2s;
+}
+
+/* Down ---------------------------------- */
+
+.fadeInDown {
+  transform: translateY(-15px);
+}
+
+/* Up ------------------------------------ */
+
+.fadeInUp {
+  transform: translateY(20px);
+}
+
+/* Right --------------------------------- */
+
+.fadeInRight {
+  transform: translateX(-15px);
+}
+
+/* Left ---------------------------------- */
+
+.fadeInLeft {
+  transform: translateX(15px);
+}
+
+/* Scale --------------------------------- */
+
+.fadeInScale.is-active,
+.fadeIn-trigger:hover .fadeInScale {
+  @include transform(scale(1));
+}
+
+.fadeInScale {
+  @include transform(scale(.8));
+}

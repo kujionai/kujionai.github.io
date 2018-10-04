@@ -1,0 +1,74 @@
+/* Palette -----------------------------------------------------
+---------------------------------------------------------------- */
+
+$white: #ffffff;
+
+$cloud: #F2F5F6;
+$storm: #CCCCCC;
+
+$palettes: (
+  default: (
+    // x-dark: _,
+    // dark: _,
+    // mid-dark: _,
+    base: #293047,
+    // mid-light: _,
+    // light: _,
+    // x-light: _,
+  ),
+);
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+/* Color -------------------------------------------------------
+---------------------------------------------------------------- */
+
+/* default ------------------------------- */
+
+.c-default, a, .link {
+  color: palette(default, base);
+}
+
+/* SVG */
+
+.c-default svg *, .c-default--hover:hover svg * {
+  fill: palette(default, base);
+}
+
+/* White ------------------------------- */
+
+/* Text */
+
+.c-white, .c-white--hover:hover, .button--secondary:hover {
+  color: $white;
+}
+
+/* SVG */
+
+.c-white svg *, .c-white--hover:hover svg *, .button svg *, .button--secondary:hover svg * {
+  fill: $white;
+}
+
+
+/* Background --------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Cloud ------------------------------- */
+
+.bg-cloud {
+  background-color: $cloud;
+}
+
+/* default ------------------------------- */
+
+.bg-default, .bg-default--hover:hover {
+  background-color: palette(default, base);
+}
+
+/* White ------------------------------- */
+
+.bg-white, .bg-white--hover:hover {
+  background-color: $white;
+}
